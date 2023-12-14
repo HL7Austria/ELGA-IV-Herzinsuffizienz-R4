@@ -47,6 +47,7 @@ Description:  "Patient/Teilnehmer basierend dem Entwurf der Datenspezifikation d
 // Bezeichnung der Kontakttypen aus PDF nicht ganz klar
 * Versorgungsnetzwerk.Kontakttyp 1..1 CodeableConcept "Team Primärversorgung/hausärztliches Team | Niedergelassene Fachärzte für innere Medizin/Kardiologie | HI-Spezialist/Spezialambulanz | Krankenhaus/stationär | Rehabilitation"
 
+// sample mapping
 Mapping:  PatientToIPSCDA
 Source:   PatientHI
 Target:   "https://art-decor.org/art-decor/decor-templates--hl7ips-?section=templates&id=2.16.840.1.113883.10.22.2.1"
