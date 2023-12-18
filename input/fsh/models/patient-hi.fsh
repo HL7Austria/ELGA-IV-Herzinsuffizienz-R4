@@ -32,6 +32,7 @@ Description:  "Patient/Teilnehmer basierend dem Entwurf der Datenspezifikation d
 * Austritt 0..1 BackboneElement "Austritt aus DM(P)"
 * Austritt.Datum 0..1 date "Austrittsdatum"
 * Austritt.Grund 0..1 CodeableConcept "Austrittsgrund auszufüllen, wenn DMP-Austrittsdatum vorhanden (Eingabefehler | verstorben | durch Patient beendet | durch Einrichtung beendet | sonstiges)"
+* Austritt.Grund from Austritt
 
 // Was ist eine Anlaufstelle?
 * Anlaufstelle 1..1 ContactPoint "Aktuelle primäre Anlaufstelle (Bezeichnung, Kontakt)"
@@ -46,6 +47,7 @@ Description:  "Patient/Teilnehmer basierend dem Entwurf der Datenspezifikation d
 * Versorgungsnetzwerk.Kontakt 1..1 ContactPoint "Bezeichnung, Kontakt, freies Textfeld"
 // Bezeichnung der Kontakttypen aus PDF nicht ganz klar
 * Versorgungsnetzwerk.Kontakttyp 1..1 CodeableConcept "Team Primärversorgung/hausärztliches Team | Niedergelassene Fachärzte für innere Medizin/Kardiologie | HI-Spezialist/Spezialambulanz | Krankenhaus/stationär | Rehabilitation"
+* Versorgungsnetzwerk.Kontakttyp from https://termgit.elga.gv.at/ValueSet/elga-authorspeciality
 
 // sample mapping
 Mapping:  PatientToIPSCDA

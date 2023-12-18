@@ -23,11 +23,14 @@ NT-proBNP als wichtiger Parameter im Rahmen der Diagnostik sowie als wesentliche
 österreichweit nicht einheitlich geregelt ist. Auch in den CHI-Projekten gibt es unterschiedliche Vorgehensweisen. Die einheitliche
 Regelung in Bezug auf NT-proBNP ist unabdingbar und sollte entsprechend priorisiert werden."""
   * Symptomatik 1..1 CodeableConcept "Symptomatik/klinischer Status (NYHA I | NYHA II | NYHA III | NYHA IV)"
+  * Symptomatik from Symptomatik
   * Kardiologe 1..1 boolean "Überweisung an Kardiologin bzw. Kardiologen im Rahmen der Erstdiagnose" """Der Begriff 'Kardiologe' wird hier der Einfachheit halber synonym für Fachärztin bzw. -arzt für Innere Medizin und Kardiologie
 (Ärzteausbildungsordnung 2015) bzw. Fachärztin bzw. -arzt für Innere Medizin mit Additivfach Kardiologie (Ärzteausbildungsordnung
 2006) verwendet."""
   * Diagnose 1..1 CodeableConcept "HFrEF | HFmrEF | HFpEF"
+  * Diagnose from Diagnose
   * Behandlungsziel 1..1 CodeableConcept "1 | 2 | 3a | 3b"
+  * Behandlungsziel from Behandlungsziel
 
 // Labor
 // sind auch die Ergebnisse zu dokumentieren? Attachment?
@@ -37,24 +40,31 @@ Regelung in Bezug auf NT-proBNP ist unabdingbar und sollte entsprechend priorisi
 * Therapie 1..1 BackboneElement "Therapie"
   * HITherapie 1..1 BackboneElement "HI-spezifische Therapie"
     * Therapie 1..1 CodeableConcept "Ja | Nein | Kontraindikation"
+    * Therapie from Therapie
     * Zieldosis 1..1 CodeableConcept "Evidenzbasierte Zieldosis (Erreicht | Nicht erreicht | Titrationsphase | Max. tolerierte Dosis erreicht)"
+    * Zieldosis from Zieldosis
   * Komedikation 1..1 CodeableConcept "Wesentliche Ko-Medikationen (Ja | Nein | Kontraindikation)"
+  * Komedikation from Therapie
 
 // Selbstmanagement (SM)/Schulung
 * Selbstmanagement 1..1 BackboneElement "Selbstmanagement (SM)/Schulung"
   * Ressourcen 1..1 CodeableConcept "Ressourcen der Patienten/Angehörigen (Selbstmanagement möglich (regelmäßiges Monitoring wichtiger Parameter) | prinzipiell Selbstmanagement (Überprüfung in definierten Zeitintervallen) | Kontinuierliche Supervision)"
+  * Ressourcen from Ressourcen
   * Betreuung 1..1 string "Betreuungssituation (Angehörige, Pflege, Heimhilfe etc.)"
   * DMPSchulung 1..1 BackboneElement "DM(P)-spezifische Patientenschulung"
     * absolviert 1..1 boolean "absolviert"
     * Datum 1..1 date "Datum der Schulung"
   * GewichtSchulung 1..1 BackboneElement "Schulung zur Überwachung des Gewichts"
     * absolviert 1..1 CodeableConcept "Ja | Nein | Nicht erforderlich"
+    * absolviert from Schulung
     * Datum 1..1 date "Datum der Schulung"
   * ImpfungBeratung 1..1 BackboneElement "Beratung über Impfungen (Grippe, Pneumokokken)"
     * absolviert 1..1 CodeableConcept "Ja | Nein | Nicht erforderlich"
+    * absolviert from Schulung
     * Datum 1..1 date "Datum der Beratung"
   * TelemonitoringSchulung 1..1 BackboneElement "Telemonitoring"
     * absolviert 1..1 CodeableConcept "Ja | Nein | Nicht erforderlich"
+    * absolviert from Schulung
     * Datum 1..1 date "Datum der Schulung"
 
 // Lebensqualität

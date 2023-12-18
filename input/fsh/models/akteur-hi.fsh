@@ -6,9 +6,12 @@ Id: AkteurHI
 Title: "Strukturdaten der beteiligten Einrichtungen/Akteure"
 // Was genau ist eine "Einrichtung"?
 * Einrichtung 1..1 string "Einrichtungsbezeichnung"
+// Warum ist das erforderlich?
 * Einrichtungsart 1..1 CodeableConcept "extramural | intramural"
+* Einrichtungsart from Einrichtungsart
 // Bezieht sich die Fachrichtung auf die Einrichtung oder den GDL?
 * Fachrichtung 1..1 CodeableConcept "Fachrichtung (AM | IM | etc.)"
+* Fachrichtung from https://termgit.elga.gv.at/ValueSet/elga-authorspeciality
 * Adresse 1..* Address "Adresse/politischer Bezirk"
 
 // muss der Personalstand regelmäßig erhoben werden; Quartalsende?
@@ -16,6 +19,7 @@ Title: "Strukturdaten der beteiligten Einrichtungen/Akteure"
 // Muss die Anzahl explizit erhoben werden oder könnte diese auch abgeleitet werden aus den dokumentierten GDL?
 * Personalstand.Anzahl 1..1 integer "Anzahl"
 * Personalstand.Berufsgruppe 1..1 CodeableConcept "Berufsgruppe"
+* Personalstand.Berufsgruppe from https://termgit.elga.gv.at/ValueSet/elga-authorspeciality
 * GDL 1..* BackboneElement "GDL"
 * GDL.Vorname 1..* string "Vorname GDL"
 * GDL.Zuname 1..* string "Zuname GDL"

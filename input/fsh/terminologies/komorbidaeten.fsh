@@ -1,0 +1,20 @@
+ValueSet: Komorbiditaeten
+Id:	komorbiditaeten
+Title: "Komorbiditäten"
+
+* $sample#1 "Komorbiditäten"
+* $sample#2 "Koronare Herzkrankheit"
+* $sample#3 "Diabetes mellitus"
+* $sample#4 "Hypertonie"
+* $sample#5 "Herzvitien"
+* $sample#6 "Vorhofflimmern/-flattern"
+* $sample#7 "Cerebrovaskuläre Störungen"
+* $sample#8 "Chronische Niereninsuffizienz"
+* $sample#9 "Chronisch obstruktive Bronchitis"
+* $sample#10 "Chronisch obstruktive Lungenerkrankung"
+* $sample#11 "Schlafapnoesyndrom"
+* $sample#12 "Depression"
+* $sample#13 "Anämie"
+* $sample#14 "Onkologische Erkrankungen"
+* $sample#15 "Kachexie"
+* $sample#16 "Chronische Schmerzen"
