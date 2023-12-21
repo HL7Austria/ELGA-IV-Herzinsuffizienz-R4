@@ -1,6 +1,7 @@
 ValueSet: Einrichtungsart
 Id:	einrichtungsart
 Title: "Einrichtungsart"
+Description: "Art der Gesundheitseinrichtung"
 
-* $sample#1 "extramural"
-* $sample#2 "intramural"
+* $sct#440655000 "extramural"
+* $sct#440654001 "intramural"

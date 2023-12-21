@@ -4,7 +4,7 @@
 Logical: PatientHI
 Id: PatientHI
 Title: "Patienten-Stammdaten"
-Description:  "Patient/Teilnehmer basierend dem Entwurf der Datenspezifikation des modularen Rahmenkonzepts für Österreich für das Disease-Management bei chronischer Herzinsuffizienz."
+Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikation des modularen Rahmenkonzepts für Österreich für das Disease-Management bei chronischer Herzinsuffizienz."
 * Vorname 1..* string "Vorname"
 * Zuname 1..* string "Zuname"
 * Geburtsjahr 1..1 date "Geburtsjahr"
@@ -27,7 +27,11 @@ Description:  "Patient/Teilnehmer basierend dem Entwurf der Datenspezifikation d
 
 * Einverstaendnis 1..1 Attachment "Patienten-Einverständniserklärung"
 
-// Kann sich ein Patient nach einem Austritt erneut einschreiben?
+// Kann sich ein Patient nach einem Austritt erneut einschreiben? => Gibt es als Austrittsgrund auch "suspended"?
+// Kann es auch zu einem Ende des Programms kommen, weil aus Gesundheitsgründen nicht mehr erforderlich?
+// VS "Austritt" bräuchte Konzeptergänzungen, wenn HI-Gruppe genau so umsetzen will, wie im Konzept
+// Codierung Austrittsdatum: 413947000	Date treatment stopped
+// Codierung 
 * Einschreibung 1..1 date "DM(P)-Einschreibedatum"
 * Austritt 0..1 BackboneElement "Austritt aus DM(P)"
 * Austritt.Datum 0..1 date "Austrittsdatum"
@@ -46,6 +50,7 @@ Description:  "Patient/Teilnehmer basierend dem Entwurf der Datenspezifikation d
 * Versorgungsnetzwerk 1..* BackboneElement "Versorgungsnetzwerk"
 * Versorgungsnetzwerk.Kontakt 1..1 ContactPoint "Bezeichnung, Kontakt, freies Textfeld"
 // Bezeichnung der Kontakttypen aus PDF nicht ganz klar
+// Insbesondere "Team Primärversorgung/hausärztliches Team" nicht abgedeckt, plus HI-Spezialist = was für ein Facharzt ist das?
 * Versorgungsnetzwerk.Kontakttyp 1..1 CodeableConcept "Team Primärversorgung/hausärztliches Team | Niedergelassene Fachärzte für innere Medizin/Kardiologie | HI-Spezialist/Spezialambulanz | Krankenhaus/stationär | Rehabilitation"
 * Versorgungsnetzwerk.Kontakttyp from https://termgit.elga.gv.at/ValueSet/elga-authorspeciality
 
