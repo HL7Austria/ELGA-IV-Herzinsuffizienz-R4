@@ -1,6 +1,6 @@
 RuleSet: Komorbiditaeten
 * Komorbiditaeten 1..1 BackboneElement "Komorbiditäten"
-  * Art 0..1 CodeableConcept "Art (Beispiel)"
+  * Art 0..1 CodeableConcept "Art der Komorbität. Die Codierung mit Hilfe des Value-Sets ist eine Alternative zu der expliziten Darstellung der einzelnen Komorbidäten darunter. Durch das Value-Set ließe sich die Menge der zu kodierenden Komorbitäten leichter steuern."
   * Art from Komorbiditaeten (example)
   * KHK 1..1 boolean "Koronare Herzkrankheit"
   * Diabetes 1..1 boolean "Diabetes mellitus"
