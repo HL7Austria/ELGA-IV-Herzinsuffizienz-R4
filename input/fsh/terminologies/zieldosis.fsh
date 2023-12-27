@@ -1,8 +1,21 @@
 ValueSet: Zieldosis
 Id:	zieldosis
 Title: "Zieldosis"
+Description: "Beurteilung der evidenzbasierten Zieldosis"
 
-* $sample#1 "Erreicht"
-* $sample#2 "Nicht erreicht"
-* $sample#3 "Titrationsphase"
-* $sample#4 "Max. tolerierte Dosis erreicht"
+// kein Wert für zu hohe Dosis, mehr als Max?
+// Achieved bezieht sich nicht auf Dosis, eigene Modellierung könnte besser sein => dosage findings
+
+
+* $sct#390802008 "Goal achieved"
+* $sct#390802008 ^designation[0].language = #de-AT
+* $sct#390802008 ^designation[0].value = "Erreicht"
+* $sct#390801001 "Goal not achieved"
+* $sct#390801001 ^designation[0].language = #de-AT
+* $sct#390801001 ^designation[0].value = "Nicht erreicht"
+* $sct#494716691000132104 "Medication titrated"
+* $sct#494716691000132104 ^designation[0].language = #de-AT
+* $sct#494716691000132104 ^designation[0].value = "Titrationsphase"
+* $sct#407566003 "Patient on maximum tolerated dose"
+* $sct#407566003 ^designation[0].language = #de-AT
+* $sct#407566003 ^designation[0].value = "Max. tolerierte Dosis erreicht"

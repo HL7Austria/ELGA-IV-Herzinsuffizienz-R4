@@ -1,7 +1,7 @@
 ValueSet: Einrichtungsart
 Id:	einrichtungsart
 Title: "Einrichtungsart"
-Description: "Art der Gesundheitseinrichtung"
+Description: "Art der Gesundheitseinrichtung (intramural/extramural)"
 
 * $sct#440655000 "Outpatient environment"
 * $sct#440655000 ^designation[0].language = #de-AT
