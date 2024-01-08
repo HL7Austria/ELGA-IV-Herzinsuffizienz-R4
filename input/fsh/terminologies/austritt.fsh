@@ -18,6 +18,6 @@ Description: "Dokumentation des Grundes für den Austritt aus einem DMP"
 * $sct#74964007 "Other"
 * $sct#74964007 ^designation[0].language = #de-AT
 * $sct#74964007 ^designation[0].value = "Sonstiges"
-* $sample#1 "durch Einrichtung beendet"
-* $sample#1 ^designation[0].language = #de-AT
-* $sample#1 ^designation[0].value = "durch Einrichtung beendet"
+* $sample#einrichtung "durch Einrichtung beendet"
+* $sample#einrichtung ^designation[0].language = #de-AT
+* $sample#einrichtung ^designation[0].value = "durch Einrichtung beendet"
