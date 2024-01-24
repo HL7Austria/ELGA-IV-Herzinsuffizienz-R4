@@ -5,6 +5,8 @@ Logical: PatientHI
 Id: PatientHI
 Title: "Patienten-Stammdaten"
 Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikation des modularen Rahmenkonzepts für Österreich für das Disease-Management bei chronischer Herzinsuffizienz."
+
+// #modul Subject
 * Vorname 1..* string "Vorname"
 * Zuname 1..* string "Zuname"
 * Geburtsjahr 1..1 date "Geburtsjahr"
@@ -18,6 +20,7 @@ Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikati
 * Geschlecht.genderExtension 0..1 CodeableConcept "Erweiterung für administratives Geschlecht für den Fall das Geschlecht.gender = other"
 * Geschlecht.genderExtension from https://termgit.elga.gv.at/ValueSet/hl7-at-administrativegender-fhir-extension
 
+// #modul Plan of Care
 // gibt es nur eine Schulung?
 // Könnte es sein, dass Schulungen wiederholt werden?
 // Muss das hier dokumentiert werden -> siehe erstdokumentation/folgedokumentation
@@ -25,6 +28,7 @@ Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikati
 * Schulung.absolviert 1..1 boolean "absolviert"
 * Schulung.Datum 1..1 date "Datum der Schulung"
 
+// worauf bezieht sich die Einverständniserklärung?
 * Einverstaendnis 1..1 Attachment "Patienten-Einverständniserklärung"
 
 // Kann sich ein Patient nach einem Austritt erneut einschreiben? => Gibt es als Austrittsgrund auch "suspended"?
@@ -41,12 +45,14 @@ Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikati
 // Was ist eine Anlaufstelle?
 * Anlaufstelle 1..1 ContactPoint "Aktuelle primäre Anlaufstelle (Bezeichnung, Kontakt)"
 
+// #modul Subject . Überlegung, dass dies unabhängig vom DMP ist, im Gegensatz zum "Versorgungsnetzwerk"
 * Betreuungsnetzwerk 1..1 BackboneElement "Betreuungsnetzwerk"
 * Betreuungsnetzwerk.Einbindung 1..1 boolean "Einbindung An- bzw. Zugehörige"
 * Betreuungsnetzwerk.Pflegehilfe 1..1 boolean "Pflege/Heimhilfe"
 // Sind in dem Textfeld detaillierte, strukturierte Daten erforderlicht?
 * Betreuungsnetzwerk.Kontakt 0..1 string "Name und Kontaktmöglichkeit"
 
+// #modul Plan of Care
 * Versorgungsnetzwerk 1..* BackboneElement "Versorgungsnetzwerk"
 * Versorgungsnetzwerk.Kontakt 1..1 ContactPoint "Bezeichnung, Kontakt, freies Textfeld"
 // Bezeichnung der Kontakttypen aus PDF nicht ganz klar

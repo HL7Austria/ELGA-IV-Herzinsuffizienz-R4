@@ -11,15 +11,21 @@ Title: "Medizinische Datensätze - Folgedokumentation"
 * Patient 1..1 PatientHI "Patient"
 
 // Laufende Versorgung gemäß Pfade
-* Versorung 1..1 BackboneElement "Laufende Versorgung gemäß Pfade"
+// #modul Plan of Care
+* Versorgung 1..1 BackboneElement "Laufende Versorgung gemäß Pfade"
   * geplant 1..1 boolean "Geplanter Kontrolltermin" """Kontrolle bei primärer Anlaufstelle alle 3 Monate bei stabilen Patientinnen bzw. Patienten mit niedrigem Risiko; Kontrolle bei der Kardiologin bzw. beim Kardiologen mindestens alle 3 Monaten für Patientinnen bzw. Patienten mit hohem Risiko; regelmäßige Betreuung in Spezialeinrichtungen von Patientinnen bzw. Patienten mit sehr hohem Risiko"""
+ 
+ // #modul History of Procedures
   * AnzahlStationaer 1..1 integer "Ungeplante stationäre Behandlung wg. HI seit letzter Dokumentation"
+
+// #modul ab hier vgl. erstdokumentation
   * Symptomatik 1..1 CodeableConcept "NYHA I | NYHA II | NYHA III | NYHA IV"
   * Symptomatik from Symptomatik
   * Behandlungsziel 1..1 BackboneElement "Behandlungsziel"
     * Aenderung 1..1 boolean "Änderung Behandlungsziel gemäß Pfade"
     * Behandlungsziel 1..1 CodeableConcept "1 | 2 | 3a | 3b"
     * Behandlungsziel from Behandlungsziel
+
 
   * insert Komorbiditaeten
 

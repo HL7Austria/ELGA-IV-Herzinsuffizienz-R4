@@ -4,6 +4,8 @@
 Logical: AkteurHI
 Id: AkteurHI
 Title: "Strukturdaten der beteiligten Einrichtungen/Akteure"
+
+// #modul Plan of Care -- Wie Header befüllt wird, noch mit Emmanuel besprechen
 // Was genau ist eine "Einrichtung"?
 * Einrichtung 1..1 string "Einrichtungsbezeichnung"
 // Warum ist das erforderlich?
