@@ -35,7 +35,7 @@ Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikati
 // Kann es auch zu einem Ende des Programms kommen, weil aus Gesundheitsgründen nicht mehr erforderlich?
 // VS "Austritt" bräuchte Konzeptergänzungen, wenn HI-Gruppe genau so umsetzen will, wie im Konzept
 // Codierung Austrittsdatum: 413947000	Date treatment stopped
-// Codierung 
+// Codierung
 * Einschreibung 1..1 date "DM(P)-Einschreibedatum"
 * Austritt 0..1 BackboneElement "Austritt aus DM(P)"
 * Austritt.Datum 0..1 date "Austrittsdatum"
@@ -60,9 +60,19 @@ Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikati
 * Versorgungsnetzwerk.Kontakttyp 1..1 CodeableConcept "Team Primärversorgung/hausärztliches Team | Niedergelassene Fachärzte für innere Medizin/Kardiologie | HI-Spezialist/Spezialambulanz | Krankenhaus/stationär | Rehabilitation"
 * Versorgungsnetzwerk.Kontakttyp from https://termgit.elga.gv.at/ValueSet/elga-authorspeciality
 
-// sample mapping
-Mapping:  PatientToIPSCDA
+// Mapping to IPS Subject modul
+Mapping:  PatientHIToSubject
 Source:   PatientHI
-Target:   "https://art-decor.org/art-decor/decor-templates--hl7ips-?section=templates&id=2.16.840.1.113883.10.22.2.1"
-* -> "PatientHI" "This logical model maps to the IPS CDA recordTarget"
-* Vorname -> "recordTarget.patientRole.patient.name.given"
+Target:   "IPS Subject"
+* -> "Subject"
+* Vorname -> ".name"
+* Zuname -> ".name"
+* Geburtsjahr -> ".birthDate"
+* SVNR -> ".identifier"
+// * KVTraeger -> ""
+* Adresse -> ".address"
+* Telefonnummer -> ".telecom"
+* Geschlecht.gender -> ".gender"
+* Geschlecht.genderExtension -> ".genderExtension"
+* Betreuungsnetzwerk.Kontakt -> ".contact" "Betreuungsnetzwerk.where(Einbindung=true)"
+* Betreuungsnetzwerk.Kontakt -> ".generalPractitioner" "Betreuungsnetzwerk.where(Pflegehilfe=true)"

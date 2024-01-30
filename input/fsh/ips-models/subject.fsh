@@ -31,8 +31,8 @@ Target:   "PatientHI"
 * genderExtension -> ".Geschlecht.genderExtension"
 * birthDate -> ".Geburtsjahr"
 * address -> ".Adresse"
-* contact -> ".Betreuungsnetzwerk"
-* generalPractitioner -> ".Betreuungsnetzwerk"
+* contact -> ".Betreuungsnetzwerk.Kontakt" "Betreuungsnetzwerk.where(Einbindung=true)"
+* generalPractitioner -> ".Betreuungsnetzwerk.Kontakt" "Betreuungsnetzwerk.where(Pflegehilfe=true)"
 
 // // #modul Plan of Care
 // // gibt es nur eine Schulung?
