@@ -159,6 +159,11 @@ menu:
 #     - StructureDefinition/bark-control
 #     - StructureDefinition/bee-sting
 groups:
+  IPS:
+    name: IPS compliant Logical Model
+    description: IPS compliant logical model for HI.
+    resources:
+      - StructureDefinition/Subject
   HI:
     name:  HI Datenmodell
     description: Datenmodell basierend auf Rahmenkonzept.
