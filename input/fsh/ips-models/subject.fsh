@@ -12,7 +12,7 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
 * telecom 1..* ContactPoint "A contact detail for the subject"
 * gender 1..1 code "male | female | other | unknown"
 * gender from http://hl7.org/fhir/ValueSet/administrative-gender
-* genderExtension 1..1 CodeableConcept "Extension in case gender = other"
+* genderExtension 0..1 CodeableConcept "Extension in case gender = other"
 * genderExtension from https://termgit.elga.gv.at/ValueSet/hl7-at-administrativegender-fhir-extension
 * birthDate 1..1 date "The date of birth for the subject"
 * address 1..* Address "An address for the subject"
@@ -23,10 +23,16 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
 Mapping:  SubjectToPatientHI
 Source:   Subject
 Target:   "PatientHI"
-* -> "This logical model maps to the PatientHI"
+* -> "PatientHI"
 * identifier -> ".SVNR"
 * name -> ".Vorname and .Zuname"
 * telecom -> ".Telefonnumer"
+* gender -> ".Geschlecht.gender"
+* genderExtension -> ".Geschlecht.genderExtension"
+* birthDate -> ".Geburtsjahr"
+* address -> ".Adresse"
+* contact -> ".Betreuungsnetzwerk"
+* generalPractitioner -> ".Betreuungsnetzwerk"
 
 // // #modul Plan of Care
 // // gibt es nur eine Schulung?
