@@ -24,11 +24,11 @@ Title: "Medizinische Datensätze - Erstdokumentation (im Rahmen der Erstabkläru
 NT-proBNP als wichtiger Parameter im Rahmen der Diagnostik sowie als wesentlicher Marker im Krankheitsverlauf für die Primärversorgung
 österreichweit nicht einheitlich geregelt ist. Auch in den CHI-Projekten gibt es unterschiedliche Vorgehensweisen. Die einheitliche
 Regelung in Bezug auf NT-proBNP ist unabdingbar und sollte entsprechend priorisiert werden."""
-  
+
   // #modul Problem list
   * Symptomatik 1..1 CodeableConcept "Symptomatik/klinischer Status (NYHA I | NYHA II | NYHA III | NYHA IV)"
   * Symptomatik from Symptomatik
-  
+
   // #modul Plan of Care
   * Kardiologe 1..1 boolean "Überweisung an Kardiologin bzw. Kardiologen im Rahmen der Erstdiagnose" """Der Begriff 'Kardiologe' wird hier der Einfachheit halber synonym für Fachärztin bzw. -arzt für Innere Medizin und Kardiologie
 (Ärzteausbildungsordnung 2015) bzw. Fachärztin bzw. -arzt für Innere Medizin mit Additivfach Kardiologie (Ärzteausbildungsordnung
@@ -87,3 +87,11 @@ Regelung in Bezug auf NT-proBNP ist unabdingbar und sollte entsprechend priorisi
 // #modul Functional Status
 // Lebensqualität
 * Lebensqualitaet 1..1 code "Fragebogen Lebensqualität EQ-5D (jährlich zu erheben ab Einschreibung) (5-stelliger Code)"
+
+// Mapping to IPS Problem modul
+Mapping:  ErstdokumentationHIToProblem
+Source:   ErstdokumentationHI
+Target:   "IPS Problem"
+* -> "Problem"
+* VPNR -> ".asserter"
+* Untersuchungsdatum -> ".recordedDate"
