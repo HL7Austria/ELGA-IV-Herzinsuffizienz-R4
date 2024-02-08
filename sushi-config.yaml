@@ -168,6 +168,7 @@ groups:
     description: IPS compliant logical model for HI.
     resources:
       - StructureDefinition/Subject
+      - StructureDefinition/Problem
   HI:
     name:  HI Datenmodell
     description: Datenmodell basierend auf Rahmenkonzept.
@@ -176,6 +177,7 @@ groups:
       - StructureDefinition/AkteurHI
       - StructureDefinition/ErstdokumentationHI
       - StructureDefinition/FolgedokumentationHI
+      - StructureDefinition/Problem
 #
 #
 # The ImplementationGuide resource defines several other properties
