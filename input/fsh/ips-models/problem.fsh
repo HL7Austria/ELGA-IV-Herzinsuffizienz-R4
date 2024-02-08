@@ -40,7 +40,7 @@ Mapping:  ProblemToErstdokumentationHI
 Source:   Problem
 Target:   "ErstdokumentationHI"
 * -> "ErstdokumentationHI"
-* code -> ".Komorbiditaeten or .Symptomatik or .Diagnose"
+* code -> ".Erstabklaerung.Komorbiditaeten or .Erstabklaerung.Symptomatik or .Erstabklaerung.Diagnose"
 * subject -> ".Patient"
 * recordedDate -> ".Untersuchungsdatum"
 * asserter -> ".VPNR"
