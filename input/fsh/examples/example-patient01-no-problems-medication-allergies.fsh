@@ -14,19 +14,19 @@ Usage: #example
 * type = #document
 * timestamp = "2024-02-08T14:01:30+00:00"
 * entry[0].fullUrl = "urn:uuid:212fdc76-ccc3-40bf-8cdd-82f2ef88bd7b"
-* entry[=].resource = Inline-Instance-for-2788423-1
+* entry[=].resource = Inline-Instance-for-1122334-1
 * entry[+].fullUrl = "urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8"
-* entry[=].resource = Inline-Instance-for-2788423-2
+* entry[=].resource = Inline-Instance-for-1122334-2
 * entry[+].fullUrl = "urn:uuid:75db30ee-7028-486c-929a-c5126837f472"
-* entry[=].resource = Inline-Instance-for-2788423-3
+* entry[=].resource = Inline-Instance-for-1122334-3
 * entry[+].fullUrl = "urn:uuid:72e85b9d-004d-4104-b166-86d129948bae"
-* entry[=].resource = Inline-Instance-for-2788423-4
+* entry[=].resource = Inline-Instance-for-1122334-4
 * entry[+].fullUrl = "urn:uuid:acac4c94-a752-4cf5-9a6b-0d84237d5076"
-* entry[=].resource = Inline-Instance-for-2788423-12
+* entry[=].resource = Inline-Instance-for-1122334-12
 * entry[+].fullUrl = "urn:uuid:768eb9cb-00f3-4ab1-bfc2-ff835cb3b89b"
-* entry[=].resource = Inline-Instance-for-2788423-171
+* entry[=].resource = Inline-Instance-for-1122334-171
 
-Instance: Inline-Instance-for-2788423-1
+Instance: Inline-Instance-for-1122334-1
 InstanceOf: Composition
 Usage: #inline
 * language = #de-AT
@@ -52,7 +52,7 @@ Usage: #inline
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
 * section[=].entry = Reference(urn:uuid:768eb9cb-00f3-4ab1-bfc2-ff835cb3b89b)
 
-Instance: Inline-Instance-for-2788423-2
+Instance: Inline-Instance-for-1122334-2
 InstanceOf: Patient
 Usage: #inline
 * identifier.type = $v2-0203#SS "Social Security Number"
@@ -81,7 +81,7 @@ Usage: #inline
 * address.country = "AUT"
 * maritalStatus = $v3-MaritalStatus#M "Married"
 
-Instance: Inline-Instance-for-2788423-3
+Instance: Inline-Instance-for-1122334-3
 InstanceOf: Device
 Usage: #inline
 * text.status = #additional
@@ -89,14 +89,14 @@ Usage: #inline
 * deviceName.name = "IPS Generator"
 * deviceName.type = #user-friendly-name
 
-Instance: Inline-Instance-for-2788423-4
+Instance: Inline-Instance-for-1122334-4
 InstanceOf: Condition
 Usage: #inline
 * clinicalStatus = $condition-clinical#inactive "Inactive"
 * code = $absent-unknown-uv-ips#no-known-problems "No known problems"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
-Instance: Inline-Instance-for-2788423-12
+Instance: Inline-Instance-for-1122334-12
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #unknown
@@ -104,7 +104,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * effectiveDateTime = "2024-02-08T10:31:58+02:00"
 
-Instance: Inline-Instance-for-2788423-171
+Instance: Inline-Instance-for-1122334-171
 InstanceOf: AllergyIntolerance
 Usage: #inline
 * clinicalStatus = $allergyintolerance-clinical#inactive "Inactive"
