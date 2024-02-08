@@ -177,7 +177,7 @@ groups:
       - StructureDefinition/AkteurHI
       - StructureDefinition/ErstdokumentationHI
       - StructureDefinition/FolgedokumentationHI
-      - StructureDefinition/Problem
+
 #
 #
 # The ImplementationGuide resource defines several other properties
