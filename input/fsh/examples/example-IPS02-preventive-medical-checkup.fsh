@@ -65,12 +65,10 @@ Usage: #example
 * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-2
 * entry[+].fullUrl = "urn:uuid:daf9c15d-14d4-429c-b658-6842fdff67d8"
 * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-3
-// * entry[+].fullUrl = "urn:uuid:8248cc70-65a2-4d37-ae14-a3ef2abf8f32"
-// * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-4
-// * entry[+].fullUrl = "urn:uuid:98285578-0bb6-42b2-908c-5bcc5e3992e0"
-// * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-5
+* entry[+].fullUrl = "urn:uuid:8248cc70-65a2-4d37-ae14-a3ef2abf8f32"
+* entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-4
 * entry[+].fullUrl = "urn:uuid:4d3f7ac4-fd0a-49af-a56b-303a2dbe67d1"
-* entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-6
+* entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-5
 // Social History
 * entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
 * entry[=].resource = IPS-2-preventive-medical-checkup-social-history-1
@@ -129,8 +127,7 @@ Usage: #inline
 * section[=].entry[0] = Reference(urn:uuid:74c5e186-d765-4c93-a624-c9b0746e8142)
 * section[=].entry[+] = Reference(urn:uuid:428259da-e0f7-4780-b1e3-c177515edd37)
 * section[=].entry[+] = Reference(urn:uuid:daf9c15d-14d4-429c-b658-6842fdff67d8)
-// * section[=].entry[+] = Reference(urn:uuid:8248cc70-65a2-4d37-ae14-a3ef2abf8f32)
-// * section[=].entry[+] = Reference(urn:uuid:98285578-0bb6-42b2-908c-5bcc5e3992e0)
+* section[=].entry[+] = Reference(urn:uuid:8248cc70-65a2-4d37-ae14-a3ef2abf8f32)
 * section[=].entry[+] = Reference(urn:uuid:4d3f7ac4-fd0a-49af-a56b-303a2dbe67d1)
 // Social History
 * section[+].title = "Social History"
@@ -372,35 +369,27 @@ Usage: #inline
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #kg/m2
 
-// Instance: IPS-2-preventive-medical-checkup-vital-sign-4
-// InstanceOf: Observation
-// Usage: #inline
-// * meta.profile = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
-// * status = #final
-// * category = $observation-category#vital-signs "Vital Signs"
-// * code = $loinc#8480-6 "Systolic blood pressure"
-// * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
-// * effectiveDateTime = "2024-02-08T08:30:00+01:00"
-// * valueQuantity.value = 130
-// * valueQuantity.unit = "mm[Hg]"
-// * valueQuantity.system = "http://unitsofmeasure.org"
-// * valueQuantity.code = #mm[Hg]
+Instance: IPS-2-preventive-medical-checkup-vital-sign-4
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#85354-9 "Blood pressure panel with all children optional"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T08:30:00+01:00"
+* component[0].code = $loinc#8480-6 "Systolic blood pressure"
+* component[=].valueQuantity.value = 130
+* component[=].valueQuantity.unit = "mm[Hg]"
+* component[=].valueQuantity.system = "http://unitsofmeasure.org"
+* component[=].valueQuantity.code = #mm[Hg]
+* component[+].code = $loinc#8462-4 "Diastolic blood pressure"
+* component[=].valueQuantity.value = 80
+* component[=].valueQuantity.unit = "mm[Hg]"
+* component[=].valueQuantity.system = "http://unitsofmeasure.org"
+* component[=].valueQuantity.code = #mm[Hg]
 
-// Instance: IPS-2-preventive-medical-checkup-vital-sign-5
-// InstanceOf: Observation
-// Usage: #inline
-// * meta.profile = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
-// * status = #final
-// * category = $observation-category#vital-signs "Vital Signs"
-// * code = $loinc#8462-4 "Diastolic blood pressure"
-// * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
-// * effectiveDateTime = "2024-02-08T08:30:00+01:00"
-// * valueQuantity.value = 80
-// * valueQuantity.unit = "mm[Hg]"
-// * valueQuantity.system = "http://unitsofmeasure.org"
-// * valueQuantity.code = #mm[Hg]
-
-Instance: IPS-2-preventive-medical-checkup-vital-sign-6
+Instance: IPS-2-preventive-medical-checkup-vital-sign-5
 InstanceOf: Observation
 Usage: #inline
 * status = #final
