@@ -372,7 +372,6 @@ Usage: #inline
 Instance: IPS-2-preventive-medical-checkup-vital-sign-4
 InstanceOf: Observation
 Usage: #inline
-* meta.profile = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
@@ -407,7 +406,6 @@ Usage: #inline
 Instance: IPS-2-preventive-medical-checkup-social-history-1
 InstanceOf: Observation
 Usage: #inline
-* meta.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"
 * status = #final
 * code = $loinc#72166-2 "Tobacco smoking status"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
