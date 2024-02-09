@@ -8,6 +8,7 @@ Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unk
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $asp = https://termgit.elga.gv.at/CodeSystem/asp-liste
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 
 Instance: IPS-2-preventive-medical-checkup
 InstanceOf: Bundle
