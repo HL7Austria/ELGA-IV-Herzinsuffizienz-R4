@@ -7,6 +7,7 @@ Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-cat
 Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $asp = https://termgit.elga.gv.at/CodeSystem/asp-liste
 
 Instance: IPS-2-preventive-medical-checkup
 InstanceOf: Bundle
@@ -50,6 +51,22 @@ Usage: #example
 // Medication Summary
 * entry[+].fullUrl = "urn:uuid:acac4c94-a752-4cf5-9a6b-0d84237d5076"
 * entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-1
+* entry[+].fullUrl = "urn:uuid:98285578-0bb6-42b2-908c-5bcc5e3992e0"
+* entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-2
+* entry[+].fullUrl = "urn:uuid:769a289d-a518-469a-8100-7943550e359f"
+* entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-3
+* entry[+].fullUrl = "urn:uuid:9cb3b3df-7b15-4270-af39-5f2f819e692e"
+* entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-4
+* entry[+].fullUrl = "urn:uuid:da89fd22-0d4f-4220-a625-b9ddf5eb330d"
+* entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-5
+* entry[+].fullUrl = "urn:uuid:e526f7e5-2f76-484e-acde-d6f2365f0859"
+* entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-6
+* entry[+].fullUrl = "urn:uuid:6d15d84f-2faf-4141-ac0c-fb9cf8496abe"
+* entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-7
+* entry[+].fullUrl = "urn:uuid:ecf9728f-fa50-4b46-b8f7-7768174df72a"
+* entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-8
+* entry[+].fullUrl = "urn:uuid:cf4b2e92-51e6-44de-9406-5406e66e9d45"
+* entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-9
 // Allergies and Intolerances
 * entry[+].fullUrl = "urn:uuid:768eb9cb-00f3-4ab1-bfc2-ff835cb3b89b"
 * entry[=].resource = IPS-2-preventive-medical-checkup-allergy-1
@@ -105,7 +122,15 @@ Usage: #inline
 * section[=].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[=].text.status = #empty
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
-* section[=].entry = Reference(urn:uuid:acac4c94-a752-4cf5-9a6b-0d84237d5076)
+* section[=].entry[0] = Reference(urn:uuid:acac4c94-a752-4cf5-9a6b-0d84237d5076)
+* section[=].entry[+] = Reference(urn:uuid:98285578-0bb6-42b2-908c-5bcc5e3992e0)
+* section[=].entry[+] = Reference(urn:uuid:769a289d-a518-469a-8100-7943550e359f)
+* section[=].entry[+] = Reference(urn:uuid:9cb3b3df-7b15-4270-af39-5f2f819e692e)
+* section[=].entry[+] = Reference(urn:uuid:da89fd22-0d4f-4220-a625-b9ddf5eb330d)
+* section[=].entry[+] = Reference(urn:uuid:e526f7e5-2f76-484e-acde-d6f2365f0859)
+* section[=].entry[+] = Reference(urn:uuid:6d15d84f-2faf-4141-ac0c-fb9cf8496abe)
+* section[=].entry[+] = Reference(urn:uuid:ecf9728f-fa50-4b46-b8f7-7768174df72a)
+* section[=].entry[+] = Reference(urn:uuid:cf4b2e92-51e6-44de-9406-5406e66e9d45)
 // Allergies and Intolerances
 * section[+].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
@@ -296,10 +321,82 @@ Usage: #inline
 Instance: IPS-2-preventive-medical-checkup-medication-summary-1
 InstanceOf: MedicationStatement
 Usage: #inline
-* status = #unknown
-* medicationCodeableConcept = $absent-unknown-uv-ips#no-known-medications "No known medications"
+* status = #active
+* medicationCodeableConcept = $asp#2443061 "EBETREXAT TBL 10MG"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
-* effectiveDateTime = "2024-02-08T10:31:58+02:00"
+* effectivePeriod.start = "2024-02-08T10:31:58+02:00"
+* dosage.text = "S:0-0-0-2 / FR"
+
+Instance: IPS-2-preventive-medical-checkup-medication-summary-2
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationCodeableConcept = $asp#3779722 "ELIQUIS FTBL 2,5MG"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2024-02-08T10:31:58+02:00"
+* dosage.text = "S:1-0-0-1"
+
+Instance: IPS-2-preventive-medical-checkup-medication-summary-3
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationCodeableConcept = $asp#3910895 "FORXIGA FTBL 10MG"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2024-02-08T10:31:58+02:00"
+* dosage.text = "S:1-0-0-0"
+
+Instance: IPS-2-preventive-medical-checkup-medication-summary-4
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationCodeableConcept = $asp#4476685 "GEROFOL TBL 5MG"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2024-02-08T10:31:58+02:00"
+* dosage.text = "S:MO, MI"
+
+Instance: IPS-2-preventive-medical-checkup-medication-summary-5
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationCodeableConcept = $asp#3780576 "IBANDRONSAEURE SAN FSPR 3MG"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2024-02-08T10:31:58+02:00"
+* dosage.text = "S:0,33/Monat, alle 3 Monate"
+
+Instance: IPS-2-preventive-medical-checkup-medication-summary-6
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationCodeableConcept = $asp#1294446 "METFORMIN HEX FTBL 500MG"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2024-02-08T10:31:58+02:00"
+* dosage.text = "S:1-0-0-1"
+
+Instance: IPS-2-preventive-medical-checkup-medication-summary-7
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationCodeableConcept = $asp#2450888 "RAMIPRIL 1A TBL 5MG"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2024-02-08T10:31:58+02:00"
+* dosage.text = "S:1-0-0-0"
+
+Instance: IPS-2-preventive-medical-checkup-medication-summary-8
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationCodeableConcept = $asp#4466132 "ROSUVASTATIN 1A FTBL 10MG"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2024-02-08T10:31:58+02:00"
+
+Instance: IPS-2-preventive-medical-checkup-medication-summary-9
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationCodeableConcept = $asp#4477087 "SEMGLEE INJ 100E/ML FPEN 3ML"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2024-02-08T10:31:58+02:00"
+* dosage.text = "S:0-0-0-10"
 
 // Allergies and Intolerances
 
