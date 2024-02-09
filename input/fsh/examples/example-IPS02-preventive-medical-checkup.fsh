@@ -55,6 +55,8 @@ Usage: #example
 * entry[=].resource = IPS-2-preventive-medical-checkup-problem-14
 * entry[+].fullUrl = "urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5"
 * entry[=].resource = IPS-2-preventive-medical-checkup-problem-15
+* entry[+].fullUrl = "urn:uuid:5ab717ff-c0a0-409e-83db-0fa6f8619f68"
+* entry[=].resource = IPS-2-preventive-medical-checkup-problem-16
 // Medication Summary
 * entry[+].fullUrl = "urn:uuid:acac4c94-a752-4cf5-9a6b-0d84237d5076"
 * entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-1
@@ -133,6 +135,7 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:3f3140b1-9478-4491-b7bf-10560f38da0e)
 * section[=].entry[+] = Reference(urn:uuid:caa77334-fbfc-4129-a101-1b01c595dd91)
 * section[=].entry[+] = Reference(urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5)
+* section[=].entry[+] = Reference(urn:uuid:5ab717ff-c0a0-409e-83db-0fa6f8619f68)
 // Medication Summary
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "History of Medication use Narrative"
@@ -369,6 +372,16 @@ Usage: #inline
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
 * category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#134439009 "Family history: premature coronary heart disease"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+
+Instance: IPS-2-preventive-medical-checkup-problem-16
+InstanceOf: Condition
+Usage: #inline
+* clinicalStatus = $condition-clinical#active "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* category.coding[0] = $condition-category#problem-list-item "Problem List Item"
+* category.coding[+] = $loinc#75326-9 "Problem"
+* code = $sct#160314003 "FH: Hypercholesterolemia"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
 // Medication Summary
