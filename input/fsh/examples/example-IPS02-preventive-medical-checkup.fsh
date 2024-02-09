@@ -84,6 +84,12 @@ Usage: #example
 * entry[=].resource = IPS-2-preventive-medical-checkup-procedure-history-1
 * entry[+].fullUrl = "urn:uuid:8103f99c-64f0-4dd5-b92e-5c9680c91e47"
 * entry[=].resource = IPS-2-preventive-medical-checkup-procedure-history-2
+// Diagnostic Results
+* entry[+].fullUrl = "urn:uuid:725bcf71-22e6-473b-a879-49a4b63cd654"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-1
+// Diagnostic Results - Performer
+* entry[+].fullUrl = "urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-performer-1
 // Vital Signs
 * entry[+].fullUrl = "urn:uuid:74c5e186-d765-4c93-a624-c9b0746e8142"
 * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-1
@@ -163,6 +169,14 @@ Usage: #inline
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a)
 * section[=].entry[+] = Reference(urn:uuid:8103f99c-64f0-4dd5-b92e-5c9680c91e47)
+// Diagnostic Results
+* section[+].title = "Diagnostic Results"
+* section[=].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
+* section[=].text.status = #empty
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].entry[0] = Reference(urn:uuid:725bcf71-22e6-473b-a879-49a4b63cd654)
+// Diagnostic Results - Performer
+* section[=].entry[+] = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
 // Vital Signs
 * section[+].title = "Vital Signs"
 * section[=].code = $loinc#8716-3 "Vital signs"
@@ -492,6 +506,54 @@ Usage: #inline
 * code = $sct#80146002 "Appendectomy"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performedDateTime = "1962"
+
+// Diagnostic Results
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-1
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#882-1 "ABO and Rh group [Type] in Blood"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueCodeableConcept = $sct#278149003 "Blood group A Rh(D) positive (finding)"
+
+// Instance: Inline-Instance-for-2788423-32
+// InstanceOf: Observation
+// Usage: #inline
+// * language = #de
+// * status = #final
+// * category = $observation-category#laboratory "Laboratory"
+// * code = urn:oid:1.2.40.0.34.5.11#300 "Hämatologie"
+// * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+// * effectiveDateTime = "2016-12-01T07:34:06+01:00"
+// * performer = Reference(urn:uuid:b7d089d1-224b-4471-b822-87502669b546)
+// * hasMember[0] = Reference(urn:uuid:5284c8f9-4310-47b8-9f4d-2ea603a81725)
+// * hasMember[+] = Reference(urn:uuid:23d4083d-9c6e-441a-b5e0-a4961928008b)
+
+// Diagnostic Results - Performer
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-performer-1
+InstanceOf: Organization
+Usage: #inline
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:oid:1.2.40.0.34.99.4613"
+* identifier.assigner.display = "Bundesministerium für Gesundheit"
+* name = "Amadeus Spital - Labor"
+* telecom[0].system = #phone
+* telecom[=].value = "+43.1.3453446.0"
+* telecom[+].system = #fax
+* telecom[=].value = "+43.1.3453446.4674"
+* telecom[+].system = #email
+* telecom[=].value = "info@amadeusspital.at"
+* telecom[+].system = #url
+* telecom[=].value = "//www.amadeusspital.at"
+* address.line = "Währinger Gürtel 18-20"
+* address.city = "Wien"
+* address.postalCode = "1090"
+* address.country = "AUT"
 
 // Vital Signs
 
