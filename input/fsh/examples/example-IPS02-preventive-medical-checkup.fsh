@@ -86,6 +86,11 @@ Usage: #example
 * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-4
 * entry[+].fullUrl = "urn:uuid:4d3f7ac4-fd0a-49af-a56b-303a2dbe67d1"
 * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-5
+// Past History of Illness
+* entry[+].fullUrl = "urn:uuid:82301518-66ca-4b4c-821d-087adf643cc4"
+* entry[=].resource = IPS-2-preventive-medical-checkup-illness-history-1
+* entry[+].fullUrl = "urn:uuid:ce2589a2-a5e5-4520-808f-8118e2863a95"
+* entry[=].resource = IPS-2-preventive-medical-checkup-illness-history-2
 // Social History
 * entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
 * entry[=].resource = IPS-2-preventive-medical-checkup-social-history-1
@@ -154,6 +159,13 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:daf9c15d-14d4-429c-b658-6842fdff67d8)
 * section[=].entry[+] = Reference(urn:uuid:8248cc70-65a2-4d37-ae14-a3ef2abf8f32)
 * section[=].entry[+] = Reference(urn:uuid:4d3f7ac4-fd0a-49af-a56b-303a2dbe67d1)
+// Past History of Illness
+* section[+].title = "Past History of Illness"
+* section[=].code = $loinc#11348-0 "History of Past illness Narrative"
+* section[=].text.status = #empty
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].entry[0] = Reference(urn:uuid:82301518-66ca-4b4c-821d-087adf643cc4)
+* section[=].entry[+] = Reference(urn:uuid:ce2589a2-a5e5-4520-808f-8118e2863a95)
 // Social History
 * section[+].title = "Social History"
 * section[=].code = $loinc#29762-2 "Social history Narrative"
@@ -497,6 +509,28 @@ Usage: #inline
 * valueQuantity.unit = "/min"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #/min
+
+// Past History of Illness
+
+Instance: IPS-2-preventive-medical-checkup-illness-history-1
+InstanceOf: Condition
+Usage: #inline
+* clinicalStatus = $condition-clinical#resolved "Resolved"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* category.coding[0] = $condition-category#problem-list-item "Problem List Item"
+* category.coding[+] = $loinc#75326-9 "Problem"
+* code = $sct#161419000 "History of measles"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+
+Instance: IPS-2-preventive-medical-checkup-illness-history-2
+InstanceOf: Condition
+Usage: #inline
+* clinicalStatus = $condition-clinical#resolved "Resolved"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* category.coding[0] = $condition-category#problem-list-item "Problem List Item"
+* category.coding[+] = $loinc#75326-9 "Problem"
+* code = $sct#161423008 "History of chickenpox (situation)"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
 // Social History
 
