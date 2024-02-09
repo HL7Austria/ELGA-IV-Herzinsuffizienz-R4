@@ -48,6 +48,13 @@ Usage: #example
 * entry[=].resource = IPS-2-preventive-medical-checkup-problem-11
 * entry[+].fullUrl = "urn:uuid:ebfb60a8-a753-459d-a796-a191a4dbd91d"
 * entry[=].resource = IPS-2-preventive-medical-checkup-problem-12
+// Problem List - Family history
+* entry[+].fullUrl = "urn:uuid:3f3140b1-9478-4491-b7bf-10560f38da0e"
+* entry[=].resource = IPS-2-preventive-medical-checkup-problem-13
+* entry[+].fullUrl = "urn:uuid:caa77334-fbfc-4129-a101-1b01c595dd91"
+* entry[=].resource = IPS-2-preventive-medical-checkup-problem-14
+* entry[+].fullUrl = "urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5"
+* entry[=].resource = IPS-2-preventive-medical-checkup-problem-15
 // Medication Summary
 * entry[+].fullUrl = "urn:uuid:acac4c94-a752-4cf5-9a6b-0d84237d5076"
 * entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-1
@@ -122,6 +129,10 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:2040058f-9537-4b26-9367-5ca5ac0ddb58)
 * section[=].entry[+] = Reference(urn:uuid:b7b2a10d-7295-4fd1-ad21-81bca78dc45a)
 * section[=].entry[+] = Reference(urn:uuid:ebfb60a8-a753-459d-a796-a191a4dbd91d)
+// Problem List - Family history
+* section[=].entry[+] = Reference(urn:uuid:3f3140b1-9478-4491-b7bf-10560f38da0e)
+* section[=].entry[+] = Reference(urn:uuid:caa77334-fbfc-4129-a101-1b01c595dd91)
+* section[=].entry[+] = Reference(urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5)
 // Medication Summary
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "History of Medication use Narrative"
@@ -326,6 +337,38 @@ Usage: #inline
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
 * category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#13644009 "Hypercholesterolemia"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+
+// Problem List - Family history
+
+Instance: IPS-2-preventive-medical-checkup-problem-13
+InstanceOf: Condition
+Usage: #inline
+* clinicalStatus = $condition-clinical#active "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* category.coding[0] = $condition-category#problem-list-item "Problem List Item"
+* category.coding[+] = $loinc#75326-9 "Problem"
+* code = $sct#160303001 "Family history of diabetes mellitus (situation)"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+
+Instance: IPS-2-preventive-medical-checkup-problem-14
+InstanceOf: Condition
+Usage: #inline
+* clinicalStatus = $condition-clinical#active "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* category.coding[0] = $condition-category#problem-list-item "Problem List Item"
+* category.coding[+] = $loinc#75326-9 "Problem"
+* code = $sct#312824007 "Family history of cancer of colon"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+
+Instance: IPS-2-preventive-medical-checkup-problem-15
+InstanceOf: Condition
+Usage: #inline
+* clinicalStatus = $condition-clinical#active "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* category.coding[0] = $condition-category#problem-list-item "Problem List Item"
+* category.coding[+] = $loinc#75326-9 "Problem"
+* code = $sct#134439009 "Family history: premature coronary heart disease"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
 // Medication Summary
