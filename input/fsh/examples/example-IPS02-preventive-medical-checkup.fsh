@@ -22,6 +22,7 @@ Usage: #example
 * entry[=].resource = IPS-2-preventive-medical-checkup-patient
 * entry[+].fullUrl = "urn:uuid:75db30ee-7028-486c-929a-c5126837f472"
 * entry[=].resource = IPS-2-preventive-medical-checkup-author
+// Problem List
 * entry[+].fullUrl = "urn:uuid:72e85b9d-004d-4104-b166-86d129948bae"
 * entry[=].resource = IPS-2-preventive-medical-checkup-problem-1
 * entry[+].fullUrl = "urn:uuid:82fa32f6-39d6-4fc9-9624-90a48fd3d3a5"
@@ -46,14 +47,33 @@ Usage: #example
 * entry[=].resource = IPS-2-preventive-medical-checkup-problem-11
 * entry[+].fullUrl = "urn:uuid:ebfb60a8-a753-459d-a796-a191a4dbd91d"
 * entry[=].resource = IPS-2-preventive-medical-checkup-problem-12
-// * entry[+].fullUrl = "urn:uuid:acac4c94-a752-4cf5-9a6b-0d84237d5076"
-// * entry[=].resource = Inline-Instance-for-1122334-12
-// * entry[+].fullUrl = "urn:uuid:768eb9cb-00f3-4ab1-bfc2-ff835cb3b89b"
-// * entry[=].resource = Inline-Instance-for-1122334-171
+// Medication Summary
+* entry[+].fullUrl = "urn:uuid:acac4c94-a752-4cf5-9a6b-0d84237d5076"
+* entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-1
+// Allergies and Intolerances
+* entry[+].fullUrl = "urn:uuid:768eb9cb-00f3-4ab1-bfc2-ff835cb3b89b"
+* entry[=].resource = IPS-2-preventive-medical-checkup-allergy-1
+// History of Procedures
 * entry[+].fullUrl = "urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a"
 * entry[=].resource = IPS-2-preventive-medical-checkup-procedure-history-1
 * entry[+].fullUrl = "urn:uuid:8103f99c-64f0-4dd5-b92e-5c9680c91e47"
 * entry[=].resource = IPS-2-preventive-medical-checkup-procedure-history-2
+// Vital Signs
+* entry[+].fullUrl = "urn:uuid:74c5e186-d765-4c93-a624-c9b0746e8142"
+* entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-1
+* entry[+].fullUrl = "urn:uuid:428259da-e0f7-4780-b1e3-c177515edd37"
+* entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-2
+* entry[+].fullUrl = "urn:uuid:daf9c15d-14d4-429c-b658-6842fdff67d8"
+* entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-3
+// * entry[+].fullUrl = "urn:uuid:8248cc70-65a2-4d37-ae14-a3ef2abf8f32"
+// * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-4
+// * entry[+].fullUrl = "urn:uuid:98285578-0bb6-42b2-908c-5bcc5e3992e0"
+// * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-5
+* entry[+].fullUrl = "urn:uuid:4d3f7ac4-fd0a-49af-a56b-303a2dbe67d1"
+* entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-6
+// Social History
+* entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
+* entry[=].resource = IPS-2-preventive-medical-checkup-social-history-1
 
 Instance: IPS-2-preventive-medical-checkup-composition
 InstanceOf: Composition
@@ -65,6 +85,7 @@ Usage: #inline
 * date = "2024-02-08T14:01:30+00:00"
 * author = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * title = "International Patient Summary - Preventive Medical Checkup"
+// Problem List
 * section[0].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list - Reported"
 * section[=].text.status = #empty
@@ -81,22 +102,42 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:2040058f-9537-4b26-9367-5ca5ac0ddb58)
 * section[=].entry[+] = Reference(urn:uuid:b7b2a10d-7295-4fd1-ad21-81bca78dc45a)
 * section[=].entry[+] = Reference(urn:uuid:ebfb60a8-a753-459d-a796-a191a4dbd91d)
+// Medication Summary
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[=].text.status = #empty
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
 * section[=].entry = Reference(urn:uuid:acac4c94-a752-4cf5-9a6b-0d84237d5076)
+// Allergies and Intolerances
 * section[+].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[=].text.status = #empty
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
 * section[=].entry = Reference(urn:uuid:768eb9cb-00f3-4ab1-bfc2-ff835cb3b89b)
+// History of Procedures
 * section[+].title = "History of Procedures"
 * section[=].code = $loinc#47519-4 "History of Procedures Document"
 * section[=].text.status = #empty
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a)
 * section[=].entry[+] = Reference(urn:uuid:8103f99c-64f0-4dd5-b92e-5c9680c91e47)
+// Vital Signs
+* section[+].title = "Vital Signs"
+* section[=].code = $loinc#8716-3 "Vital signs"
+* section[=].text.status = #empty
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].entry[0] = Reference(urn:uuid:74c5e186-d765-4c93-a624-c9b0746e8142)
+* section[=].entry[+] = Reference(urn:uuid:428259da-e0f7-4780-b1e3-c177515edd37)
+* section[=].entry[+] = Reference(urn:uuid:daf9c15d-14d4-429c-b658-6842fdff67d8)
+// * section[=].entry[+] = Reference(urn:uuid:8248cc70-65a2-4d37-ae14-a3ef2abf8f32)
+// * section[=].entry[+] = Reference(urn:uuid:98285578-0bb6-42b2-908c-5bcc5e3992e0)
+* section[=].entry[+] = Reference(urn:uuid:4d3f7ac4-fd0a-49af-a56b-303a2dbe67d1)
+// Social History
+* section[+].title = "Social History"
+* section[=].code = $loinc#29762-2 "Social history Narrative"
+* section[=].text.status = #empty
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].entry[0] = Reference(urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e)
 
 Instance: IPS-2-preventive-medical-checkup-patient
 InstanceOf: Patient
@@ -119,11 +160,13 @@ Instance: IPS-2-preventive-medical-checkup-author
 InstanceOf: Practitioner
 Usage: #inline
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "1.2.40.0.10.99.1.2.3.4"
+* identifier.value = "urn:oid:1.2.40.0.10.99.1.2.3.4"
 * identifier.assigner.display = "Bundesministerium für Gesundheit"
 * name.prefix[0] = "Dr"
 * name.family = "Hausarzt"
 * name.given[0] = "Hannes"
+
+// Problem List
 
 Instance: IPS-2-preventive-medical-checkup-problem-1
 InstanceOf: Condition
@@ -197,6 +240,7 @@ Usage: #inline
 * code = $sct#168938005 "Coronary arteriography normal"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
+// shall this condition be documented as medication?
 Instance: IPS-2-preventive-medical-checkup-problem-8
 InstanceOf: Condition
 Usage: #inline
@@ -206,8 +250,9 @@ Usage: #inline
 * category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#328941000119101 "Long-term current use of bisphosphonates"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
-* onsetDateTime = "2020-06"
-* abatementDateTime = "2025-03"
+* onsetPeriod.start = "2020-06"
+* onsetPeriod.end = "2025-03"
+// * abatementDateTime = "2025-03"
 
 Instance: IPS-2-preventive-medical-checkup-problem-9
 InstanceOf: Condition
@@ -249,20 +294,26 @@ Usage: #inline
 * code = $sct#13644009 "Hypercholesterolemia"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
-// Instance: Inline-Instance-for-1122334-12
-// InstanceOf: MedicationStatement
-// Usage: #inline
-// * status = #unknown
-// * medicationCodeableConcept = $absent-unknown-uv-ips#no-known-medications "No known medications"
-// * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
-// * effectiveDateTime = "2024-02-08T10:31:58+02:00"
+// Medication Summary
 
-// Instance: Inline-Instance-for-1122334-171
-// InstanceOf: AllergyIntolerance
-// Usage: #inline
-// * clinicalStatus = $allergyintolerance-clinical#inactive "Inactive"
-// * code = $absent-unknown-uv-ips#no-known-allergies "No known allergies"
-// * patient = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+Instance: IPS-2-preventive-medical-checkup-medication-summary-1
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #unknown
+* medicationCodeableConcept = $absent-unknown-uv-ips#no-known-medications "No known medications"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T10:31:58+02:00"
+
+// Allergies and Intolerances
+
+Instance: IPS-2-preventive-medical-checkup-allergy-1
+InstanceOf: AllergyIntolerance
+Usage: #inline
+* clinicalStatus = $allergyintolerance-clinical#active "Active"
+* code = $sct#764146007 "Penicillin"
+* patient = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+
+// History of Procedures
 
 Instance: IPS-2-preventive-medical-checkup-procedure-history-1
 InstanceOf: Procedure
@@ -279,3 +330,97 @@ Usage: #inline
 * code = $sct#80146002 "Appendectomy"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performedDateTime = "1962"
+
+// Vital Signs
+
+Instance: IPS-2-preventive-medical-checkup-vital-sign-1
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#8302-2 "Body height"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T08:30:00+01:00"
+* valueQuantity.value = 173
+* valueQuantity.unit = "cm"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #cm
+
+Instance: IPS-2-preventive-medical-checkup-vital-sign-2
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#29463-7 "Body weight"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T08:30:00+01:00"
+* valueQuantity.value = 68
+* valueQuantity.unit = "kg"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #kg
+
+Instance: IPS-2-preventive-medical-checkup-vital-sign-3
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T08:30:00+01:00"
+* valueQuantity.value = 22.72
+* valueQuantity.unit = "kg/m2"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #kg/m2
+
+// Instance: IPS-2-preventive-medical-checkup-vital-sign-4
+// InstanceOf: Observation
+// Usage: #inline
+// * meta.profile = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+// * status = #final
+// * category = $observation-category#vital-signs "Vital Signs"
+// * code = $loinc#8480-6 "Systolic blood pressure"
+// * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+// * effectiveDateTime = "2024-02-08T08:30:00+01:00"
+// * valueQuantity.value = 130
+// * valueQuantity.unit = "mm[Hg]"
+// * valueQuantity.system = "http://unitsofmeasure.org"
+// * valueQuantity.code = #mm[Hg]
+
+// Instance: IPS-2-preventive-medical-checkup-vital-sign-5
+// InstanceOf: Observation
+// Usage: #inline
+// * meta.profile = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+// * status = #final
+// * category = $observation-category#vital-signs "Vital Signs"
+// * code = $loinc#8462-4 "Diastolic blood pressure"
+// * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+// * effectiveDateTime = "2024-02-08T08:30:00+01:00"
+// * valueQuantity.value = 80
+// * valueQuantity.unit = "mm[Hg]"
+// * valueQuantity.system = "http://unitsofmeasure.org"
+// * valueQuantity.code = #mm[Hg]
+
+Instance: IPS-2-preventive-medical-checkup-vital-sign-6
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#8867-4 "Heart rate"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T08:30:00+01:00"
+* valueQuantity.value = 85
+* valueQuantity.unit = "/min"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #/min
+
+// Social History
+
+Instance: IPS-2-preventive-medical-checkup-social-history-1
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"
+* status = #final
+* code = $loinc#72166-2 "Tobacco smoking status"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T08:30:00+01:00"
+* valueCodeableConcept = $loinc#LA18978-9 "Never smoker"
