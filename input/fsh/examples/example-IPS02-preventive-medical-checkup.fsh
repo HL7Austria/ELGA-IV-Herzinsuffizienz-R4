@@ -9,6 +9,7 @@ Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/alle
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $asp = https://termgit.elga.gv.at/CodeSystem/asp-liste
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $elga-laborparameterergaenzung = https://termgit.elga.gv.at/CodeSystem/elga-laborparameterergaenzung
 
 Instance: IPS-2-preventive-medical-checkup
 InstanceOf: Bundle
@@ -88,6 +89,32 @@ Usage: #example
 // Diagnostic Results
 * entry[+].fullUrl = "urn:uuid:725bcf71-22e6-473b-a879-49a4b63cd654"
 * entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-1
+* entry[+].fullUrl = "urn:uuid:aeff2319-2cc2-4fba-9541-7a4de3d20f91"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-2
+* entry[+].fullUrl = "urn:uuid:d16dce15-bc5a-48a5-910e-6ac039785a2a"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-3
+* entry[+].fullUrl = "urn:uuid:96314fcd-3b0c-4032-8cac-6eb59579d90a"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-4
+* entry[+].fullUrl = "urn:uuid:30c8a990-ea39-4dcb-9e1e-b9ac74afffc9"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-5
+* entry[+].fullUrl = "urn:uuid:f29ac02d-762e-436e-b40c-667ab89e15f2"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-6
+* entry[+].fullUrl = "urn:uuid:28a773ea-38c7-4c77-86c4-7764325756e7"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-7
+* entry[+].fullUrl = "urn:uuid:4fe4b16a-14cb-4fd6-9da6-02c4b3797fdc"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-8
+* entry[+].fullUrl = "urn:uuid:24ff8632-0ccd-4279-88b2-325fdd936ecb"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-9
+* entry[+].fullUrl = "urn:uuid:8c11ad58-94ec-469c-ba4d-bfba9063067d"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-10
+* entry[+].fullUrl = "urn:uuid:8c7f9e94-b834-474e-818c-bbd6c3ce3e17"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-11
+* entry[+].fullUrl = "urn:uuid:e6e05f94-92be-4ae3-bf49-b0b7d4a62b35"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-12
+* entry[+].fullUrl = "urn:uuid:33e09da2-5f43-4046-b2eb-cf190031826b"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-13
+* entry[+].fullUrl = "urn:uuid:b675680e-9469-41b1-adc1-093904e3a1d2"
+* entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-14
 // Diagnostic Results - Performer
 * entry[+].fullUrl = "urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6"
 * entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-performer-1
@@ -176,6 +203,19 @@ Usage: #inline
 * section[=].text.status = #empty
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:725bcf71-22e6-473b-a879-49a4b63cd654)
+* section[=].entry[+] = Reference(urn:uuid:aeff2319-2cc2-4fba-9541-7a4de3d20f91)
+* section[=].entry[+] = Reference(urn:uuid:d16dce15-bc5a-48a5-910e-6ac039785a2a)
+* section[=].entry[+] = Reference(urn:uuid:96314fcd-3b0c-4032-8cac-6eb59579d90a)
+* section[=].entry[+] = Reference(urn:uuid:30c8a990-ea39-4dcb-9e1e-b9ac74afffc9)
+* section[=].entry[+] = Reference(urn:uuid:f29ac02d-762e-436e-b40c-667ab89e15f2)
+* section[=].entry[+] = Reference(urn:uuid:28a773ea-38c7-4c77-86c4-7764325756e7)
+* section[=].entry[+] = Reference(urn:uuid:4fe4b16a-14cb-4fd6-9da6-02c4b3797fdc)
+* section[=].entry[+] = Reference(urn:uuid:24ff8632-0ccd-4279-88b2-325fdd936ecb)
+* section[=].entry[+] = Reference(urn:uuid:8c11ad58-94ec-469c-ba4d-bfba9063067d)
+* section[=].entry[+] = Reference(urn:uuid:8c7f9e94-b834-474e-818c-bbd6c3ce3e17)
+* section[=].entry[+] = Reference(urn:uuid:e6e05f94-92be-4ae3-bf49-b0b7d4a62b35)
+* section[=].entry[+] = Reference(urn:uuid:33e09da2-5f43-4046-b2eb-cf190031826b)
+* section[=].entry[+] = Reference(urn:uuid:b675680e-9469-41b1-adc1-093904e3a1d2)
 // Diagnostic Results - Performer
 * section[=].entry[+] = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
 // Vital Signs
@@ -251,6 +291,7 @@ Usage: #inline
 * code = $sct#711150003 "Long-term current use of anticoagulant"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
+// Type-2-Diabetes
 Instance: IPS-2-preventive-medical-checkup-problem-3
 InstanceOf: Condition
 Usage: #inline
@@ -268,7 +309,7 @@ Usage: #inline
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
 * category.coding[+] = $loinc#75326-9 "Problem"
-* code = $sct#38341003 "Hypertensive disorder"
+* code = $sct#710159007 "Long-term current use of immunosuppressive drug"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
 Instance: IPS-2-preventive-medical-checkup-problem-5
@@ -521,18 +562,187 @@ Usage: #inline
 * performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
 * valueCodeableConcept = $sct#278149003 "Blood group A Rh(D) positive (finding)"
 
-// Instance: Inline-Instance-for-2788423-32
-// InstanceOf: Observation
-// Usage: #inline
-// * language = #de
-// * status = #final
-// * category = $observation-category#laboratory "Laboratory"
-// * code = urn:oid:1.2.40.0.34.5.11#300 "Hämatologie"
-// * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
-// * effectiveDateTime = "2016-12-01T07:34:06+01:00"
-// * performer = Reference(urn:uuid:b7d089d1-224b-4471-b822-87502669b546)
-// * hasMember[0] = Reference(urn:uuid:5284c8f9-4310-47b8-9f4d-2ea603a81725)
-// * hasMember[+] = Reference(urn:uuid:23d4083d-9c6e-441a-b5e0-a4961928008b)
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-2
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $elga-laborparameterergaenzung#500 "Klinische Chemie"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:56:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* hasMember[0] = Reference(urn:uuid:aeff2319-2cc2-4fba-9541-7a4de3d20f91)
+* hasMember[+] = Reference(urn:uuid:d16dce15-bc5a-48a5-910e-6ac039785a2a)
+* hasMember[+] = Reference(urn:uuid:96314fcd-3b0c-4032-8cac-6eb59579d90a)
+* hasMember[+] = Reference(urn:uuid:30c8a990-ea39-4dcb-9e1e-b9ac74afffc9)
+* hasMember[+] = Reference(urn:uuid:f29ac02d-762e-436e-b40c-667ab89e15f2)
+* hasMember[+] = Reference(urn:uuid:28a773ea-38c7-4c77-86c4-7764325756e7)
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-3
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#2093-3 "Cholesterin"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity.value = 180
+* valueQuantity.unit = "mg/dL"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #mg/dL
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-4
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#2085-9 "HDL-Cholesterin"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity.value = 45
+* valueQuantity.unit = "mg/dL"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #mg/dL
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-5
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#9830-1 "Cholesterol.total/Cholesterol in HDL [Mass Ratio] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity.value = 4.0
+* valueQuantity.unit = "{ratio}"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #{ratio}
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-6
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#2571-8 "Triglyceride"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity.value = 130
+* valueQuantity.unit = "mg/dL"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #mg/dL
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-7
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#2324-2 "Gamma-GT"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity.value = 54
+* valueQuantity.unit = "U/L"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #U/L
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-8
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $elga-laborparameterergaenzung#1400 "Urindiagnostik"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:56:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* hasMember[0] = Reference(urn:uuid:24ff8632-0ccd-4279-88b2-325fdd936ecb)
+* hasMember[+] = Reference(urn:uuid:8c11ad58-94ec-469c-ba4d-bfba9063067d)
+* hasMember[+] = Reference(urn:uuid:8c7f9e94-b834-474e-818c-bbd6c3ce3e17)
+* hasMember[+] = Reference(urn:uuid:e6e05f94-92be-4ae3-bf49-b0b7d4a62b35)
+* hasMember[+] = Reference(urn:uuid:33e09da2-5f43-4046-b2eb-cf190031826b)
+* hasMember[+] = Reference(urn:uuid:b675680e-9469-41b1-adc1-093904e3a1d2)
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-9
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#33052-2 "Leukocytes [Presence] in Urine"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueCodeableConcept = $sct#260415000 "Not detected (qualifier value)"
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-10
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#2887-8 "Protein [Presence] in Urine"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueCodeableConcept = $sct#260415000 "Not detected (qualifier value)"
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-11
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#2349-9 "Glucose [Presence] in Urine"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueCodeableConcept = $sct#260415000 "Not detected (qualifier value)"
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-12
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#53963-5 "Blood [Presence] in Urine by Visual"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueCodeableConcept = $sct#260415000 "Not detected (qualifier value)"
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-13
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#32710-6 "Nitrite [Presence] in Urine"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueCodeableConcept = $sct#260415000 "Not detected (qualifier value)"
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-14
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#13658-0 "Urobilinogen [Presence] in Urine"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueCodeableConcept = $sct#260415000 "Not detected (qualifier value)"
+
+Instance: IPS-2-preventive-medical-checkup-diagnostic-result-15
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#2339-0 "Glucose /B"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T07:34:06+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity.value = 112
+* valueQuantity.unit = "mg/dL"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #mg/dL
 
 // Diagnostic Results - Performer
 
