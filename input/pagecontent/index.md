@@ -9,4 +9,4 @@ Logical model consists of:
 
 ## Übersicht
 
-[![overview](input/images/iv-hi-context.drawio.png){: style="width: 100%"}](input/images/iv-hi-context.drawio.png)
+[![overview](iv-hi-context.drawio.png){: style="width: 100%"}](iv-hi-context.drawio.png)
