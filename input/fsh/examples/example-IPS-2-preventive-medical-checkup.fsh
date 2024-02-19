@@ -11,6 +11,7 @@ Alias: $asp = https://termgit.elga.gv.at/CodeSystem/asp-liste
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $elga-laborparameterergaenzung = https://termgit.elga.gv.at/CodeSystem/elga-laborparameterergaenzung
 Alias: $observation-interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+Alias: $event-timing = http://hl7.org/fhir/event-timing
 
 Instance: IPS-2-preventive-medical-checkup
 InstanceOf: Bundle
@@ -469,7 +470,15 @@ Usage: #inline
 * medicationCodeableConcept = $asp#2443061 "EBETREXAT TBL 10MG"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * effectivePeriod.start = "2024-02-08T10:31:58+02:00"
-* dosage.text = "S:0-0-0-2 / FR"
+// "S:0-0-0-2 / FR"
+* dosage.sequence = 1
+* dosage.timing.repeat.when = $event-timing#NIGHT "Night"
+* dosage.timing.repeat.dayOfWeek = #fri
+* dosage.route = $sct#26643006 "Oral use"
+* dosage.doseAndRate.doseQuantity.value = 2
+* dosage.doseAndRate.doseQuantity.unit = "Tablet"
+* dosage.doseAndRate.doseQuantity.system = "https://standardterms.edqm.eu/"
+* dosage.doseAndRate.doseQuantity.code = #15054000"
 
 Instance: IPS-2-preventive-medical-checkup-medication-summary-2
 InstanceOf: MedicationStatement
