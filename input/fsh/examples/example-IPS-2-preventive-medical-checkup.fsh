@@ -216,8 +216,6 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:e6e05f94-92be-4ae3-bf49-b0b7d4a62b35)
 * section[=].entry[+] = Reference(urn:uuid:33e09da2-5f43-4046-b2eb-cf190031826b)
 * section[=].entry[+] = Reference(urn:uuid:b675680e-9469-41b1-adc1-093904e3a1d2)
-// Diagnostic Results - Performer
-* section[=].entry[+] = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
 // Vital Signs
 * section[+].title = "Vital Signs"
 * section[=].code = $loinc#8716-3 "Vital signs"
