@@ -59,6 +59,11 @@ Usage: #example
 * entry[=].resource = IPS-2-preventive-medical-checkup-problem-15
 * entry[+].fullUrl = "urn:uuid:5ab717ff-c0a0-409e-83db-0fa6f8619f68"
 * entry[=].resource = IPS-2-preventive-medical-checkup-problem-16
+// Problem List - periodontal disease risk
+* entry[+].fullUrl = "urn:uuid:fa46fccb-5c24-4a40-a478-d6da4902ff33"
+* entry[=].resource = IPS-2-preventive-medical-checkup-problem-17
+* entry[+].fullUrl = "urn:uuid:f235c566-01aa-457d-ab49-9e422df69863"
+* entry[=].resource = IPS-2-preventive-medical-checkup-problem-17-assessment-1
 // Medication Summary
 * entry[+].fullUrl = "urn:uuid:acac4c94-a752-4cf5-9a6b-0d84237d5076"
 * entry[=].resource = IPS-2-preventive-medical-checkup-medication-summary-1
@@ -172,6 +177,8 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:caa77334-fbfc-4129-a101-1b01c595dd91)
 * section[=].entry[+] = Reference(urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5)
 * section[=].entry[+] = Reference(urn:uuid:5ab717ff-c0a0-409e-83db-0fa6f8619f68)
+// Problem List - periodontal disease risk
+* section[=].entry[+] = Reference(urn:uuid:fa46fccb-5c24-4a40-a478-d6da4902ff33)
 // Medication Summary
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "History of Medication use Narrative"
@@ -424,6 +431,27 @@ Usage: #inline
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
 * code = $sct#160314003 "FH: Hypercholesterolemia"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+
+// risk of periodontal disease
+Instance: IPS-2-preventive-medical-checkup-problem-17
+InstanceOf: Condition
+Usage: #inline
+* clinicalStatus = $condition-clinical#inactive "Inactive"
+* verificationStatus = $condition-ver-status#provisional "Provisional"
+* category.coding[0] = $condition-category#problem-list-item "Problem List Item"
+* code = $sct#2556008 "Periodontal disease (disorder)"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* stage.assessment = Reference(urn:uuid:f235c566-01aa-457d-ab49-9e422df69863)
+
+Instance: IPS-2-preventive-medical-checkup-problem-17-assessment-1
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#exam "Exam"
+* code = $sct#1237049003 "Evaluation of risk factors for periodontal disease"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T08:30:00+01:00"
+* valueCodeableConcept = $sct#723509005 "High risk"
 
 // Medication Summary
 
