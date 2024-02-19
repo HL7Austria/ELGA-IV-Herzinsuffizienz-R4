@@ -277,7 +277,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#700379002 "Chronic kidney disease stage 3B"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -287,7 +286,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#711150003 "Long-term current use of anticoagulant"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -298,7 +296,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#314194001 "Diabetic on insulin and oral treatment"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -308,7 +305,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#710159007 "Long-term current use of immunosuppressive drug"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -318,7 +314,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#38341003 "Hypertensive disorder"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -329,7 +324,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#408570008 "Carotid artery doppler normal"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -340,7 +334,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#168938005 "Coronary arteriography normal"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -351,7 +344,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#328941000119101 "Long-term current use of bisphosphonates"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * onsetPeriod.start = "2020-06"
@@ -364,7 +356,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#440028005 "Permanent atrial fibrillation"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -374,7 +365,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#735623008 "Albuminuria grade A2"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -384,7 +374,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#239792003 "Seronegative rheumatoid arthritis"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -394,7 +383,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#13644009 "Hypercholesterolemia"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -406,7 +394,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#160303001 "Family history of diabetes mellitus (situation)"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -416,7 +403,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#312824007 "Family history of cancer of colon"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -426,7 +412,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#134439009 "Family history: premature coronary heart disease"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -436,7 +421,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#160314003 "FH: Hypercholesterolemia"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -847,7 +831,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#resolved "Resolved"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#161419000 "History of measles"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
@@ -857,7 +840,6 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#resolved "Resolved"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category.coding[0] = $condition-category#problem-list-item "Problem List Item"
-* category.coding[+] = $loinc#75326-9 "Problem"
 * code = $sct#161423008 "History of chickenpox (situation)"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 
