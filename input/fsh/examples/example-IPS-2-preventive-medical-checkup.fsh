@@ -10,6 +10,7 @@ Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-v
 Alias: $asp = https://termgit.elga.gv.at/CodeSystem/asp-liste
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $elga-laborparameterergaenzung = https://termgit.elga.gv.at/CodeSystem/elga-laborparameterergaenzung
+Alias: $observation-interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
 Instance: IPS-2-preventive-medical-checkup
 InstanceOf: Bundle
@@ -834,6 +835,8 @@ Usage: #inline
 * valueQuantity.unit = "kg/m2"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #kg/m2
+// realization of "leicht übergewichtig"
+* interpretation = $observation-interpretation#H "High"
 
 Instance: IPS-2-preventive-medical-checkup-vital-sign-4
 InstanceOf: Observation
