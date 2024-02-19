@@ -137,6 +137,8 @@ Usage: #example
 // Social History
 * entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
 * entry[=].resource = IPS-2-preventive-medical-checkup-social-history-1
+* entry[+].fullUrl = "urn:uuid:9add5c32-1ded-43d6-b163-c3fe13f94984"
+* entry[=].resource = IPS-2-preventive-medical-checkup-social-history-2
 
 Instance: IPS-2-preventive-medical-checkup-composition
 InstanceOf: Composition
@@ -239,6 +241,7 @@ Usage: #inline
 * section[=].text.status = #empty
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e)
+* section[=].entry[+] = Reference(urn:uuid:9add5c32-1ded-43d6-b163-c3fe13f94984)
 
 Instance: IPS-2-preventive-medical-checkup-patient
 InstanceOf: Patient
@@ -851,3 +854,20 @@ Usage: #inline
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * effectiveDateTime = "2024-02-08T08:30:00+01:00"
 * valueCodeableConcept = $loinc#LA18978-9 "Never smoker"
+
+Instance: IPS-2-preventive-medical-checkup-social-history-2
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* code = $sct#61686008 "Physical exercise"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T08:30:00+01:00"
+* valueRatio.numerator.value = 2.5
+* valueRatio.numerator.unit = "h"
+* valueRatio.numerator.system = "http://unitsofmeasure.org"
+* valueRatio.numerator.code = #h
+* valueRatio.numerator.comparator = #>
+* valueRatio.denominator.value = 1
+* valueRatio.denominator.unit = "wk"
+* valueRatio.denominator.system = "http://unitsofmeasure.org"
+* valueRatio.denominator.code = #wk
