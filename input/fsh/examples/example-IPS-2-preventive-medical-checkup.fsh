@@ -91,6 +91,8 @@ Usage: #example
 * entry[=].resource = IPS-2-preventive-medical-checkup-procedure-history-1
 * entry[+].fullUrl = "urn:uuid:8103f99c-64f0-4dd5-b92e-5c9680c91e47"
 * entry[=].resource = IPS-2-preventive-medical-checkup-procedure-history-2
+* entry[+].fullUrl = "urn:uuid:8a825f17-1599-4928-b384-0ca4a62daba8"
+* entry[=].resource = IPS-2-preventive-medical-checkup-procedure-history-3
 // Diagnostic Results
 * entry[+].fullUrl = "urn:uuid:725bcf71-22e6-473b-a879-49a4b63cd654"
 * entry[=].resource = IPS-2-preventive-medical-checkup-diagnostic-result-1
@@ -206,6 +208,7 @@ Usage: #inline
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a)
 * section[=].entry[+] = Reference(urn:uuid:8103f99c-64f0-4dd5-b92e-5c9680c91e47)
+* section[=].entry[+] = Reference(urn:uuid:8a825f17-1599-4928-b384-0ca4a62daba8)
 // Diagnostic Results
 * section[+].title = "Diagnostic Results"
 * section[=].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
@@ -561,6 +564,15 @@ Usage: #inline
 * code = $sct#80146002 "Appendectomy"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performedDateTime = "1962"
+
+Instance: IPS-2-preventive-medical-checkup-procedure-history-3
+InstanceOf: Procedure
+Usage: #inline
+* status = #completed
+* code = $sct#851000119109 "History of colonoscopy"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+// within the last 10 years
+* performedDateTime = "2014"
 
 // Diagnostic Results
 
