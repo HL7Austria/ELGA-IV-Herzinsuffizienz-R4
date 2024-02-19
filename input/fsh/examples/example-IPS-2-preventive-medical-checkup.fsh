@@ -136,6 +136,8 @@ Usage: #example
 * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-4
 * entry[+].fullUrl = "urn:uuid:4d3f7ac4-fd0a-49af-a56b-303a2dbe67d1"
 * entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-5
+* entry[+].fullUrl = "urn:uuid:be35e603-6b99-4bb5-ad70-8499f6b55df1"
+* entry[=].resource = IPS-2-preventive-medical-checkup-vital-sign-6
 // Past History of Illness
 * entry[+].fullUrl = "urn:uuid:82301518-66ca-4b4c-821d-087adf643cc4"
 * entry[=].resource = IPS-2-preventive-medical-checkup-illness-history-1
@@ -238,6 +240,7 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:daf9c15d-14d4-429c-b658-6842fdff67d8)
 * section[=].entry[+] = Reference(urn:uuid:8248cc70-65a2-4d37-ae14-a3ef2abf8f32)
 * section[=].entry[+] = Reference(urn:uuid:4d3f7ac4-fd0a-49af-a56b-303a2dbe67d1)
+* section[=].entry[+] = Reference(urn:uuid:be35e603-6b99-4bb5-ad70-8499f6b55df1)
 // Past History of Illness
 * section[+].title = "Past History of Illness"
 * section[=].code = $loinc#11348-0 "History of Past illness Narrative"
@@ -863,6 +866,20 @@ Usage: #inline
 * valueQuantity.unit = "/min"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #/min
+
+Instance: IPS-2-preventive-medical-checkup-vital-sign-6
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $sct#276361009 "Waist circumference"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2024-02-08T08:30:00+01:00"
+* valueQuantity.value = 102
+* valueQuantity.unit = "cm"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #cm
+* valueQuantity.comparator = #<
 
 // Past History of Illness
 
