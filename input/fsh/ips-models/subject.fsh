@@ -38,3 +38,9 @@ Target:   "PatientHI"
 * contact -> ".Betreuungsnetzwerk.Kontakt" "Betreuungsnetzwerk.where(Einbindung=true)"
 * contactInsurance -> ".KVTraeger"
 * generalPractitioner -> ".Betreuungsnetzwerk.Kontakt" "Betreuungsnetzwerk.where(Pflegehilfe=true)"
+
+Mapping: SubjectToErstdokumentationHI
+Source: Subject
+Target: "ErstdokumentationHI"
+* -> "ErstdokumentationHI"
+* contact -> "Selbstmanagement.Betreuung"
