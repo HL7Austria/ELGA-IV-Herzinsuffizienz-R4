@@ -99,3 +99,16 @@ Target:   "IPS Problem"
 * Erstabklaerung.Komorbiditaeten -> ".code"
 * Erstabklaerung.Symptomatik -> ".code"
 * Erstabklaerung.Diagnose -> ".code"
+
+// Mapping to IPS Diagnostic Results modul
+Mapping:  ErstdokumentationHIToDiagnosticResults
+Source:   ErstdokumentationHI
+Target:   "IPS Diagnostic Results"
+* -> "DiagnosticResults"
+* VPNR -> ".performer"
+* Untersuchungsdatum -> ".effective[x]"
+* Patient -> ".subject"
+* Erstabklaerung.EKG -> ".code and .value"
+* Erstabklaerung.Echokardiogramm -> ".code and .value"
+* Erstabklaerung.NTproBNP -> ".code and .value"
+* Labor -> ".code and .value"
