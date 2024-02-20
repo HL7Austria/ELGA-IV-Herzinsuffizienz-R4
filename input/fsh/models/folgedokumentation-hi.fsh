@@ -14,7 +14,7 @@ Title: "Medizinische Datensätze - Folgedokumentation"
 // #modul Plan of Care
 * Versorgung 1..1 BackboneElement "Laufende Versorgung gemäß Pfade"
   * geplant 1..1 boolean "Geplanter Kontrolltermin" """Kontrolle bei primärer Anlaufstelle alle 3 Monate bei stabilen Patientinnen bzw. Patienten mit niedrigem Risiko; Kontrolle bei der Kardiologin bzw. beim Kardiologen mindestens alle 3 Monaten für Patientinnen bzw. Patienten mit hohem Risiko; regelmäßige Betreuung in Spezialeinrichtungen von Patientinnen bzw. Patienten mit sehr hohem Risiko"""
- 
+
  // #modul History of Procedures
   * AnzahlStationaer 1..1 integer "Ungeplante stationäre Behandlung wg. HI seit letzter Dokumentation"
 
@@ -77,3 +77,33 @@ mind. alle 3 Monaten für Patientinnnen bzw. Patienten mit hohem Risiko"""
 
 // Datum der Erhebung?
 * Lebensqualitaet 0..1 code "Fragebogen Lebensqualität (5-stelliger Code) (jährlich zu erheben ab Einschreibung)"
+
+// Mapping to IPS Problem modul
+Mapping:  FolgedokumentationHIToProblem
+Source:   FolgedokumentationHI
+Target:   "IPS Problem"
+* -> "Problem"
+* VPNR -> ".asserter"
+* Untersuchungsdatum -> ".recordedDate"
+* Patient -> ".subject"
+* Versorgung.Komorbiditaeten -> ".code"
+* Versorgung.Symptomatik -> ".code"
+
+// Mapping to IPS Diagnostic Results modul
+Mapping:  FolgedokumentationHIToDiagnosticResults
+Source:   FolgedokumentationHI
+Target:   "IPS Diagnostic Results"
+* -> "DiagnosticResults"
+* VPNR -> ".performer"
+* Untersuchungsdatum -> ".effective[x]"
+* Patient -> ".subject"
+* Versorgung.EKG -> ".code and .value"
+* Versorgung.Echokardiogramm -> ".code and .value"
+* Labor -> ".code and .value"
+
+// Mapping to IPS Subject modul
+Mapping:  FolgedokumentationHIToSubject
+Source:   FolgedokumentationHI
+Target:   "IPS Subject"
+* -> "Subject"
+* Selbstmanagement.Betreuung -> ".contact"

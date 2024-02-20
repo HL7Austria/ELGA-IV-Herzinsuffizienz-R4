@@ -24,4 +24,13 @@ Target:   "ErstdokumentationHI"
 * performer -> ".VPNR"
 * value[x] -> ".Erstabklaerung.EKG or .Erstabklaerung.Echokardiogramm or .Erstabklaerung.NTproBNP or .Labor"
 
-
+// Mapping to HI datamodel
+Mapping:  DiagnosticResultsToFolgedokumentationHI
+Source:   DiagnosticResults
+Target:   "FolgedokumentationHI"
+* -> "FolgedokumentationHI"
+* code -> ".Versorgung.EKG or .Versorgung.Echokardiogramm or .Labor"
+* subject -> ".Patient"
+* effective[x] -> ".Untersuchungsdatum or .Labor"
+* performer -> ".VPNR"
+* value[x] -> ".Versorgung.EKG or .Versorgung.Echokardiogramm or .Labor"

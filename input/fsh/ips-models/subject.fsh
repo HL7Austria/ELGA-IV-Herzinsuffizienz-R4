@@ -44,3 +44,9 @@ Source: Subject
 Target: "ErstdokumentationHI"
 * -> "ErstdokumentationHI"
 * contact -> "Selbstmanagement.Betreuung"
+
+Mapping: SubjectToFolgedokumentationHI
+Source: Subject
+Target: "FolgedokumentationHI"
+* -> "FolgedokumentationHI"
+* contact -> "Selbstmanagement.Betreuung"

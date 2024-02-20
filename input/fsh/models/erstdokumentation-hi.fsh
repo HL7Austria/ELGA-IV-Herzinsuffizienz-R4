@@ -113,7 +113,7 @@ Target:   "IPS Diagnostic Results"
 * Erstabklaerung.NTproBNP -> ".code and .value"
 * Labor -> ".code and .value"
 
-// Mapping to IPS Diagnostic Results modul
+// Mapping to IPS Subject modul
 Mapping:  ErstdokumentationHIToSubject
 Source:   ErstdokumentationHI
 Target:   "IPS Subject"

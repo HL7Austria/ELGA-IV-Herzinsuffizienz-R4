@@ -45,4 +45,12 @@ Target:   "ErstdokumentationHI"
 * recordedDate -> ".Untersuchungsdatum"
 * asserter -> ".VPNR"
 
-
+// Mapping to HI datamodel
+Mapping:  ProblemToFolgedokumentationHI
+Source:   Problem
+Target:   "FolgedokumentationHI"
+* -> "FolgedokumentationHI"
+* code -> ".Versorgung.Komorbiditaeten or .Versorgung.Symptomatik"
+* subject -> ".Patient"
+* recordedDate -> ".Untersuchungsdatum"
+* asserter -> ".VPNR"
