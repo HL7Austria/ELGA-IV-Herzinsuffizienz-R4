@@ -33,6 +33,8 @@ publisher:
 dependencies:
   # hl7.fhir.uv.ips: current
   hl7.fhir.uv.ips: 1.1.0
+  gabriel0316.HL7ATCoreProfiles: current
+  # gabriel0316.terminologies: current
 
 #
 #
