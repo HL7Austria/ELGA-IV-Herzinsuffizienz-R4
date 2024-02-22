@@ -261,6 +261,7 @@ Usage: #inline
 Instance: IPS-2-preventive-medical-checkup-patient
 InstanceOf: Patient
 Usage: #inline
+* meta.profile = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-patient"
 * identifier.type = $v2-0203#SS "Social Security Number"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier.value = "0000121150"
