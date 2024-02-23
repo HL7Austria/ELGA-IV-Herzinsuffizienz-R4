@@ -521,7 +521,7 @@ Instance: IPS-2-preventive-medical-checkup-medication-summary-6
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationCodeableConcept = $asp#1294446 "METFORMIN HEX FTBL 500MG"
+* medicationCodeableConcept = $asp#1294446 "METFORMIN HEX FTBL  500MG"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * effectivePeriod.start = "2024-02-08T10:31:58+02:00"
 * dosage.text = "S:1-0-0-1"
@@ -530,7 +530,7 @@ Instance: IPS-2-preventive-medical-checkup-medication-summary-7
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationCodeableConcept = $asp#2450888 "RAMIPRIL 1A TBL 5MG"
+* medicationCodeableConcept = $asp#2450888 "RAMIPRIL 1A TBL  5MG"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * effectivePeriod.start = "2024-02-08T10:31:58+02:00"
 * dosage.text = "S:1-0-0-0"
