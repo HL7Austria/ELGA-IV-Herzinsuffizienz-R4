@@ -1,9 +1,9 @@
 // -------------------------------------------------------------------------------
 //  Logical Model akteur-hi.fsh
 // -------------------------------------------------------------------------------
-Logical: AkteurHI
-Id: AkteurHI
-Title: "Akteur"
+Logical: AkteurHi
+Id: Akteur-hi
+Title: "Akteur (HI)"
 Description: "Strukturdaten der beteiligten Einrichtungen/Akteure"
 
 // #modul Plan of Care -- Wie Header befüllt wird, noch mit Emmanuel besprechen
@@ -39,16 +39,16 @@ Description: "Strukturdaten der beteiligten Einrichtungen/Akteure"
 * Konsultationen 1..1 date "Datum e-card-Steckung"
 
 // Mapping to HI datamodel
-Mapping:  AkteurHIToPlanOfCare
-Source:   AkteurHI
-Target:   "PlanOfCare"
-* -> "PlanOfCare"
+Mapping:  AkteurHiToPlanOfCareIps
+Source:   AkteurHi
+Target:   "PlanOfCareIps"
+* -> "PlanOfCareIps"
 * GDL -> ".author (as case coordinator) or .careTeam.participant.member"
 * GDL.Teilnahmebeginn -> ".period"
 * GDL.Austritt -> ".period"
 
-Mapping:  AkteurHIToPractitionerRole
-Source:   AkteurHI
+Mapping:  AkteurHiToPractitionerRole
+Source:   AkteurHi
 Target:   "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"
 * -> "PractitionerRole"
 * Einrichtung -> ".organization.name"

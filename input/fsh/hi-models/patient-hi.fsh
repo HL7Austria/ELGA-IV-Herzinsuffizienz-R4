@@ -1,9 +1,9 @@
 // -------------------------------------------------------------------------------
 //  Logical Model patient-hi.fsh
 // -------------------------------------------------------------------------------
-Logical: PatientHI
-Id: PatientHI
-Title: "Patienten-Stammdaten"
+Logical: PatientHi
+Id: Patient-hi
+Title: "Patienten-Stammdaten - Patient (HI)"
 Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikation des modularen Rahmenkonzepts für Österreich für das Disease-Management bei chronischer Herzinsuffizienz."
 
 // #modul Subject
@@ -61,10 +61,10 @@ Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikati
 * Versorgungsnetzwerk.Kontakttyp from https://termgit.elga.gv.at/ValueSet/elga-authorspeciality
 
 // Mapping to IPS Subject modul
-Mapping:  PatientHIToSubject
-Source:   PatientHI
-Target:   "IPS Subject"
-* -> "Subject"
+Mapping:  PatientHiToSubjectIps
+Source:   PatientHi
+Target:   "SubjectIps"
+* -> "SubjectIps"
 * Vorname -> ".name"
 * Zuname -> ".name"
 * Geburtsjahr -> ".birthDate"

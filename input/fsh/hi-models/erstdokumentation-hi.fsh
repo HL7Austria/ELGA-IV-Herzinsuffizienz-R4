@@ -1,21 +1,23 @@
 // -------------------------------------------------------------------------------
 //  Logical Model erstdokumentation-hi.fsh
 // -------------------------------------------------------------------------------
-Logical: ErstdokumentationHI
-Id: ErstdokumentationHI
-Title: "Medizinische Datensätze - Erstdokumentation (im Rahmen der Erstabklärung erhoben/durchgeführt)"
+Logical: ErstdokumentationHi
+Id: Erstdokumentation-hi
+Title: "Erstdokumentation (HI)"
+Description: "Medizinische Datensätze - Erstdokumentation (im Rahmen der Erstabklärung erhoben/durchgeführt)"
 * VPNR 1..1 integer "Vertragspartnernummer"
 * Untersuchungsdatum 1..1 date "Untersuchungsdatum"
 
 // Personendaten
-* Patient 1..1 PatientHI "Patient"
+* Patient 1..1 PatientHi "Patient"
 
 // Diagnostische Erstabklärung
 * Erstabklaerung 1..1 BackboneElement "Diagnostische Erstabklärung"
   * Untersuchung 1..1 boolean "Spezifische körperliche Untersuchung"
 
 // #modul Problem list
-  * insert Komorbiditaeten
+  * Komorbiditaet 0..* CodeableConcept "Komorbidität"
+  * Komorbiditaet from Komorbiditaeten (example)
 
  // #modul Diagnostic Results
   * EKG 1..1 boolean "EKG (mit 12 Ableitungen)"
@@ -89,22 +91,22 @@ Regelung in Bezug auf NT-proBNP ist unabdingbar und sollte entsprechend priorisi
 * Lebensqualitaet 1..1 code "Fragebogen Lebensqualität EQ-5D (jährlich zu erheben ab Einschreibung) (5-stelliger Code)"
 
 // Mapping to IPS Problem modul
-Mapping:  ErstdokumentationHIToProblem
-Source:   ErstdokumentationHI
-Target:   "IPS Problem"
-* -> "Problem"
+Mapping:  ErstdokumentationHiToProblemIps
+Source:   ErstdokumentationHi
+Target:   "ProblemIps"
+* -> "ProblemIps"
 * VPNR -> ".asserter"
 * Untersuchungsdatum -> ".recordedDate"
 * Patient -> ".subject"
-* Erstabklaerung.Komorbiditaeten -> ".code"
+* Erstabklaerung.Komorbiditaet -> ".code"
 * Erstabklaerung.Symptomatik -> ".code"
 * Erstabklaerung.Diagnose -> ".code"
 
 // Mapping to IPS Diagnostic Results modul
-Mapping:  ErstdokumentationHIToDiagnosticResults
-Source:   ErstdokumentationHI
-Target:   "IPS Diagnostic Results"
-* -> "DiagnosticResults"
+Mapping:  ErstdokumentationHiToDiagnosticResultsIps
+Source:   ErstdokumentationHi
+Target:   "DiagnosticResultsIps"
+* -> "DiagnosticResultsIps"
 * VPNR -> ".performer"
 * Untersuchungsdatum -> ".effective[x]"
 * Patient -> ".subject"
@@ -114,8 +116,8 @@ Target:   "IPS Diagnostic Results"
 * Labor -> ".code and .value"
 
 // Mapping to IPS Subject modul
-Mapping:  ErstdokumentationHIToSubject
-Source:   ErstdokumentationHI
-Target:   "IPS Subject"
-* -> "Subject"
+Mapping:  ErstdokumentationHiToSubjectIps
+Source:   ErstdokumentationHi
+Target:   "SubjectIps"
+* -> "SubjectIps"
 * Selbstmanagement.Betreuung -> ".contact"

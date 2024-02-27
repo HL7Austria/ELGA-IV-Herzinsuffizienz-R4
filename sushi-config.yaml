@@ -173,10 +173,10 @@ groups:
     name:  HI Datenmodell
     description: Datenmodell basierend auf Rahmenkonzept.
     resources:
-      - StructureDefinition/PatientHI
-      - StructureDefinition/AkteurHI
-      - StructureDefinition/ErstdokumentationHI
-      - StructureDefinition/FolgedokumentationHI
+      - StructureDefinition/Patient-hi
+      - StructureDefinition/Akteur-hi
+      - StructureDefinition/Erstdokumentation-hi
+      - StructureDefinition/Folgedokumentation-hi
 
 #
 #

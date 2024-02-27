@@ -1,14 +1,15 @@
 // -------------------------------------------------------------------------------
 //  Logical Model folgedokumentation-hi.fsh
 // -------------------------------------------------------------------------------
-Logical: FolgedokumentationHI
-Id: FolgedokumentationHI
-Title: "Medizinische Datensätze - Folgedokumentation"
+Logical: FolgedokumentationHi
+Id: Folgedokumentation-hi
+Title: "Folgedokumentation (HI)"
+Description: "Medizinische Datensätze - Folgedokumentation"
 * VPNR 1..1 integer "Vertragspartnernummer"
 * Untersuchungsdatum 1..1 date "Untersuchungsdatum"
 
 // Personendaten
-* Patient 1..1 PatientHI "Patient"
+* Patient 1..1 PatientHi "Patient"
 
 // Laufende Versorgung gemäß Pfade
 // #modul Plan of Care
@@ -26,8 +27,8 @@ Title: "Medizinische Datensätze - Folgedokumentation"
     * Behandlungsziel 1..1 CodeableConcept "1 | 2 | 3a | 3b"
     * Behandlungsziel from Behandlungsziel
 
-
-  * insert Komorbiditaeten
+  * Komorbiditaet 0..* CodeableConcept "Komorbidität"
+  * Komorbiditaet from Komorbiditaeten (example)
 
   * EKG 1..1 boolean "EKG (mit 12 Ableitungen)"
   * Kardiologe 1..1 boolean "Überweisung an Kardiologin bzw. Kardiologen" """alle 12-18 Monate bei stabilen Patientinnen bzw. Patienten mit niedrigem Risiko;
@@ -79,21 +80,21 @@ mind. alle 3 Monaten für Patientinnnen bzw. Patienten mit hohem Risiko"""
 * Lebensqualitaet 0..1 code "Fragebogen Lebensqualität (5-stelliger Code) (jährlich zu erheben ab Einschreibung)"
 
 // Mapping to IPS Problem modul
-Mapping:  FolgedokumentationHIToProblem
-Source:   FolgedokumentationHI
-Target:   "IPS Problem"
-* -> "Problem"
+Mapping:  FolgedokumentationHiToProblemIps
+Source:   FolgedokumentationHi
+Target:   "ProblemIps"
+* -> "ProblemIps"
 * VPNR -> ".asserter"
 * Untersuchungsdatum -> ".recordedDate"
 * Patient -> ".subject"
-* Versorgung.Komorbiditaeten -> ".code"
+* Versorgung.Komorbiditaet -> ".code"
 * Versorgung.Symptomatik -> ".code"
 
 // Mapping to IPS Diagnostic Results modul
-Mapping:  FolgedokumentationHIToDiagnosticResults
-Source:   FolgedokumentationHI
-Target:   "IPS Diagnostic Results"
-* -> "DiagnosticResults"
+Mapping:  FolgedokumentationHiToDiagnosticResultsIps
+Source:   FolgedokumentationHi
+Target:   "DiagnosticResultsIps"
+* -> "DiagnosticResultsIps"
 * VPNR -> ".performer"
 * Untersuchungsdatum -> ".effective[x]"
 * Patient -> ".subject"
@@ -102,8 +103,8 @@ Target:   "IPS Diagnostic Results"
 * Labor -> ".code and .value"
 
 // Mapping to IPS Subject modul
-Mapping:  FolgedokumentationHIToSubject
-Source:   FolgedokumentationHI
-Target:   "IPS Subject"
-* -> "Subject"
+Mapping:  FolgedokumentationHiToSubjectIps
+Source:   FolgedokumentationHi
+Target:   "SubjectIps"
+* -> "SubjectIps"
 * Selbstmanagement.Betreuung -> ".contact"
