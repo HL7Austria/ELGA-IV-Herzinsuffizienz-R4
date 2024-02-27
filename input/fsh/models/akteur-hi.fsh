@@ -3,7 +3,8 @@
 // -------------------------------------------------------------------------------
 Logical: AkteurHI
 Id: AkteurHI
-Title: "Strukturdaten der beteiligten Einrichtungen/Akteure"
+Title: "Akteur"
+Description: "Strukturdaten der beteiligten Einrichtungen/Akteure"
 
 // #modul Plan of Care -- Wie Header befüllt wird, noch mit Emmanuel besprechen
 // Was genau ist eine "Einrichtung"?
