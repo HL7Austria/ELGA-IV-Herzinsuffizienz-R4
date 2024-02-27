@@ -15,6 +15,14 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
   * participant 0..* BackboneElement "Members of the team"
     * member 0..1 Reference(Practitioner or PractitionerRole or RelatedPerson or Organization) "Who is involved"
     * period 0..1 Period "Time period of participant"
+* activity 0..* BackboneElement "Action to occur as part of plan"
+  * kind 0..1 code "Appointment | CommunicationRequest | DeviceRequest | MedicationRequest | NutritionOrder | Task | ServiceRequest | VisionPrescription"
+  * kind from http://hl7.org/fhir/ValueSet/care-plan-activity-kind (required)
+  * code 0..1 CodeableConcept "Detail type of activity"
+  * status 1..1 code "not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error"
+  * status from http://hl7.org/fhir/ValueSet/care-plan-activity-status (required)
+  * scheduled[x] 0..1 Timing or Period or string "When activity is to occur"
+  * performer 0..* Reference(Practitioner or PractitionerRole or RelatedPerson or Organization) "Who will be responsible?"
 
 // Mapping to HI datamodel
 Mapping:  PlanOfCareIpsToAkteurHi
