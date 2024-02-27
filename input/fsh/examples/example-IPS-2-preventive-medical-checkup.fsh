@@ -799,7 +799,7 @@ Usage: #inline
 * telecom[+].system = #email
 * telecom[=].value = "info@amadeusspital.at"
 * telecom[+].system = #url
-* telecom[=].value = "//www.amadeusspital.at"
+* telecom[=].value = "https://www.amadeusspital.at"
 * address.line = "Währinger Gürtel 18-20"
 * address.city = "Wien"
 * address.postalCode = "1090"
