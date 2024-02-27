@@ -12,3 +12,15 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
 * subject 1..1 Subject "Who the care plan is for"
 * author 1..1 Reference(Practitioner or PractitionerRole) "Who is the designated responsible party"
 * careTeam 0..* BackboneElement "Who's involved in plan?"
+  * participant 0..* BackboneElement "Members of the team"
+    * member 0..1 Reference(Practitioner or PractitionerRole or RelatedPerson or Organization) "Who is involved"
+    * period 0..1 Period "Time period of participant"
+
+// Mapping to HI datamodel
+Mapping:  PlanOfCareToAkteurHI
+Source:   PlanOfCare
+Target:   "AkteurHI"
+* -> "AkteurHI"
+* author -> ".GDL"
+* careTeam.participant.member -> ".GDL"
+* careTeam.participant.period -> ".GDL.Teilnahmebeginn and .GDL.Austritt"

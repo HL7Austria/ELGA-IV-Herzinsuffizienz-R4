@@ -36,3 +36,19 @@ Title: "Strukturdaten der beteiligten Einrichtungen/Akteure"
 * Schulungen.Anzahl 0..1 integer "Anzahl der durchgeführten DM(P)-spezifischen Patientenschulungen"
 // Was soll hiermit dokumentiert werden?
 * Konsultationen 1..1 date "Datum e-card-Steckung"
+
+// Mapping to HI datamodel
+Mapping:  AkteurHIToPlanOfCare
+Source:   AkteurHI
+Target:   "PlanOfCare"
+* -> "PlanOfCare"
+* GDL -> ".author (as case coordinator) or .careTeam.participant.member"
+* GDL.Teilnahmebeginn -> ".period"
+* GDL.Austritt -> ".period"
+
+Mapping:  AkteurHIToPractitionerRole
+Source:   AkteurHI
+Target:   "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"
+* -> "PractitionerRole"
+* Einrichtung -> ".organization.name"
+* Einrichtungsart -> ".organization.type"
