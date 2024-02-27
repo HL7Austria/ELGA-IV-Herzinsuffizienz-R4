@@ -1,9 +1,9 @@
 // -------------------------------------------------------------------------------
 //  Logical Model subject.fsh
 // -------------------------------------------------------------------------------
-Logical: Subject
-Id: Subject
-Title: "Subject"
+Logical: SubjectIps
+Id: Subject-ips
+Title: "Subject (IPS)"
 Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifikation des modularen Rahmenkonzepts für
 Österreich für das Disease-Management bei chronischer Herzinsuffizienz erforderlich sind, auf dem des IPS-Modul "Subject"."""
 
@@ -24,10 +24,10 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
 * generalPractitioner 0..* Reference(Organization or Practitioner or PractitionerRole) "Patient's nominated primary care provider"
 
 // Mapping to HI datamodel
-Mapping:  SubjectToPatientHI
-Source:   Subject
-Target:   "PatientHI"
-* -> "PatientHI"
+Mapping:  SubjectIpsToPatientHi
+Source:   SubjectIps
+Target:   "PatientHi"
+* -> "PatientHi"
 * identifier -> ".SVNR"
 * name -> ".Vorname and .Zuname"
 * telecom -> ".Telefonnumer"
@@ -39,14 +39,14 @@ Target:   "PatientHI"
 * contactInsurance -> ".KVTraeger"
 * generalPractitioner -> ".Betreuungsnetzwerk.Kontakt" "Betreuungsnetzwerk.where(Pflegehilfe=true)"
 
-Mapping: SubjectToErstdokumentationHI
-Source: Subject
-Target: "ErstdokumentationHI"
-* -> "ErstdokumentationHI"
+Mapping: SubjectIpsToErstdokumentationHi
+Source: SubjectIps
+Target: "ErstdokumentationHi"
+* -> "ErstdokumentationHi"
 * contact -> "Selbstmanagement.Betreuung"
 
-Mapping: SubjectToFolgedokumentationHI
-Source: Subject
-Target: "FolgedokumentationHI"
-* -> "FolgedokumentationHI"
+Mapping: SubjectIpsToFolgedokumentationHi
+Source: SubjectIps
+Target: "FolgedokumentationHi"
+* -> "FolgedokumentationHi"
 * contact -> "Selbstmanagement.Betreuung"

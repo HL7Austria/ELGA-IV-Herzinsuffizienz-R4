@@ -1,9 +1,9 @@
 // -------------------------------------------------------------------------------
 //  Logical Model problem.fsh
 // -------------------------------------------------------------------------------
-Logical: Problem
-Id: Problem
-Title: "Problem"
+Logical: ProblemIps
+Id: Problem-ips
+Title: "Problem (IPS)"
 Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifikation des modularen Rahmenkonzepts für
 Österreich für das Disease-Management bei chronischer Herzinsuffizienz erforderlich sind, auf dem des IPS-Modul "Problem"."""
 
@@ -30,26 +30,26 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
 * code ^binding.extension[=].extension[+].url = "documentation"
 * code ^binding.extension[=].extension[=].valueMarkdown = "Codes for symptoms"
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-* subject 1..1 Subject "Who has the condition?"
+* subject 1..1 SubjectIps "Who has the condition?"
 * recordedDate 1..1 dateTime "Date record was first recorded"
 * asserter 1..1 Reference(Practitioner or PractitionerRole) "Person who asserts this condition"
 
 
 // Mapping to HI datamodel
-Mapping:  ProblemToErstdokumentationHI
-Source:   Problem
-Target:   "ErstdokumentationHI"
-* -> "ErstdokumentationHI"
+Mapping:  ProblemIpsToErstdokumentationHi
+Source:   ProblemIps
+Target:   "ErstdokumentationHi"
+* -> "ErstdokumentationHi"
 * code -> ".Erstabklaerung.Komorbiditaeten or .Erstabklaerung.Symptomatik or .Erstabklaerung.Diagnose"
 * subject -> ".Patient"
 * recordedDate -> ".Untersuchungsdatum"
 * asserter -> ".VPNR"
 
 // Mapping to HI datamodel
-Mapping:  ProblemToFolgedokumentationHI
-Source:   Problem
-Target:   "FolgedokumentationHI"
-* -> "FolgedokumentationHI"
+Mapping:  ProblemIpsToFolgedokumentationHi
+Source:   ProblemIps
+Target:   "FolgedokumentationHi"
+* -> "FolgedokumentationHi"
 * code -> ".Versorgung.Komorbiditaeten or .Versorgung.Symptomatik"
 * subject -> ".Patient"
 * recordedDate -> ".Untersuchungsdatum"

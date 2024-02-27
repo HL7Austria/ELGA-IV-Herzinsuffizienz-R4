@@ -167,8 +167,10 @@ groups:
     name: IPS compliant Logical Model
     description: IPS compliant logical model for HI.
     resources:
-      - StructureDefinition/Subject
-      - StructureDefinition/Problem
+      - StructureDefinition/Subject-ips
+      - StructureDefinition/Problem-ips
+      - StructureDefinition/DiagnosticResults-ips
+      - StructureDefinition/PlanOfCare-ips
   HI:
     name:  HI Datenmodell
     description: Datenmodell basierend auf Rahmenkonzept.
