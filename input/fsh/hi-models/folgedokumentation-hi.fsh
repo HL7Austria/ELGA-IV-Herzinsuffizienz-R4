@@ -5,7 +5,7 @@ Logical: FolgedokumentationHi
 Id: Folgedokumentation-hi
 Title: "Folgedokumentation (HI)"
 Description: "Medizinische Datensätze - Folgedokumentation"
-* VPNR 1..1 integer "Vertragspartnernummer"
+* VPNR 1..1 AkteurHi "Beteiligter Akteur"
 * Untersuchungsdatum 1..1 date "Untersuchungsdatum"
 
 // Personendaten

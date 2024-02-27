@@ -5,7 +5,7 @@ Logical: ErstdokumentationHi
 Id: Erstdokumentation-hi
 Title: "Erstdokumentation (HI)"
 Description: "Medizinische Datensätze - Erstdokumentation (im Rahmen der Erstabklärung erhoben/durchgeführt)"
-* VPNR 1..1 integer "Vertragspartnernummer"
+* VPNR 1..1 AkteurHi "Beteiligter Akteur"
 * Untersuchungsdatum 1..1 date "Untersuchungsdatum"
 
 // Personendaten
