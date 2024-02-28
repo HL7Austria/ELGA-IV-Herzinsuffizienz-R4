@@ -108,3 +108,18 @@ Source:   FolgedokumentationHi
 Target:   "SubjectIps"
 * -> "SubjectIps"
 * Selbstmanagement.Betreuung -> ".contact"
+
+// Mapping to IPS PlanOfCare modul
+Mapping: FolgedokumentationHiToPlanOfCareIps
+Source: FolgedokumentationHi
+Target: "PlanOfCareIps"
+Description: """The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". The results of activities might be documented as "CarePlan.activity.outcomeReference" and might as well be documented elsewhere in the patient's summary (e.g. list of problems). As has been done with some of the examinations of the "Folgedokumentation" (e.g. "EKG", "Diagnose", ...)."""
+* -> "PlanOfCareIps"
+* VPNR -> ".activity.performer"
+* Untersuchungsdatum -> ".activity.scheduled[x]"
+* Patient -> ".subject"
+* Versorgung.Kardiologe -> ".activity"
+* Versorgung.Behandlungsziel -> ".goal"
+* Labor -> ".activity"
+* Therapie -> ".activity"
+* Selbstmanagement.DMPSchulung -> ".activity"

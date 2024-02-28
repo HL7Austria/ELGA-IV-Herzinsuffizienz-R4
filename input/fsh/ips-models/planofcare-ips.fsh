@@ -33,3 +33,25 @@ Target:   "AkteurHi"
 * author -> ".GDL"
 * careTeam.participant.member -> ".GDL"
 * careTeam.participant.period -> ".GDL.Teilnahmebeginn and .GDL.Austritt"
+
+// Mapping to HI datamodel
+Mapping:  PlanOfCareIpsToErstdokumentationHi
+Source:   PlanOfCareIps
+Target:   "ErstdokumentationHi"
+* -> "ErstdokumentationHi"
+* subject -> ".Patient"
+* goal -> ".Erstabklaerung.Behandlungsziel"
+* activity -> "ErstdokumentationHi or .Erstabklaerung.Kardiologe or .Labor or .Therapie or .Selbstmanagement.DMPSchulung"
+* activity.scheduled[x] -> ".Untersuchungsdatum"
+* activity.performer -> ".VPNR"
+
+// Mapping to HI datamodel
+Mapping:  PlanOfCareIpsToFolgedokumentationHi
+Source:   PlanOfCareIps
+Target:   "FolgedokumentationHi"
+* -> "FolgedokumentationHi"
+* subject -> ".Patient"
+* goal -> ".Versorgung.Behandlungsziel"
+* activity -> "ErstdokumentationHi or .Versorgung.Kardiologe or .Labor or .Therapie or .Selbstmanagement.DMPSchulung"
+* activity.scheduled[x] -> ".Untersuchungsdatum"
+* activity.performer -> ".VPNR"
