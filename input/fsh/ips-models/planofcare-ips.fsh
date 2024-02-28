@@ -15,6 +15,7 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
   * participant 0..* BackboneElement "Members of the team"
     * member 0..1 Reference(Practitioner or PractitionerRole or RelatedPerson or Organization) "Who is involved"
     * period 0..1 Period "Time period of participant"
+* goal 0..* Reference(Goal) "Desired outcome of plan"
 * activity 0..* BackboneElement "Action to occur as part of plan"
   * kind 0..1 code "Appointment | CommunicationRequest | DeviceRequest | MedicationRequest | NutritionOrder | Task | ServiceRequest | VisionPrescription"
   * kind from http://hl7.org/fhir/ValueSet/care-plan-activity-kind (required)
