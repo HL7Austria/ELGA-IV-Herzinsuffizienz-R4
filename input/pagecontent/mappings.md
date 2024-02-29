@@ -13,6 +13,8 @@ Note, that for each mapping only the relevant modules of the IPS will be include
 
 #### Patient
 
+Please refer to [Patient (HI)](StructureDefinition-Patient-hi.html) for further details about this data model.
+
 <table class="grid">
 <tbody>
   <tr>
@@ -185,6 +187,8 @@ Note, that for each mapping only the relevant modules of the IPS will be include
 
 #### Akteur
 
+Please refer to [Akteur (HI)](StructureDefinition-Akteur-hi.html) for further details about this data model.
+
 <table class="grid">
 <tbody>
   <tr>
@@ -322,7 +326,7 @@ Note, that for each mapping only the relevant modules of the IPS will be include
 
 #### Erstdokumentation
 
-Please refer to [Erstdokumentation](StructureDefinition-Erstdokumentation-hi.html) for further details about this data model.
+Please refer to [Erstdokumentation (HI)](StructureDefinition-Erstdokumentation-hi.html) for further details about this data model.
 
 The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". The results of activities might be documented as "PlanOfCare.activity.outcomeReference" and might as well be documented elsewhere in the patient's summary (e.g. "Problem List"). As has been done with some of the examinations of the "Erstdokumentation" (e.g. "EKG", "Diagnose", ...).
 
@@ -624,7 +628,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
 
 #### Folgedokumentation
 
-Please refer to [Folgedokumentation](StructureDefinition-Folgedokumentation-hi.html) for further details about this data model.
+Please refer to [Folgedokumentation (HI)](StructureDefinition-Folgedokumentation-hi.html) for further details about this data model.
 
 The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". The results of activities might be documented as "PlanOfCare.activity.outcomeReference" and might as well be documented elsewhere in the patient's summary (e.g. "Problem List"). As has been done with some of the examinations of the "Erstdokumentation" (e.g. "EKG", "Diagnose", ...).
 

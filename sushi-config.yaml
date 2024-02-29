@@ -55,6 +55,13 @@ dependencies:
 #     title: Examples Overview
 #     simpleExamples.xml:
 #     complexExamples.xml:
+
+pages:
+  index.md:
+    title: Implementation Guide for HI
+  mappings.md:
+    title: Mapping from HI to IPS
+
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -80,6 +87,17 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Logical Model (HI):
+    Patient (HI): StructureDefinition-Patient-hi.html
+    Akteur (HI): StructureDefinition-Akteur-hi.html
+    Erstdokumentation (HI): StructureDefinition-Erstdokumentation-hi.html
+    Folgedokumentation (HI): StructureDefinition-Folgedokumentation-hi.html
+  Logical Model (IPS):
+    Subject (IPS): StructureDefinition-Subject-ips.html
+    Problem List (IPS): StructureDefinition-ProblemList-ips.html
+    Diagnostic Results (IPS): StructureDefinition-DiagnosticResults-ips.html
+    Plan of Care (IPS): StructureDefinition-PlanOfCare-ips.html
+  Mapping HI to IPS: mappings.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
