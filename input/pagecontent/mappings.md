@@ -1,24 +1,24 @@
 ### Mappings
 
 <style type="text/css">
-.grid .tg-5044{background-color:#ffa52a;}
-.grid .tg-q912{background-color:#56c3f3;}
-.grid .tg-qhgh{background-color:#e53432;}
-.grid .tg-0pky{vertical-align:middle}
-.grid .tg-0lax{text-align:center;}
-.grid .tg-gh8i{background-color:#91cf50;}
+.grid .ips-recommended{background-color:#ffa52a;}
+.grid .ips-header{background-color:#56c3f3;}
+.grid .ips-required{background-color:#e53432;}
+.grid .source-modul{vertical-align:middle}
+.grid .target-modul{text-align:center;}
+.grid .ips-optional{background-color:#91cf50;}
 </style>
 <table class="grid">
 <tbody>
   <tr>
-    <th class="tg-0pky" rowspan="2"><strong>Erstdokumentation (HI)</strong></th>
-    <th class="tg-0lax" colspan="4"><strong>IPS Moduls</strong></th>
+    <th class="source-modul" rowspan="2"><strong>Erstdokumentation (HI)</strong></th>
+    <th class="target-modul" colspan="4"><strong>IPS Moduls</strong></th>
   </tr>
   <tr>
-    <th class="tg-q912"><a href="StructureDefinition-Subject-ips.html"><strong>Subject (IPS)</strong></a></th>
-    <th class="tg-qhgh"><a href="StructureDefinition-ProblemList-ips.html"><strong>Problem List (IPS)</strong></a></th>
-    <th class="tg-5044"><a href="StructureDefinition-DiagnosticResults-ips.html"><strong>Diagnostic Results (IPS)</strong></a></th>
-    <th class="tg-gh8i"><a href="StructureDefinition-PlanOfCare-ips.html"><strong>Plan of Care (IPS)</strong></a></th>
+    <th class="ips-header"><a href="StructureDefinition-Subject-ips.html"><strong>Subject (IPS)</strong></a></th>
+    <th class="ips-required"><a href="StructureDefinition-ProblemList-ips.html"><strong>Problem List (IPS)</strong></a></th>
+    <th class="ips-recommended"><a href="StructureDefinition-DiagnosticResults-ips.html"><strong>Diagnostic Results (IPS)</strong></a></th>
+    <th class="ips-optional"><a href="StructureDefinition-PlanOfCare-ips.html"><strong>Plan of Care (IPS)</strong></a></th>
   </tr>
   <tr>
     <td>VPNR</td>
