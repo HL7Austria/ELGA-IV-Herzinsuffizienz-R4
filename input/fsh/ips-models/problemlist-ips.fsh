@@ -1,11 +1,11 @@
 // -------------------------------------------------------------------------------
 //  Logical Model problem.fsh
 // -------------------------------------------------------------------------------
-Logical: ProblemIps
-Id: Problem-ips
-Title: "Problem (IPS)"
+Logical: ProblemListIps
+Id: ProblemList-ips
+Title: "Problem List (IPS)"
 Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifikation des modularen Rahmenkonzepts für
-Österreich für das Disease-Management bei chronischer Herzinsuffizienz erforderlich sind, auf dem des IPS-Modul "Problem"."""
+Österreich für das Disease-Management bei chronischer Herzinsuffizienz erforderlich sind, auf dem des IPS-Modul "Problem List"."""
 
 * code 1..1 CodeableConcept "Identification of the condition, problem or diagnosis"
 * code from http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips (preferred)
@@ -36,8 +36,8 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
 
 
 // Mapping to HI datamodel
-Mapping:  ProblemIpsToErstdokumentationHi
-Source:   ProblemIps
+Mapping:  ProblemListIpsToErstdokumentationHi
+Source:   ProblemListIps
 Target:   "ErstdokumentationHi"
 * -> "ErstdokumentationHi"
 * code -> ".Erstabklaerung.Komorbiditaeten or .Erstabklaerung.Symptomatik or .Erstabklaerung.Diagnose"
@@ -46,8 +46,8 @@ Target:   "ErstdokumentationHi"
 * asserter -> ".VPNR"
 
 // Mapping to HI datamodel
-Mapping:  ProblemIpsToFolgedokumentationHi
-Source:   ProblemIps
+Mapping:  ProblemListIpsToFolgedokumentationHi
+Source:   ProblemListIps
 Target:   "FolgedokumentationHi"
 * -> "FolgedokumentationHi"
 * code -> ".Versorgung.Komorbiditaeten or .Versorgung.Symptomatik"
