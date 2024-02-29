@@ -1,10 +1,6 @@
-On this page you can find the mapping from the data model based on the "Disease-Management bei chronischer Herzinsuffizienz - Modulares Rahmenkonzept für Österreich" to the data model based on the [International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/).
+On this page you can find the mapping from the data model based on the "Disease-Management bei chronischer Herzinsuffizienz - Modulares Rahmenkonzept für Österreich" to the data model based on the [International Patient Summary (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/).
 
-#### Erstdokumentation
-
-Please refer to [Erstdokumentation](StructureDefinition-Erstdokumentation-hi.html) for further details about this data model.
-
-The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". The results of activities might be documented as "PlanOfCare.activity.outcomeReference" and might as well be documented elsewhere in the patient's summary (e.g. "Problem List"). As has been done with some of the examinations of the "Erstdokumentation" (e.g. "EKG", "Diagnose", ...).
+Note, that for each mapping only the relevant modules of the IPS will be included. Furthermore, even if not all modules of the IPS are mentioned in the mappings it is of course allowed to use them, if applicable.
 
 <style type="text/css">
 .grid .ips-recommended{background-color:#ffa52a;}
@@ -14,11 +10,191 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
 .grid .target-module{text-align:center;}
 .grid .ips-optional{background-color:#91cf50;}
 </style>
+
+#### Patient
+
+<table class="grid">
+<tbody>
+  <tr>
+    <th class="source-module" rowspan="2"><a href="StructureDefinition-Patient-hi.html"><strong>Patient (HI)</strong></a></th>
+    <th class="target-module" colspan="2"><strong>IPS Modules</strong></th>
+    <th class="source-module" rowspan="2"><strong>Comment</strong></th>
+  </tr>
+  <tr>
+    <th class="ips-header"><a href="StructureDefinition-Subject-ips.html"><strong>Subject (IPS)</strong></a></th>
+    <th class="ips-optional"><a href="StructureDefinition-PlanOfCare-ips.html"><strong>Plan of Care (IPS)</strong></a></th>
+  </tr>
+  <tr>
+    <td>Vorname</td>
+    <td>.name</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Zuname</td>
+    <td>.name</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Geburtsjahr</td>
+    <td>.birthDate</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SVNR</td>
+    <td>.identifier</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>KVTraeger</td>
+    <td>.contactInsurance</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Adresse</td>
+    <td>.address</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Telefonnummer</td>
+    <td>.telecom</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Geschlecht</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Geschlecht.gender</td>
+    <td>.gender</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Geschlecht.genderExtension</td>
+    <td>.genderExtension</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Schulung</td>
+    <td>-</td>
+    <td>.activity</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;absolviert</td>
+    <td>-</td>
+    <td>.activity.status</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Datum</td>
+    <td>-</td>
+    <td>.activity.scheduled[x]</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Einverstaendnis</td>
+    <td>-</td>
+    <td>-</td>
+    <td>unclear</td>
+  </tr>
+  <tr>
+    <td>Einschreibung</td>
+    <td>-</td>
+    <td>.period</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Austritt</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Datum</td>
+    <td>-</td>
+    <td>.period</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Grund</td>
+    <td>-</td>
+    <td>-</td>
+    <td>unclear</td>
+  </tr>
+  <tr>
+    <td>Anlaufstelle</td>
+    <td>-</td>
+    <td>-</td>
+    <td>unclear</td>
+  </tr>
+  <tr>
+    <td>Betreuungsnetzwerk</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Einbindung</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Pflegehilfe</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Kontakt</td>
+    <td>TODO</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Versorgungsnetzwerk</td>
+    <td>-</td>
+    <td>.author or .careTeam</td>
+    <td>.author if it is the case coordinator</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Kontakt</td>
+    <td>-</td>
+    <td>.author or .careTeam.participant</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Kontakttyp</td>
+    <td>-</td>
+    <td>.careTeam.participant.role</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+#### Erstdokumentation
+
+Please refer to [Erstdokumentation](StructureDefinition-Erstdokumentation-hi.html) for further details about this data model.
+
+The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". The results of activities might be documented as "PlanOfCare.activity.outcomeReference" and might as well be documented elsewhere in the patient's summary (e.g. "Problem List"). As has been done with some of the examinations of the "Erstdokumentation" (e.g. "EKG", "Diagnose", ...).
+
 <table class="grid">
 <tbody>
   <tr>
     <th class="source-module" rowspan="2"><a href="StructureDefinition-Erstdokumentation-hi.html"><strong>Erstdokumentation (HI)</strong></a></th>
     <th class="target-module" colspan="4"><strong>IPS Modules</strong></th>
+    <th class="source-module" rowspan="2"><strong>Comment</strong></th>
   </tr>
   <tr>
     <th class="ips-header"><a href="StructureDefinition-Subject-ips.html"><strong>Subject (IPS)</strong></a></th>
@@ -32,6 +208,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>.asserter</td>
     <td>.performer</td>
     <td>.activity.performer</td>
+    <td></td>
   </tr>
   <tr>
     <td>Untersuchungsdatum</td>
@@ -39,6 +216,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>.recordedDate</td>
     <td>.effective[x]</td>
     <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
     <td>Patient</td>
@@ -46,20 +224,23 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>.subject</td>
     <td>.subject</td>
     <td>.subject</td>
+    <td></td>
   </tr>
   <tr>
     <td>Erstabklärung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Untersuchung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.outcomeReference</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Komorbiditaet</td>
@@ -67,6 +248,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>.code</td>
     <td>-</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;EKG</td>
@@ -74,6 +256,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>.code and .value</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Echokardiogramm</td>
@@ -81,6 +264,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>.code and .value</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;NTproBNP</td>
@@ -88,6 +272,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>.code and .value</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Symptomatik</td>
@@ -95,6 +280,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>.code</td>
     <td>-</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Kardiologe</td>
@@ -102,6 +288,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Diagnose</td>
@@ -109,6 +296,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>.code</td>
     <td>-</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Behandlungsziel</td>
@@ -116,6 +304,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>.goal</td>
+    <td></td>
   </tr>
   <tr>
     <td>Labor</td>
@@ -123,6 +312,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>.code and .value</td>
     <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
     <td>Therapie</td>
@@ -130,6 +320,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;HITherapie</td>
@@ -137,6 +328,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;Therapie</td>
@@ -144,6 +336,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;Zieldosis</td>
@@ -151,6 +344,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Komedikation</td>
@@ -158,13 +352,15 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>TODO</td>
   </tr>
   <tr>
     <td>Selbstmanagement</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Ressourcen</td>
@@ -172,6 +368,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>TODO</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Betreuung</td>
@@ -179,6 +376,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;DMPSchulung</td>
@@ -186,83 +384,95 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.status</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;GewichtSchulung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.status</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;ImpfungBeratung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.status</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;TelemonitoringSchulung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.status</td>
+    <td></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
     <td>Lebensqualitaet</td>
@@ -270,6 +480,7 @@ The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". T
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>TODO</td>
   </tr>
 </tbody>
 </table>
@@ -280,11 +491,12 @@ Please refer to [Folgedokumentation](StructureDefinition-Folgedokumentation-hi.h
 
 The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". The results of activities might be documented as "PlanOfCare.activity.outcomeReference" and might as well be documented elsewhere in the patient's summary (e.g. "Problem List"). As has been done with some of the examinations of the "Erstdokumentation" (e.g. "EKG", "Diagnose", ...).
 
-<table>
-<thead>
+<table class="grid">
+<tbody>
   <tr>
     <th class="source-module" rowspan="2"><a href="StructureDefinition-Folgedokumentation-hi.html"><strong>Folgedokumentation (HI)</strong></a></th>
     <th class="target-module" colspan="4"><strong>IPS Modules</strong></th>
+    <th class="source-module" rowspan="2"><strong>Comment</comment></th>
   </tr>
   <tr>
     <th class="ips-header"><a href="StructureDefinition-Subject-ips.html"><strong>Subject (IPS)</strong></a></a></th>
@@ -292,24 +504,13 @@ The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". 
     <th class="ips-recommended"><a href="StructureDefinition-DiagnosticResults-ips.html"><strong>Diagnostic Results (IPS)</strong></a></th>
     <th class="ips-optional"><a href="StructureDefinition-DiagnosticResults-ips.html"><strong>Plan of Care (IPS)</strong></a></th>
   </tr>
-</thead>
-<tbody>
-  <tr>
-    <th rowspan="2"><strong>Folgedokumentation (HI)</th>
-    <th colspan="4">IPS Modules</th>
-  </tr>
-  <tr>
-    <th><a href="https://structuredefinition-subject-ips.html/">Subject (IPS)</a></th>
-    <th>Problem (IPS)</th>
-    <th>DiagnosticResults (IPS)</th>
-    <th>Plan of Care (IPS)</th>
-  </tr>
   <tr>
     <td>VPNR</td>
     <td>-</td>
     <td>.asserter</td>
     <td>.performer</td>
     <td>.activity.performer</td>
+    <td></td>
   </tr>
   <tr>
     <td>Untersuchungsdatum</td>
@@ -317,6 +518,7 @@ The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". 
     <td>.recordedDate</td>
     <td>.effective[x]</td>
     <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
     <td>Patient</td>
@@ -324,83 +526,95 @@ The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". 
     <td>.subject</td>
     <td>.subject</td>
     <td>.subject</td>
+    <td></td>
   </tr>
   <tr>
     <td>Versorgung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;geplant</td>
+    <td>&nbsp;&nbsp;geplant</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.status</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;AnzahlStationaer</td>
+    <td>&nbsp;&nbsp;AnzahlStationaer</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>TODO</td>
   </tr>
   <tr>
-    <td>&amp;Symtomatik</td>
+    <td>&nbsp;&nbsp;Symtomatik</td>
     <td>-</td>
     <td>.code</td>
     <td>-</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;Behandlungsziel</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td>&nbsp;&nbsp;Behandlungsziel</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;&amp;Aenderung</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Aenderung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
-    <td>&amp;&amp;Behandlungsziel</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Behandlungsziel</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>.goal</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;Komorbiditaet</td>
+    <td>&nbsp;&nbsp;Komorbiditaet</td>
     <td>-</td>
     <td>.code</td>
     <td>-</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;EKG</td>
+    <td>&nbsp;&nbsp;EKG</td>
     <td>-</td>
     <td>-</td>
     <td>.code and .value</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;Kardiologe</td>
+    <td>&nbsp;&nbsp;Kardiologe</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;Echokardiogramm</td>
+    <td>&nbsp;&nbsp;Echokardiogramm</td>
     <td>-</td>
     <td>-</td>
     <td>.code and .value</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
     <td>Labor</td>
@@ -408,20 +622,23 @@ The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". 
     <td>-</td>
     <td>-</td>
     <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;Befund</td>
+    <td>&nbsp;&nbsp;Befund</td>
     <td>-</td>
     <td>-</td>
     <td>.code and .value</td>
     <td>.activity.outcomeReference</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;Datum</td>
+    <td>&nbsp;&nbsp;Datum</td>
     <td>-</td>
     <td>-</td>
     <td>.effective[x]</td>
     <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
     <td>Therapie</td>
@@ -429,160 +646,183 @@ The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". 
     <td>-</td>
     <td>-</td>
     <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;ACE</td>
+    <td>&nbsp;&nbsp;ACE</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
-    <td>&amp;&amp;ACE</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;ACE</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
-    <td>&amp;&amp;Zieldosis</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Zieldosis</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
-    <td>&amp;Betablocker</td>
+    <td>&nbsp;&nbsp;Betablocker</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
-    <td>&amp;&amp;Betablocker</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Betablocker</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
-    <td>&amp;&amp;Zieldosis</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Zieldosis</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
-    <td>&amp;Antikoagulation</td>
+    <td>&nbsp;&nbsp;Antikoagulation</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>unclear</td>
   </tr>
   <tr>
     <td>Selbstmanagement</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;Ressourcen</td>
+    <td>&nbsp;&nbsp;Ressourcen</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>TODO</td>
   </tr>
   <tr>
-    <td>&amp;Betreuung</td>
+    <td>&nbsp;&nbsp;Betreuung</td>
     <td>.contact</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;DMPSchulung</td>
+    <td>&nbsp;&nbsp;DMPSchulung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;&amp;absolviert</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.status</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;&amp;Datum</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;GewichtSchulung</td>
+    <td>&nbsp;&nbsp;GewichtSchulung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;&amp;absolviert</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.status</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;&amp;Datum</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;ImpfungBeratung</td>
+    <td>&nbsp;&nbsp;ImpfungBeratung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;&amp;absolviert</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.status</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;&amp;Datum</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;TelemonitoringSchulung</td>
+    <td>&nbsp;&nbsp;TelemonitoringSchulung</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;&amp;absolviert</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.status</td>
+    <td></td>
   </tr>
   <tr>
-    <td>&amp;&amp;Datum</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
+    <td>.activity.scheduled[x]</td>
+    <td></td>
   </tr>
   <tr>
     <td>Lebensqualitaet</td>
@@ -590,6 +830,7 @@ The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". 
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>TODO</td>
   </tr>
 </tbody>
 </table>
