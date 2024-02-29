@@ -168,7 +168,7 @@ groups:
     description: IPS compliant logical model for HI.
     resources:
       - StructureDefinition/Subject-ips
-      - StructureDefinition/Problem-ips
+      - StructureDefinition/ProblemList-ips
       - StructureDefinition/DiagnosticResults-ips
       - StructureDefinition/PlanOfCare-ips
   HI:

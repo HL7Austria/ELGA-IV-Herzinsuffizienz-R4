@@ -1,4 +1,8 @@
-### Mappings
+On this page you can find the mapping from the data model based on the "Disease-Management bei chronischer Herzinsuffizienz - Modulares Rahmenkonzept für Österreich" to the data model based on the [International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/).
+
+#### Erstdokumentation
+
+Please refer to [Erstdokumentation](StructureDefinition-Erstdokumentation-hi.html) for further details about this data model.
 
 <style type="text/css">
 .grid .ips-recommended{background-color:#ffa52a;}
@@ -11,7 +15,7 @@
 <table class="grid">
 <tbody>
   <tr>
-    <th class="source-modul" rowspan="2"><strong>Erstdokumentation (HI)</strong></th>
+    <th class="source-modul" rowspan="2"><a href="StructureDefinition-Erstdokumentation-hi.html"><strong>Erstdokumentation (HI)</strong></a></th>
     <th class="target-modul" colspan="4"><strong>IPS Moduls</strong></th>
   </tr>
   <tr>
