@@ -26,13 +26,13 @@ Note, that for each mapping only the relevant modules of the IPS will be include
   </tr>
   <tr>
     <td>Vorname</td>
-    <td>.name</td>
+    <td>.name.given</td>
     <td>-</td>
     <td></td>
   </tr>
   <tr>
     <td>Zuname</td>
-    <td>.name</td>
+    <td>.name.family</td>
     <td>-</td>
     <td></td>
   </tr>
@@ -165,13 +165,13 @@ Note, that for each mapping only the relevant modules of the IPS will be include
   <tr>
     <td>Versorgungsnetzwerk</td>
     <td>-</td>
-    <td>.author or .careTeam</td>
+    <td>.author and .careTeam</td>
     <td>.author if it is the case coordinator</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;Kontakt</td>
     <td>-</td>
-    <td>.author or .careTeam.participant</td>
+    <td>.author and .careTeam.participant.member</td>
     <td></td>
   </tr>
   <tr>
@@ -179,6 +179,143 @@ Note, that for each mapping only the relevant modules of the IPS will be include
     <td>-</td>
     <td>.careTeam.participant.role</td>
     <td></td>
+  </tr>
+</tbody>
+</table>
+
+#### Akteur
+
+<table class="grid">
+<tbody>
+  <tr>
+    <th class="source-module" rowspan="2"><a href="StructureDefinition-Akteur-hi.html"><strong>Akteur (HI)</strong></a></th>
+    <th class="target-module"><strong>IPS Modules</strong></th>
+    <th class="target-module"><strong>IPS IG</strong></th>
+    <th class="source-module" rowspan="2"><strong>Comment</strong></th>
+  </tr>
+  <tr>
+    <th class="ips-optional"><a href="StructureDefinition-PlanOfCare-ips.html"><strong>Plan of Care (IPS)</strong></a></th>
+    <th><a href="http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"><strong>PractitionerRole (IPS)</strong></a></th>
+  </tr>
+  <tr>
+    <td>Einrichtung</td>
+    <td>-</td>
+    <td>.organization.name</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Einrichtungsart</td>
+    <td>-</td>
+    <td>.organization.type</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Fachrichtung</td>
+    <td>-</td>
+    <td>.practitioner.qualification.code</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Adresse</td>
+    <td>-</td>
+    <td>.organization.address or .practitioner.address</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Personalstand</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Anzahl</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>derivable</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Berufsgruppe</td>
+    <td>-</td>
+    <td>.code</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>GDL</td>
+    <td>.author and .careTeam.participant.member</td>
+    <td>.practitioner</td>
+    <td>.author if it is the case coordinator</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Vorname</td>
+    <td>-</td>
+    <td>.practitioner.name.given</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Zuname</td>
+    <td>-</td>
+    <td>.practitioner.name.family</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Vertragspartnernummer</td>
+    <td>-</td>
+    <td>.practitioner.identifier</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Teilnahmebeginn</td>
+    <td>.careTeam.participant.period</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Schulungsnachweis</td>
+    <td>-</td>
+    <td>.practitioner.qualification</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Austritt</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Austrittsanfrage</td>
+    <td>-</td>
+    <td>-</td>
+    <td>unclear</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Teilnahmeende</td>
+    <td>.careTeam.participant.period</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Schulungen</td>
+    <td>-</td>
+    <td>-</td>
+    <td>derivable from PlanOfCare.activity and its corresponding performer</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;aktiv</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;Anzahl</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Konsultationen</td>
+    <td>-</td>
+    <td>-</td>
+    <td>unclear</td>
   </tr>
 </tbody>
 </table>
