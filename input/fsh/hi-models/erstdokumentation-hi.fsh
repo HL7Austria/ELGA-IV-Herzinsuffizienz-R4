@@ -93,8 +93,8 @@ Regelung in Bezug auf NT-proBNP ist unabdingbar und sollte entsprechend priorisi
 // Mapping to IPS Problem modul
 Mapping:  ErstdokumentationHiToProblemIps
 Source:   ErstdokumentationHi
-Target:   "ProblemIps"
-* -> "ProblemIps"
+Target:   "ProblemListIps"
+* -> "ProblemListIps"
 * VPNR -> ".asserter"
 * Untersuchungsdatum -> ".recordedDate"
 * Patient -> ".subject"

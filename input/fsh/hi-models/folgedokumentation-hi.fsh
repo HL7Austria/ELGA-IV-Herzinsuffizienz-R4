@@ -82,8 +82,8 @@ mind. alle 3 Monaten für Patientinnnen bzw. Patienten mit hohem Risiko"""
 // Mapping to IPS Problem modul
 Mapping:  FolgedokumentationHiToProblemIps
 Source:   FolgedokumentationHi
-Target:   "ProblemIps"
-* -> "ProblemIps"
+Target:   "ProblemListIps"
+* -> "ProblemListIps"
 * VPNR -> ".asserter"
 * Untersuchungsdatum -> ".recordedDate"
 * Patient -> ".subject"
