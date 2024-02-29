@@ -1,276 +1,269 @@
 ### Mappings
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-5044{background-color:#ffa52a;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-q912{background-color:#56c3f3;text-align:left;vertical-align:top}
-.tg .tg-qhgh{background-color:#e53432;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-.tg .tg-gh8i{background-color:#91cf50;text-align:left;vertical-align:top}
+.tg-5044{background-color:#ffa52a;}
+.tg-q912{background-color:#56c3f3;}
+.tg-qhgh{background-color:#e53432;}
+.tg-0pky{vertical-align:middle}
+.tg-0lax{text-align:center;}
+.tg-gh8i{background-color:#91cf50;}
 </style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky" rowspan="2">Erstdokumentation (HI)</th>
-    <th class="tg-0lax" colspan="4">IPS Moduls</th>
-  </tr>
-  <tr>
-    <th class="tg-q912"><a href="https://structuredefinition-subject-ips.html/">Subject (IPS)</a></th>
-    <th class="tg-qhgh">Problem (IPS)</th>
-    <th class="tg-5044">DiagnosticResults (IPS)</th>
-    <th class="tg-gh8i">Plan of Care (IPS)</th>
-  </tr>
-</thead>
+<table class="grid">
 <tbody>
   <tr>
-    <td class="tg-0pky">VPNR</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">.asserter</td>
-    <td class="tg-0pky">.performer</td>
-    <td class="tg-0lax">.activity.performer</td>
+    <th class="tg-0pky" rowspan="2"><strong>Erstdokumentation (HI)</strong></th>
+    <th class="tg-0lax" colspan="4"><strong>IPS Moduls</strong></th>
   </tr>
   <tr>
-    <td class="tg-0pky">Untersuchungsdatum</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">.recordedDate</td>
-    <td class="tg-0pky">.effective[x]</td>
-    <td class="tg-0lax">.activity.scheduled[x]</td>
+    <th class="tg-q912"><a href="structuredefinition-subject-ips.html"><strong>Subject (IPS)</strong></a></th>
+    <th class="tg-qhgh"><strong>Problem (IPS)</strong></th>
+    <th class="tg-5044"><strong>DiagnosticResults (IPS)</strong></th>
+    <th class="tg-gh8i"><strong>Plan of Care (IPS)</strong></th>
   </tr>
   <tr>
-    <td class="tg-0pky">Patient</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">.subject</td>
-    <td class="tg-0pky">.subject</td>
-    <td class="tg-0lax">.subject</td>
+    <td>VPNR</td>
+    <td>-</td>
+    <td>.asserter</td>
+    <td>.performer</td>
+    <td>.activity.performer</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Erstabklärung</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>Untersuchungsdatum</td>
+    <td>-</td>
+    <td>.recordedDate</td>
+    <td>.effective[x]</td>
+    <td>.activity.scheduled[x]</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;Untersuchung</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>Patient</td>
+    <td>-</td>
+    <td>.subject</td>
+    <td>.subject</td>
+    <td>.subject</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;Komorbiditaet</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">.code</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>Erstabklärung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;EKG</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">.code and .value</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;Untersuchung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;Echokardiogramm</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">.code and .value</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;Komorbiditaet</td>
+    <td>-</td>
+    <td>.code</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;NTproBNP</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">.code and .value</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;EKG</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.code and .value</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;Symptomatik</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">.code</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;Echokardiogramm</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.code and .value</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;Kardiologe</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">.activity</td>
+    <td>&nbsp;&nbsp;NTproBNP</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.code and .value</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;Diagnose</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">.code</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;Symptomatik</td>
+    <td>-</td>
+    <td>.code</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;Behandlungsziel</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">.goal</td>
+    <td>&nbsp;&nbsp;Kardiologe</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.activity</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Labor</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">.code and .value</td>
-    <td class="tg-0lax">.activity</td>
+    <td>&nbsp;&nbsp;Diagnose</td>
+    <td>-</td>
+    <td>.code</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Therapie</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">.activity</td>
+    <td>&nbsp;&nbsp;Behandlungsziel</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.goal</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;HITherapie</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>Labor</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.code and .value</td>
+    <td>.activity</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;Therapie</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>Therapie</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.activity</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;Zieldosis</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;HITherapie</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;Komedikation</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Therapie</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Selbstmanagement</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Zieldosis</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;Ressourcen</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;Komedikation</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;Betreuung</td>
-    <td class="tg-0lax">.contact</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>Selbstmanagement</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;DMPSchulung</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">.activity</td>
+    <td>&nbsp;&nbsp;Ressourcen</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;Betreuung</td>
+    <td>.contact</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;DMPSchulung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.activity</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;GewichtSchulung</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;GewichtSchulung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;ImpfungBeratung</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;ImpfungBeratung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;TelemonitoringSchulung</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;TelemonitoringSchulung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Lebensqualitaet</td>
-    <td class="tg-0lax">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0lax">-</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;absolviert</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Lebensqualitaet</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
 </tbody>
 </table>
