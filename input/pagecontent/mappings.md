@@ -636,7 +636,7 @@ The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". 
     <th class="source-module" rowspan="2"><strong>Comment</comment></th>
   </tr>
   <tr>
-    <th class="ips-header"><a href="StructureDefinition-Subject-ips.html"><strong>Subject (IPS)</strong></a></a></th>
+    <th class="ips-header"><a href="StructureDefinition-Subject-ips.html"><strong>Subject (IPS)</strong></a></th>
     <th class="ips-required"><a href="StructureDefinition-ProblemList-ips.html"><strong>Problem List (IPS)</strong></a></th>
     <th class="ips-recommended"><a href="StructureDefinition-DiagnosticResults-ips.html"><strong>Diagnostic Results (IPS)</strong></a></th>
     <th class="ips-optional"><a href="StructureDefinition-DiagnosticResults-ips.html"><strong>Plan of Care (IPS)</strong></a></th>
