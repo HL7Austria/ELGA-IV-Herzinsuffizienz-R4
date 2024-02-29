@@ -4,19 +4,21 @@ On this page you can find the mapping from the data model based on the "Disease-
 
 Please refer to [Erstdokumentation](StructureDefinition-Erstdokumentation-hi.html) for further details about this data model.
 
+The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". The results of activities might be documented as "PlanOfCare.activity.outcomeReference" and might as well be documented elsewhere in the patient's summary (e.g. "Problem List"). As has been done with some of the examinations of the "Erstdokumentation" (e.g. "EKG", "Diagnose", ...).
+
 <style type="text/css">
 .grid .ips-recommended{background-color:#ffa52a;}
 .grid .ips-header{background-color:#56c3f3;}
 .grid .ips-required{background-color:#e53432;}
-.grid .source-modul{vertical-align:middle}
-.grid .target-modul{text-align:center;}
+.grid .source-module{vertical-align:middle}
+.grid .target-module{text-align:center;}
 .grid .ips-optional{background-color:#91cf50;}
 </style>
 <table class="grid">
 <tbody>
   <tr>
-    <th class="source-modul" rowspan="2"><a href="StructureDefinition-Erstdokumentation-hi.html"><strong>Erstdokumentation (HI)</strong></a></th>
-    <th class="target-modul" colspan="4"><strong>IPS Moduls</strong></th>
+    <th class="source-module" rowspan="2"><a href="StructureDefinition-Erstdokumentation-hi.html"><strong>Erstdokumentation (HI)</strong></a></th>
+    <th class="target-module" colspan="4"><strong>IPS Modules</strong></th>
   </tr>
   <tr>
     <th class="ips-header"><a href="StructureDefinition-Subject-ips.html"><strong>Subject (IPS)</strong></a></th>
@@ -257,6 +259,326 @@ Please refer to [Erstdokumentation](StructureDefinition-Erstdokumentation-hi.htm
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;Datum</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Lebensqualitaet</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</tbody>
+</table>
+
+#### Folgedokumentation
+
+Please refer to [Folgedokumentation](StructureDefinition-Folgedokumentation-hi.html) for further details about this data model.
+
+The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". The results of activities might be documented as "PlanOfCare.activity.outcomeReference" and might as well be documented elsewhere in the patient's summary (e.g. "Problem List"). As has been done with some of the examinations of the "Erstdokumentation" (e.g. "EKG", "Diagnose", ...).
+
+<table>
+<thead>
+  <tr>
+    <th class="source-module" rowspan="2"><a href="StructureDefinition-Folgedokumentation-hi.html"><strong>Folgedokumentation (HI)</strong></a></th>
+    <th class="target-module" colspan="4"><strong>IPS Modules</strong></th>
+  </tr>
+  <tr>
+    <th class="ips-header"><a href="StructureDefinition-Subject-ips.html"><strong>Subject (IPS)</strong></a></a></th>
+    <th class="ips-required"><a href="StructureDefinition-ProblemList-ips.html"><strong>Problem List (IPS)</strong></a></th>
+    <th class="ips-recommended"><a href="StructureDefinition-DiagnosticResults-ips.html"><strong>Diagnostic Results (IPS)</strong></a></th>
+    <th class="ips-optional"><a href="StructureDefinition-DiagnosticResults-ips.html"><strong>Plan of Care (IPS)</strong></a></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <th rowspan="2"><strong>Folgedokumentation (HI)</th>
+    <th colspan="4">IPS Modules</th>
+  </tr>
+  <tr>
+    <th><a href="https://structuredefinition-subject-ips.html/">Subject (IPS)</a></th>
+    <th>Problem (IPS)</th>
+    <th>DiagnosticResults (IPS)</th>
+    <th>Plan of Care (IPS)</th>
+  </tr>
+  <tr>
+    <td>VPNR</td>
+    <td>-</td>
+    <td>.asserter</td>
+    <td>.performer</td>
+    <td>.activity.performer</td>
+  </tr>
+  <tr>
+    <td>Untersuchungsdatum</td>
+    <td>-</td>
+    <td>.recordedDate</td>
+    <td>.effective[x]</td>
+    <td>.activity.scheduled[x]</td>
+  </tr>
+  <tr>
+    <td>Patient</td>
+    <td>-</td>
+    <td>.subject</td>
+    <td>.subject</td>
+    <td>.subject</td>
+  </tr>
+  <tr>
+    <td>Versorgung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;geplant</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;AnzahlStationaer</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;Symtomatik</td>
+    <td>-</td>
+    <td>.code</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;Behandlungsziel</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;Aenderung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;Behandlungsziel</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.goal</td>
+  </tr>
+  <tr>
+    <td>&amp;Komorbiditaet</td>
+    <td>-</td>
+    <td>.code</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;EKG</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.code and .value</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;Kardiologe</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.activity</td>
+  </tr>
+  <tr>
+    <td>&amp;Echokardiogramm</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.code and .value</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Labor</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.activity</td>
+  </tr>
+  <tr>
+    <td>&amp;Befund</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.code and .value</td>
+    <td>.activity.outcomeReference</td>
+  </tr>
+  <tr>
+    <td>&amp;Datum</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.effective[x]</td>
+    <td>.activity.scheduled[x]</td>
+  </tr>
+  <tr>
+    <td>Therapie</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.activity</td>
+  </tr>
+  <tr>
+    <td>&amp;ACE</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;ACE</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;Zieldosis</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;Betablocker</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;Betablocker</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;Zieldosis</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;Antikoagulation</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Selbstmanagement</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;Ressourcen</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;Betreuung</td>
+    <td>.contact</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;DMPSchulung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>.activity</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;absolviert</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;Datum</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;GewichtSchulung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;absolviert</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;Datum</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;ImpfungBeratung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;absolviert</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;Datum</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;TelemonitoringSchulung</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;absolviert</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;Datum</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
