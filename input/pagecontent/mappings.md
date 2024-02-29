@@ -1,12 +1,12 @@
 ### Mappings
 
 <style type="text/css">
-.tg-5044{background-color:#ffa52a;}
-.tg-q912{background-color:#56c3f3;}
-.tg-qhgh{background-color:#e53432;}
-.tg-0pky{vertical-align:middle}
-.tg-0lax{text-align:center;}
-.tg-gh8i{background-color:#91cf50;}
+.grid .tg-5044{background-color:#ffa52a;}
+.grid .tg-q912{background-color:#56c3f3;}
+.grid .tg-qhgh{background-color:#e53432;}
+.grid .tg-0pky{vertical-align:middle}
+.grid .tg-0lax{text-align:center;}
+.grid .tg-gh8i{background-color:#91cf50;}
 </style>
 <table class="grid">
 <tbody>
@@ -15,10 +15,10 @@
     <th class="tg-0lax" colspan="4"><strong>IPS Moduls</strong></th>
   </tr>
   <tr>
-    <th class="tg-q912"><a href="structuredefinition-subject-ips.html"><strong>Subject (IPS)</strong></a></th>
-    <th class="tg-qhgh"><strong>Problem (IPS)</strong></th>
-    <th class="tg-5044"><strong>DiagnosticResults (IPS)</strong></th>
-    <th class="tg-gh8i"><strong>Plan of Care (IPS)</strong></th>
+    <th class="tg-q912"><a href="StructureDefinition-Subject-ips.html"><strong>Subject (IPS)</strong></a></th>
+    <th class="tg-qhgh"><a href="StructureDefinition-ProblemList-ips.html"><strong>Problem List (IPS)</strong></a></th>
+    <th class="tg-5044"><a href="StructureDefinition-DiagnosticResults-ips.html"><strong>Diagnostic Results (IPS)</strong></a></th>
+    <th class="tg-gh8i"><a href="StructureDefinition-PlanOfCare-ips.html"><strong>Plan of Care (IPS)</strong></a></th>
   </tr>
   <tr>
     <td>VPNR</td>
@@ -267,12 +267,3 @@
   </tr>
 </tbody>
 </table>
-
-### markdown
-
-| Erstdokumentation (HI)  | IPS Moduls    | IPS Moduls    |                         |                        |
-|-------------------------|---------------|---------------|-------------------------|------------------------|
-| ErstdokumentationHi     | Subject (IPS) | Problem (IPS) | DiagnosticResults (IPS) | Plan of Care (IPS)     |
-| VPNR                    | -             | .asserter     | .performer              | .activity.performer    |
-| Untersuchungsdatum      | -             | .recordedDate | .effective[x]           | .activity.scheduled[x] |
-| Patient                 | -             | .subject      | .subject                | .subject               |
