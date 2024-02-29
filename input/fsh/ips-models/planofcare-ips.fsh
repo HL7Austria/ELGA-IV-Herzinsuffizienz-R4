@@ -10,9 +10,11 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
 * instantiatesUri 1..1 uri "Instantiates external protocol or definition"
 * instantiatesUri = "https://www.cciv.at/cdscontent/?contentid=10007.864468&portal=ccivportal" (exactly)
 * subject 1..1 SubjectIps "Who the care plan is for"
+* period 0..1 Period "Time period plan covers"
 * author 1..1 Reference(Practitioner or PractitionerRole) "Who is the designated responsible party"
 * careTeam 0..* BackboneElement "Who's involved in plan?"
   * participant 0..* BackboneElement "Members of the team"
+    * role 0..* CodeableConcept "Type of involvement"
     * member 0..1 Reference(Practitioner or PractitionerRole or RelatedPerson or Organization) "Who is involved"
     * period 0..1 Period "Time period of participant"
 * goal 0..* Reference(Goal) "Desired outcome of plan"
