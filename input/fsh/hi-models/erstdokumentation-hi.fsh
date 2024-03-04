@@ -4,7 +4,9 @@
 Logical: ErstdokumentationHi
 Id: Erstdokumentation-hi
 Title: "Erstdokumentation (HI)"
-Description: "Medizinische Datensätze - Erstdokumentation (im Rahmen der Erstabklärung erhoben/durchgeführt)"
+Description: """Medizinische Datensätze - Erstdokumentation (im Rahmen der Erstabklärung erhoben/durchgeführt)
+
+Refer to the **[mapping from the logical model of HI to the logical model based on the International Patient Summary (IPS)](mappings.html#erstdokumentation)** in order to get an idea how the IPS can be used in this context."""
 * VPNR 1..1 AkteurHi "Beteiligter Akteur"
 * Untersuchungsdatum 1..1 date "Untersuchungsdatum"
 
@@ -89,51 +91,3 @@ Regelung in Bezug auf NT-proBNP ist unabdingbar und sollte entsprechend priorisi
 // #modul Functional Status
 // Lebensqualität
 * Lebensqualitaet 1..1 code "Fragebogen Lebensqualität EQ-5D (jährlich zu erheben ab Einschreibung) (5-stelliger Code)"
-
-// Mapping to IPS Problem modul
-Mapping:  ErstdokumentationHiToProblemIps
-Source:   ErstdokumentationHi
-Target:   "ProblemListIps"
-* -> "ProblemListIps"
-* VPNR -> ".asserter"
-* Untersuchungsdatum -> ".recordedDate"
-* Patient -> ".subject"
-* Erstabklaerung.Komorbiditaet -> ".code"
-* Erstabklaerung.Symptomatik -> ".code"
-* Erstabklaerung.Diagnose -> ".code"
-
-// Mapping to IPS Diagnostic Results modul
-Mapping:  ErstdokumentationHiToDiagnosticResultsIps
-Source:   ErstdokumentationHi
-Target:   "DiagnosticResultsIps"
-* -> "DiagnosticResultsIps"
-* VPNR -> ".performer"
-* Untersuchungsdatum -> ".effective[x]"
-* Patient -> ".subject"
-* Erstabklaerung.EKG -> ".code and .value"
-* Erstabklaerung.Echokardiogramm -> ".code and .value"
-* Erstabklaerung.NTproBNP -> ".code and .value"
-* Labor -> ".code and .value"
-
-// Mapping to IPS Subject modul
-Mapping:  ErstdokumentationHiToSubjectIps
-Source:   ErstdokumentationHi
-Target:   "SubjectIps"
-* -> "SubjectIps"
-* Selbstmanagement.Betreuung -> ".contact"
-
-// Mapping to IPS PlanOfCare modul
-Mapping: ErstdokumentationHiToPlanOfCareIps
-Source: ErstdokumentationHi
-Target: "PlanOfCareIps"
-Description: """The "Erstdokumentation" itself should be represented as "PlanOfCare.activity". The results of activities might be documented as "CarePlan.activity.outcomeReference" and might as well be documented elsewhere in the patient's summary (e.g. list of problems). As has been done with some of the examinations of the "Erstdokumentation" (e.g. "EKG", "Diagnose", ...)."""
-* -> "PlanOfCareIps"
-* VPNR -> ".activity.performer"
-* Untersuchungsdatum -> ".activity.scheduled[x]"
-* Patient -> ".subject"
-* Erstabklaerung.Kardiologe -> ".activity"
-* Erstabklaerung.Behandlungsziel -> ".goal"
-* Erstabklaerung.Komorbiditaet -> ""
-* Labor -> ".activity"
-* Therapie -> ".activity"
-* Selbstmanagement.DMPSchulung -> ".activity"

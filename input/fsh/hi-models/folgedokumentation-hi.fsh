@@ -4,7 +4,9 @@
 Logical: FolgedokumentationHi
 Id: Folgedokumentation-hi
 Title: "Folgedokumentation (HI)"
-Description: "Medizinische Datensätze - Folgedokumentation"
+Description: """Medizinische Datensätze - Folgedokumentation
+
+Refer to the **[mapping from the logical model of HI to the logical model based on the International Patient Summary (IPS)](mappings.html#folgedokumentation)** in order to get an idea how the IPS can be used in this context."""
 * VPNR 1..1 AkteurHi "Beteiligter Akteur"
 * Untersuchungsdatum 1..1 date "Untersuchungsdatum"
 
@@ -78,48 +80,3 @@ mind. alle 3 Monaten für Patientinnnen bzw. Patienten mit hohem Risiko"""
 
 // Datum der Erhebung?
 * Lebensqualitaet 0..1 code "Fragebogen Lebensqualität (5-stelliger Code) (jährlich zu erheben ab Einschreibung)"
-
-// Mapping to IPS Problem modul
-Mapping:  FolgedokumentationHiToProblemIps
-Source:   FolgedokumentationHi
-Target:   "ProblemListIps"
-* -> "ProblemListIps"
-* VPNR -> ".asserter"
-* Untersuchungsdatum -> ".recordedDate"
-* Patient -> ".subject"
-* Versorgung.Komorbiditaet -> ".code"
-* Versorgung.Symptomatik -> ".code"
-
-// Mapping to IPS Diagnostic Results modul
-Mapping:  FolgedokumentationHiToDiagnosticResultsIps
-Source:   FolgedokumentationHi
-Target:   "DiagnosticResultsIps"
-* -> "DiagnosticResultsIps"
-* VPNR -> ".performer"
-* Untersuchungsdatum -> ".effective[x]"
-* Patient -> ".subject"
-* Versorgung.EKG -> ".code and .value"
-* Versorgung.Echokardiogramm -> ".code and .value"
-* Labor -> ".code and .value"
-
-// Mapping to IPS Subject modul
-Mapping:  FolgedokumentationHiToSubjectIps
-Source:   FolgedokumentationHi
-Target:   "SubjectIps"
-* -> "SubjectIps"
-* Selbstmanagement.Betreuung -> ".contact"
-
-// Mapping to IPS PlanOfCare modul
-Mapping: FolgedokumentationHiToPlanOfCareIps
-Source: FolgedokumentationHi
-Target: "PlanOfCareIps"
-Description: """The "Folgedokumentation" itself should be represented as "PlanOfCare.activity". The results of activities might be documented as "CarePlan.activity.outcomeReference" and might as well be documented elsewhere in the patient's summary (e.g. list of problems). As has been done with some of the examinations of the "Folgedokumentation" (e.g. "EKG", "Diagnose", ...)."""
-* -> "PlanOfCareIps"
-* VPNR -> ".activity.performer"
-* Untersuchungsdatum -> ".activity.scheduled[x]"
-* Patient -> ".subject"
-* Versorgung.Kardiologe -> ".activity"
-* Versorgung.Behandlungsziel -> ".goal"
-* Labor -> ".activity"
-* Therapie -> ".activity"
-* Selbstmanagement.DMPSchulung -> ".activity"

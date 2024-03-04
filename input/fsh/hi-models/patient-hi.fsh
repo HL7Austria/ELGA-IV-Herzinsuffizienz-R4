@@ -4,7 +4,9 @@
 Logical: PatientHi
 Id: Patient-hi
 Title: "Patienten-Stammdaten - Patient (HI)"
-Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikation des modularen Rahmenkonzepts für Österreich für das Disease-Management bei chronischer Herzinsuffizienz."
+Description: """Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikation des modularen Rahmenkonzepts für Österreich für das Disease-Management bei chronischer Herzinsuffizienz.
+
+Refer to the **[mapping from the logical model of HI to the logical model based on the International Patient Summary (IPS)](mappings.html#patient)** in order to get an idea how the IPS can be used in this context."""
 
 // #modul Subject
 * Vorname 1..* string "Vorname"
@@ -59,20 +61,3 @@ Description:  "Patient/Teilnehmer basierend auf dem Entwurf der Datenspezifikati
 // Insbesondere "Team Primärversorgung/hausärztliches Team" nicht abgedeckt, plus HI-Spezialist = was für ein Facharzt ist das?
 * Versorgungsnetzwerk.Kontakttyp 1..1 CodeableConcept "Team Primärversorgung/hausärztliches Team | Niedergelassene Fachärzte für innere Medizin/Kardiologie | HI-Spezialist/Spezialambulanz | Krankenhaus/stationär | Rehabilitation"
 * Versorgungsnetzwerk.Kontakttyp from https://termgit.elga.gv.at/ValueSet/elga-authorspeciality
-
-// Mapping to IPS Subject modul
-Mapping:  PatientHiToSubjectIps
-Source:   PatientHi
-Target:   "SubjectIps"
-* -> "SubjectIps"
-* Vorname -> ".name"
-* Zuname -> ".name"
-* Geburtsjahr -> ".birthDate"
-* SVNR -> ".identifier"
-* KVTraeger -> ".contactInsurance"
-* Adresse -> ".address"
-* Telefonnummer -> ".telecom"
-* Geschlecht.gender -> ".gender"
-* Geschlecht.genderExtension -> ".genderExtension"
-* Betreuungsnetzwerk.Kontakt -> ".contact" "Betreuungsnetzwerk.where(Einbindung=true)"
-* Betreuungsnetzwerk.Kontakt -> ".generalPractitioner" "Betreuungsnetzwerk.where(Pflegehilfe=true)"

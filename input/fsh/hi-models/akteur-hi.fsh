@@ -4,7 +4,9 @@
 Logical: AkteurHi
 Id: Akteur-hi
 Title: "Akteur (HI)"
-Description: "Strukturdaten der beteiligten Einrichtungen/Akteure"
+Description: """Strukturdaten der beteiligten Einrichtungen/Akteure
+
+Refer to the **[mapping from the logical model of HI to the logical model based on the International Patient Summary (IPS)](mappings.html#akteur)** in order to get an idea how the IPS can be used in this context."""
 
 // #modul Plan of Care -- Wie Header befüllt wird, noch mit Emmanuel besprechen
 // Was genau ist eine "Einrichtung"?
@@ -37,27 +39,3 @@ Description: "Strukturdaten der beteiligten Einrichtungen/Akteure"
 * Schulungen.Anzahl 0..1 integer "Anzahl der durchgeführten DM(P)-spezifischen Patientenschulungen"
 // Was soll hiermit dokumentiert werden?
 * Konsultationen 1..1 date "Datum e-card-Steckung"
-
-// Mapping to HI datamodel
-Mapping:  AkteurHiToPlanOfCareIps
-Source:   AkteurHi
-Target:   "PlanOfCareIps"
-* -> "PlanOfCareIps"
-* GDL -> ".author (as case coordinator) or .careTeam.participant.member"
-* GDL.Teilnahmebeginn -> ".period"
-* GDL.Austritt -> ".period"
-
-Mapping:  AkteurHiToPractitionerRole
-Source:   AkteurHi
-Target:   "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"
-* -> "PractitionerRole"
-* Einrichtung -> ".organization.name"
-* Einrichtungsart -> ".organization.type"
-* Fachrichtung -> "practitioner.qualification.code"
-* Adresse -> ".organization.address"
-* Personalstand.Berufsgruppe -> ".code"
-* GDL -> "practitioner"
-* GDL.Vorname -> ".practitioner.name.given"
-* GDL.Zuname -> ".practitioner.name.family"
-* GDL.Vertragspartnernummer -> "practitioner.identifier"
-* GDL.Schulungsnachweis -> ".practitioner.qualification"
