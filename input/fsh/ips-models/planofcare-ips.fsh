@@ -5,7 +5,9 @@ Logical: PlanOfCareIps
 Id: PlanOfCare-ips
 Title: "Plan Of Care (IPS)"
 Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifikation des modularen Rahmenkonzepts für
-Österreich für das Disease-Management bei chronischer Herzinsuffizienz erforderlich sind, auf dem des IPS-Modul "Plan Of Care"."""
+Österreich für das Disease-Management bei chronischer Herzinsuffizienz erforderlich sind, auf dem des IPS-Modul "Plan Of Care".
+
+Refer to the **[mapping from the logical model of HI to the logical model based on the International Patient Summary (IPS)](mappings.html)** in order to get an idea how the IPS relates to HI."""
 
 * instantiatesUri 1..1 uri "Instantiates external protocol or definition"
 * instantiatesUri = "https://www.cciv.at/cdscontent/?contentid=10007.864468&portal=ccivportal" (exactly)
@@ -27,34 +29,3 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
   * status from http://hl7.org/fhir/ValueSet/care-plan-activity-status (required)
   * scheduled[x] 0..1 Timing or Period or string "When activity is to occur"
   * performer 0..* Reference(Practitioner or PractitionerRole or RelatedPerson or Organization) "Who will be responsible?"
-
-// Mapping to HI datamodel
-Mapping:  PlanOfCareIpsToAkteurHi
-Source:   PlanOfCareIps
-Target:   "AkteurHi"
-* -> "AkteurHi"
-* author -> ".GDL"
-* careTeam.participant.member -> ".GDL"
-* careTeam.participant.period -> ".GDL.Teilnahmebeginn and .GDL.Austritt"
-
-// Mapping to HI datamodel
-Mapping:  PlanOfCareIpsToErstdokumentationHi
-Source:   PlanOfCareIps
-Target:   "ErstdokumentationHi"
-* -> "ErstdokumentationHi"
-* subject -> ".Patient"
-* goal -> ".Erstabklaerung.Behandlungsziel"
-* activity -> "ErstdokumentationHi or .Erstabklaerung.Kardiologe or .Labor or .Therapie or .Selbstmanagement.DMPSchulung"
-* activity.scheduled[x] -> ".Untersuchungsdatum"
-* activity.performer -> ".VPNR"
-
-// Mapping to HI datamodel
-Mapping:  PlanOfCareIpsToFolgedokumentationHi
-Source:   PlanOfCareIps
-Target:   "FolgedokumentationHi"
-* -> "FolgedokumentationHi"
-* subject -> ".Patient"
-* goal -> ".Versorgung.Behandlungsziel"
-* activity -> "ErstdokumentationHi or .Versorgung.Kardiologe or .Labor or .Therapie or .Selbstmanagement.DMPSchulung"
-* activity.scheduled[x] -> ".Untersuchungsdatum"
-* activity.performer -> ".VPNR"

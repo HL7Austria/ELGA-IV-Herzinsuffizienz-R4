@@ -5,7 +5,9 @@ Logical: ProblemListIps
 Id: ProblemList-ips
 Title: "Problem List (IPS)"
 Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifikation des modularen Rahmenkonzepts für
-Österreich für das Disease-Management bei chronischer Herzinsuffizienz erforderlich sind, auf dem des IPS-Modul "Problem List"."""
+Österreich für das Disease-Management bei chronischer Herzinsuffizienz erforderlich sind, auf dem des IPS-Modul "Problem List".
+
+Refer to the **[mapping from the logical model of HI to the logical model based on the International Patient Summary (IPS)](mappings.html)** in order to get an idea how the IPS relates to HI."""
 
 * code 1..1 CodeableConcept "Identification of the condition, problem or diagnosis"
 * code from http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips (preferred)
@@ -33,24 +35,3 @@ Description: """Abbildung der Datenfelder, die für den Entwurf der Datenspezifi
 * subject 1..1 SubjectIps "Who has the condition?"
 * recordedDate 1..1 dateTime "Date record was first recorded"
 * asserter 1..1 Reference(Practitioner or PractitionerRole) "Person who asserts this condition"
-
-
-// Mapping to HI datamodel
-Mapping:  ProblemListIpsToErstdokumentationHi
-Source:   ProblemListIps
-Target:   "ErstdokumentationHi"
-* -> "ErstdokumentationHi"
-* code -> ".Erstabklaerung.Komorbiditaeten or .Erstabklaerung.Symptomatik or .Erstabklaerung.Diagnose"
-* subject -> ".Patient"
-* recordedDate -> ".Untersuchungsdatum"
-* asserter -> ".VPNR"
-
-// Mapping to HI datamodel
-Mapping:  ProblemListIpsToFolgedokumentationHi
-Source:   ProblemListIps
-Target:   "FolgedokumentationHi"
-* -> "FolgedokumentationHi"
-* code -> ".Versorgung.Komorbiditaeten or .Versorgung.Symptomatik"
-* subject -> ".Patient"
-* recordedDate -> ".Untersuchungsdatum"
-* asserter -> ".VPNR"
