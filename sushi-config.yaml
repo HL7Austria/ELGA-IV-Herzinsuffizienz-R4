@@ -61,6 +61,8 @@ pages:
     title: Implementation Guide for HI
   mappings.md:
     title: Mapping from HI to IPS
+  terminologies.md:
+    title: Terminologies
 
 #
 #
@@ -98,6 +100,7 @@ menu:
     Diagnostic Results (IPS): StructureDefinition-DiagnosticResults-ips.html
     Plan of Care (IPS): StructureDefinition-PlanOfCare-ips.html
   Mapping HI to IPS: mappings.html
+  Terminologies: terminologies.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
