@@ -13,3 +13,4 @@ Title: "Therapie"
 * $sct#410536001 "Contraindicated"
 * $sct#410536001 ^designation[0].language = #de-AT
 * $sct#410536001 ^designation[0].value = "Kontraindikation"
+

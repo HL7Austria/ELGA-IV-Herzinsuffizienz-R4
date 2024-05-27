@@ -1,20 +1,26 @@
-ValueSet: ACETherapie
-Id:	acetherapie
+ValueSet: ACE Therapy
+Id:	acetherapy
 Title: "ACE Therapie"
 
-// was ist bei ARB gemeint? indicated? therapy? habe übergangsmäßig substance genommen
+// fachliche Fragen im Excel hinterlegt, hier mit ?xxx? im de-Display gekennzeichnet
+// alternativer Strukturvorschlag weiter unten
 
-* $sct#373066001 "Yes"
-* $sct#373066001 ^designation[0].language = #de-AT
-* $sct#373066001 ^designation[0].value = "Ja"
-* $sct#373067005 "No"
-* $sct#373067005 ^designation[0].language = #de-AT
-* $sct#373067005 ^designation[0].value = "Nein"
-* $sct#410536001 "Contraindicated"
-* $sct#410536001 ^designation[0].language = #de-AT
-* $sct#410536001 ^designation[0].value = "Kontraindikation"
-* $sct#372913009 "Angiotensin II receptor antagonist"
-* $sct#372913009 ^designation[0].language = #de-AT
-* $sct#372913009 ^designation[0].value = "ARB"
+* $sct#410682003 "Angiotensin converting enzyme inhibitor therapy"
+* $sct#410682003 ^designation[0].language = #de-AT
+* $sct#410682003 ^designation[0].value = "ACE-Hemmer-Therapie"
+* $sct#134390006 "Angiotensin converting enzyme inhibitor not indicated"
+* $sct#134390006 ^designation[0].language = #de-AT
+* $sct#134390006 ^designation[0].value = "ACE-Hemmer-Therapie nicht indiziert"
+* $sct#31536400 "Angiotensin converting enzyme inhibitors contraindicated"
+* $sct#31536400 ^designation[0].language = #de-AT
+* $sct#31536400 ^designation[0].value = "ACT-Hemmer-Therapie kontraindiziert"
+* $sct#410683008 "Angiotensin II receptor antagonist therapy"
+* $sct#410683008 ^designation[0].language = #de-AT
+* $sct#410683008 ^designation[0].value = "?Angiotensinrezeptorblocker-Therapie?"
 
 
+// Vorschlag Therapie-Value-Set
+// 410682003 Angiotensin converting enzyme inhibitor therapy (procedure)
+// 410683008 Angiotensin II receptor antagonist therapy (procedure)
+// 439630003 Beta adrenergic receptor blocking agent therapy (procedure)
+// 182764009 Anticoagulant therapy (procedure)

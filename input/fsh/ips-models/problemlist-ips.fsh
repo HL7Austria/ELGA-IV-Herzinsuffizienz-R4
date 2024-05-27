@@ -30,7 +30,7 @@ Refer to the **[mapping from the logical model of HI to the logical model based 
 * code ^binding.extension[=].extension[+].url = "valueSet"
 * code ^binding.extension[=].extension[=].valueCanonical = "https://hi.iv.elga.gv.at/ValueSet/diagnose"
 * code ^binding.extension[=].extension[+].url = "documentation"
-* code ^binding.extension[=].extension[=].valueMarkdown = "Codes for symptoms"
+* code ^binding.extension[=].extension[=].valueMarkdown = "Codes for diagnosis"
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * subject 1..1 SubjectIps "Who has the condition?"
 * recordedDate 1..1 dateTime "Date record was first recorded"

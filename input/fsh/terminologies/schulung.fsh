@@ -14,3 +14,9 @@ Description: "Erhebung der absolvierten Schulungen"
 * $sct#410529002 "Not needed"
 * $sct#385658003 ^designation[0].language = #de-AT
 * $sct#385658003 ^designation[0].value = "Nicht erforderlich"
+
+
+// Schulungen
+// DMPSchulung = 710534005 | Education about treatment regime |
+// Gewichtschulung = 410200000 | Edukation über Gewichtskontrolle | (oder: 609104008 | Educated about weight management |=)
+// ImpfungBeratung = 171044003 | Edukation über Immunisierung |  (SY:Impfberatung)
