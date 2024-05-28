@@ -16,7 +16,8 @@ Alias: $event-timing = http://hl7.org/fhir/event-timing
 Instance: IPS-2-preventive-medical-checkup
 InstanceOf: Bundle
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-document"
+// * meta.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
 * identifier.system = "http://system-to-be-defined.com"
 * identifier.value = "63fef90a-be11-4ddf-aece-d77da15c4f20"
 * type = #document
@@ -268,8 +269,8 @@ Usage: #inline
 * identifier.assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
 * name.family = "Test"
 * name.given[0] = "Arnold"
-* gender = #male
-* birthDate = "1950-11-12"
+* gender = #male // 1..1 in AT Core
+* birthDate = "1950-11-12" // 1..1 in IPS
 * address.line = "Am Schulweg 5"
 * address.use = #home
 * address.city = "Hainfeld"

@@ -9,6 +9,7 @@ Instance: IPS-1-no-problems-medication-allergies
 InstanceOf: Bundle
 Usage: #example
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-document"
+// * meta.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
 * identifier.system = "http://system-to-be-defined.com"
 * identifier.value = "63fef90a-be11-4ddf-aece-d77da15c4f20"
 * type = #document
@@ -71,8 +72,8 @@ Usage: #inline
 * telecom[=].use = #mobile
 * telecom[+].system = #email
 * telecom[=].value = "musterfrau@provider.at"
-* gender = #female
-* birthDate = "1961-12-24"
+* gender = #female // 1..1 in AT Core
+* birthDate = "1961-12-24" // 1..1 in IPS
 * address.line = "Musterstraße 13a"
 * address.use = #home
 * address.city = "Eisenstadt"
