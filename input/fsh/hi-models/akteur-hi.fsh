@@ -13,7 +13,7 @@ Refer to the **[mapping from the logical model of HI to the logical model based 
 * Einrichtung 1..1 string "Einrichtungsbezeichnung"
 // Warum ist das erforderlich?
 * Einrichtungsart 1..1 CodeableConcept "extramural | intramural"
-* Einrichtungsart from Einrichtungsart
+* Einrichtungsart from FacilityType
 // Bezieht sich die Fachrichtung auf die Einrichtung oder den GDL?
 * Fachrichtung 1..1 CodeableConcept "Fachrichtung (AM | IM | etc.)"
 * Fachrichtung from https://termgit.elga.gv.at/ValueSet/elga-authorspeciality

@@ -19,7 +19,7 @@ Refer to the **[mapping from the logical model of HI to the logical model based 
 
 // #modul Problem list
   * Komorbiditaet 0..* CodeableConcept "Komorbidität"
-  * Komorbiditaet from Komorbiditaeten (example)
+  * Komorbiditaet from Comorbidities (example)
 
  // #modul Diagnostic Results
   * EKG 1..1 boolean "EKG (mit 12 Ableitungen)"
@@ -31,7 +31,7 @@ Regelung in Bezug auf NT-proBNP ist unabdingbar und sollte entsprechend priorisi
 
   // #modul Problem list
   * Symptomatik 1..1 CodeableConcept "Symptomatik/klinischer Status (NYHA I | NYHA II | NYHA III | NYHA IV)"
-  * Symptomatik from Symptomatik
+  * Symptomatik from Symptoms
 
   // #modul Plan of Care
   * Kardiologe 1..1 boolean "Überweisung an Kardiologin bzw. Kardiologen im Rahmen der Erstdiagnose" """Der Begriff 'Kardiologe' wird hier der Einfachheit halber synonym für Fachärztin bzw. -arzt für Innere Medizin und Kardiologie
@@ -40,7 +40,7 @@ Regelung in Bezug auf NT-proBNP ist unabdingbar und sollte entsprechend priorisi
 
 // #modul Problem list
   * Diagnose 1..1 CodeableConcept "HFrEF | HFmrEF | HFpEF"
-  * Diagnose from Diagnose
+  * Diagnose from Diagnosis
 
   // #modul Plan of Care
   * Behandlungsziel 1..1 CodeableConcept "1 | 2 | 3a | 3b"
@@ -58,7 +58,7 @@ Regelung in Bezug auf NT-proBNP ist unabdingbar und sollte entsprechend priorisi
     * Therapie 1..1 CodeableConcept "Ja | Nein | Kontraindikation"
     * Therapie from Therapie
     * Zieldosis 1..1 CodeableConcept "Evidenzbasierte Zieldosis (Erreicht | Nicht erreicht | Titrationsphase | Max. tolerierte Dosis erreicht)"
-    * Zieldosis from Zieldosis
+    * Zieldosis from TargetDose
   * Komedikation 1..1 CodeableConcept "Wesentliche Ko-Medikationen (Ja | Nein | Kontraindikation)"
   * Komedikation from Therapie
 

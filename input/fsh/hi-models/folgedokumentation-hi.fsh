@@ -23,14 +23,14 @@ Refer to the **[mapping from the logical model of HI to the logical model based 
 
 // #modul ab hier vgl. erstdokumentation
   * Symptomatik 1..1 CodeableConcept "NYHA I | NYHA II | NYHA III | NYHA IV"
-  * Symptomatik from Symptomatik
+  * Symptomatik from Symptoms
   * Behandlungsziel 1..1 BackboneElement "Behandlungsziel"
     * Aenderung 1..1 boolean "Änderung Behandlungsziel gemäß Pfade"
     * Behandlungsziel 1..1 CodeableConcept "1 | 2 | 3a | 3b"
     * Behandlungsziel from Behandlungsziel
 
   * Komorbiditaet 0..* CodeableConcept "Komorbidität"
-  * Komorbiditaet from Komorbiditaeten (example)
+  * Komorbiditaet from Comorbidities (example)
 
   * EKG 1..1 boolean "EKG (mit 12 Ableitungen)"
   * Kardiologe 1..1 boolean "Überweisung an Kardiologin bzw. Kardiologen" """alle 12-18 Monate bei stabilen Patientinnen bzw. Patienten mit niedrigem Risiko;
@@ -45,14 +45,14 @@ mind. alle 3 Monaten für Patientinnnen bzw. Patienten mit hohem Risiko"""
 * Therapie 1..1 BackboneElement "Therapie"
   * ACE 1..1 BackboneElement "ACE-Hemmer"
     * ACE 1..1 CodeableConcept "ACE-Hemmer (Ja | Nein | Kontraindikation | ARB)"
-    * ACE from ACETherapie
+    * ACE from AceTherapy
     * Zieldosis 1..1 CodeableConcept "Evidenzbasierte Zieldosis (Erreicht | Nicht erreicht | Titrationsphase | Max. tolerierte Dosis erreicht)"
-    * Zieldosis from Zieldosis
+    * Zieldosis from TargetDose
   * Betablocker 1..1 BackboneElement "Betablocker"
     * Betablocker 1..1 CodeableConcept "Betablocker (Ja | Nein | Kontraindikation)"
     * Betablocker from Therapie
     * Zieldosis 1..1 CodeableConcept "Evidenzbasierte Zieldosis (Erreicht | Nicht erreicht | Titrationsphase | Max. tolerierte Dosis erreicht)"
-    * Zieldosis from Zieldosis
+    * Zieldosis from TargetDose
   * Antikoagulation 1..1 CodeableConcept "Orale Antikoagulantien (Ja | Nein | Kontraindikation)"
   * Antikoagulation from Therapie
 

@@ -1,4 +1,4 @@
-ValueSet: symptoms
+ValueSet: Symptoms
 Id:	symptoms
 Title: "Symptomatik"
 Description: "Einteilung gemäß der New York Heart Association (NYHA)"

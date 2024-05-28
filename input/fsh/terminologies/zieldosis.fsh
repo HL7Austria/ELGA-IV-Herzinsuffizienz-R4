@@ -1,4 +1,4 @@
-ValueSet: targetDose
+ValueSet: TargetDose
 Id:	targetdose
 Title: "Zieldosis"
 Description: "Beurteilung der evidenzbasierten Zieldosis"
