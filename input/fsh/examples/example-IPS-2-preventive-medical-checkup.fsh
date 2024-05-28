@@ -154,7 +154,7 @@ Usage: #example
 Instance: IPS-2-preventive-medical-checkup-composition
 InstanceOf: Composition
 Usage: #inline
-* language = #de-AT
+// * language = #de-AT
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
