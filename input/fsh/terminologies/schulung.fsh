@@ -3,6 +3,7 @@ Id:	schulung
 Title: "Schulung"
 Description: "Erhebung der absolvierten Schulungen"
 
+// im logischen Modell (IPS) sind diese Info im Plan of Care untergebracht mit Value-Set education
 // Werte aus 288532009 | Context values for actions |, da es um Schulung absolviert geht. Gäbe noch zahlreiche Feinheiten
 
 * $sct#385658003 "Done"

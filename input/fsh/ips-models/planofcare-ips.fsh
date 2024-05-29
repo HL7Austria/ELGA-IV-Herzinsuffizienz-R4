@@ -25,6 +25,7 @@ Refer to the **[mapping from the logical model of HI to the logical model based 
   * kind 0..1 code "Appointment | CommunicationRequest | DeviceRequest | MedicationRequest | NutritionOrder | Task | ServiceRequest | VisionPrescription"
   * kind from http://hl7.org/fhir/ValueSet/care-plan-activity-kind (required)
   * code 0..1 CodeableConcept "Detail type of activity"
+  * code from Schulungen
   * status 1..1 code "not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error"
   * status from http://hl7.org/fhir/ValueSet/care-plan-activity-status (required)
   * scheduled[x] 0..1 Timing or Period or string "When activity is to occur"

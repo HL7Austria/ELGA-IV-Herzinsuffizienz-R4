@@ -1,4 +1,4 @@
-ValueSet: Comorbidities
+ValueSet: comorbidities
 Id:	comorbidities
 Title: "Komorbiditäten"
 Description: "Spezifische Komorbiditäten zur Erstdiagnose Herzinsuffizienz"
