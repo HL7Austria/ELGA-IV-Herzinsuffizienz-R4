@@ -1,4 +1,4 @@
-ValueSet: comorbidities
+ValueSet: Comorbidities
 Id:	comorbidities
 Title: "Komorbiditäten"
 Description: "Spezifische Komorbiditäten zur Erstdiagnose Herzinsuffizienz"
@@ -15,14 +15,14 @@ Description: "Spezifische Komorbiditäten zur Erstdiagnose Herzinsuffizienz"
 * $sct#56731001 "Hypertonia"
 * $sct#56731001 ^designation[0].language = #de-AT
 * $sct#56731001 ^designation[0].value = "Hypertonie"
-* $sct#13213009 "Congenital heart disease" 
+* $sct#13213009 "Congenital heart disease"
 * $sct#13213009 ^designation[0].language = #de-AT
 * $sct#13213009 ^designation[0].value = "?Herzvitien?"
-* $sct#17366009 "Atrial arrhythmia" 
+* $sct#17366009 "Atrial arrhythmia"
 * $sct#17366009 ^designation[0].language = #de-AT
 * $sct#17366009 ^designation[0].value = "?Vorhofflimmern/-flattern?"
 * $sct#230689003 "Cerebrovascular and spinal vascular disorders"
-* $sct#230689003 ^designation[0].language = #de-AT 
+* $sct#230689003 ^designation[0].language = #de-AT
 * $sct#230689003 ^designation[0].value = "?Cerebrovaskuläre Störungen?"
 * $sct#723190009 "Chronic renal insufficiency"
 * $sct#723190009 ^designation[0].language = #de-AT
@@ -48,6 +48,6 @@ Description: "Spezifische Komorbiditäten zur Erstdiagnose Herzinsuffizienz"
 * $sct#238108007 "Cachexia"
 * $sct#238108007 ^designation[0].language = #de-AT
 * $sct#238108007 ^designation[0].value = "Kachexie"
-* $sct#82423001 "Chronic pain" 
+* $sct#82423001 "Chronic pain"
 * $sct#82423001 ^designation[0].language = #de-AT
 * $sct#82423001 ^designation[0].value = "Chronische Schmerzen"
