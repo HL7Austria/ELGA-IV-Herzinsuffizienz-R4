@@ -64,6 +64,8 @@ pages:
     title: Mapping from HI to IPS
   terminologies.md:
     title: Terminologies
+  patientJourney.md:
+    title: Patient Journey
 
 #
 #
@@ -90,6 +92,10 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  TOC: toc.html
+  Anwendungsfälle: patientJourney.html
+  Terminologies: terminologies.html
+  Artifacts: artifacts.html
   Logical Model (HI):
     Patient (HI): StructureDefinition-Patient-hi.html
     Akteur (HI): StructureDefinition-Akteur-hi.html
@@ -101,8 +107,6 @@ menu:
     Diagnostic Results (IPS): StructureDefinition-DiagnosticResults-ips.html
     Plan of Care (IPS): StructureDefinition-PlanOfCare-ips.html
   Mapping HI to IPS: mappings.html
-  Terminologies: terminologies.html
-  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
