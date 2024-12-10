@@ -1,6 +1,20 @@
-### Überblick
+### Zusammenfassung
 
+### Einleitung
 [![overview](iv-hi-context.drawio.png){: style="width: 100%"}](iv-hi-context.drawio.png)
+
+#### Ausgangslage und Motivation
+
+#### Zweck des Dokuments und Zielgruppe
+
+#### Autoren und Mitwirkende
+
+### Technischer Hintergrund
+
+### Vorgaben zum medizinischen Inhalt
+???
+
+### Überblick (alter content)
 
 Das **logische Modell der Herzinsuffizienz (HI)** wurde auf der Grundlage von Musterformularen erstellt und umfasst die folgenden Elemente:
 

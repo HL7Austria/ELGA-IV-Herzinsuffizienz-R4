@@ -66,6 +66,8 @@ pages:
     title: Terminologies
   patientJourney.md:
     title: Anwendungsfälle
+  info.md:
+    title: Informationen über dieses Dokument
 
 #
 #
@@ -96,6 +98,7 @@ menu:
   Anwendungsfälle: patientJourney.html
   Terminologies: terminologies.html
   Artifacts: artifacts.html
+  ELGA IGs: info.html
   Logical Model (HI):
     Patient (HI): StructureDefinition-Patient-hi.html
     Akteur (HI): StructureDefinition-Akteur-hi.html
