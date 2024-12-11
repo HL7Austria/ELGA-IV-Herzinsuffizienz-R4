@@ -64,8 +64,8 @@ pages:
     title: Mapping from HI to IPS
   terminologies.md:
     title: Terminologies
-  patientJourney.md:
-    title: Anwendungsfälle
+  anwendungsfaelle.md:
+    title: Use Cases
   info.md:
     title: Informationen über dieses Dokument
 
@@ -95,7 +95,7 @@ pages:
 menu:
   Home: index.html
   TOC: toc.html
-  Anwendungsfälle: patientJourney.html
+  Use Cases: anwendungsfaelle.html
   Terminologies: terminologies.html
   Artifacts: artifacts.html
   ELGA IGs: info.html
