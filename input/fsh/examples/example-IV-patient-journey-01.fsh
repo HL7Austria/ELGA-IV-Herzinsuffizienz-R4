@@ -7,7 +7,7 @@ Alias: $sct = http://snomed.info/sct
 Alias: $asp-liste = https://termgit.elga.gv.at/CodeSystem/asp-liste
 Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
-Instance: example
+Instance: example-01
 InstanceOf: Bundle
 Usage: #example
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-bundle"
@@ -16,43 +16,43 @@ Usage: #example
 * type = #document
 * timestamp = "2023-01-01T14:00:00+00:00"
 * entry[0].fullUrl = "urn:uuid:212fdc76-ccc3-40bf-8cdd-82f2ef88bd7b"
-* entry[=].resource = example-composition
+* entry[=].resource = example-01-composition
 * entry[+].fullUrl = "urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8"
-* entry[=].resource = example-patient
+* entry[=].resource = example-01-patient
 * entry[+].fullUrl = "urn:uuid:75db30ee-7028-486c-929a-c5126837f472"
-* entry[=].resource = example-author
+* entry[=].resource = example-01-author
 * entry[+].fullUrl = "urn:uuid:9d1c0b74-20c1-4603-a95a-71e6a1dc8fde"
-* entry[=].resource = example-problem-5
+* entry[=].resource = example-01-problem-5
 * entry[+].fullUrl = "urn:uuid:8d3a18fb-3610-4bfb-9aa4-1169cc6dd2dd"
-* entry[=].resource = example-problem-7
+* entry[=].resource = example-01-problem-7
 * entry[+].fullUrl = "urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5"
-* entry[=].resource = example-problem-15
+* entry[=].resource = example-01-problem-15
 * entry[+].fullUrl = "urn:uuid:6d15d84f-2faf-4141-ac0c-fb9cf8496abe"
-* entry[=].resource = example-medication-summary-7
+* entry[=].resource = example-01-medication-summary-7
 * entry[+].fullUrl = "urn:uuid:74c5e186-d765-4c93-a624-c9b0746e8142"
-* entry[=].resource = example-vital-sign-1
+* entry[=].resource = example-01-vital-sign-1
 * entry[+].fullUrl = "urn:uuid:428259da-e0f7-4780-b1e3-c177515edd37"
-* entry[=].resource = example-vital-sign-2
+* entry[=].resource = example-01-vital-sign-2
 * entry[+].fullUrl = "urn:uuid:daf9c15d-14d4-429c-b658-6842fdff67d8"
-* entry[=].resource = example-vital-sign-3
+* entry[=].resource = example-01-vital-sign-3
 * entry[+].fullUrl = "urn:uuid:8248cc70-65a2-4d37-ae14-a3ef2abf8f32"
-* entry[=].resource = example-vital-sign-4
+* entry[=].resource = example-01-vital-sign-4
 * entry[+].fullUrl = "urn:uuid:4d3f7ac4-fd0a-49af-a56b-303a2dbe67d1"
-* entry[=].resource = example-vital-sign-5
+* entry[=].resource = example-01-vital-sign-5
 * entry[+].fullUrl = "urn:uuid:be35e603-6b99-4bb5-ad70-8499f6b55df1"
-* entry[=].resource = example-vital-sign-6
+* entry[=].resource = example-01-vital-sign-6
 * entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
-* entry[=].resource = example-social-history-1
+* entry[=].resource = example-01-social-history-1
 * entry[+].fullUrl = "urn:uuid:CBA1F802-851B-46FB-BE7D-781BE4198E15"
-* entry[=].resource = Inline-Instance-for-example-1
+* entry[=].resource = Inline-Instance-for-example-01-1
 * entry[+].fullUrl = "urn:uuid:0317A71F-6573-450F-BFA7-F2728EA7A8CC"
-* entry[=].resource = Inline-Instance-for-example-2
+* entry[=].resource = Inline-Instance-for-example-01-2
 * entry[+].fullUrl = "urn:uuid:feb8751e-3baa-4f49-8d9e-1cd32a6c6dac"
-* entry[=].resource = Inline-Instance-for-example-3
+* entry[=].resource = Inline-Instance-for-example-01-3
 * entry[+].fullUrl = "urn:uuid:9add5c32-1ded-43d6-b163-c3fe13f94984"
-* entry[=].resource = example-social-history-2
+* entry[=].resource = example-01-social-history-2
 
-Instance: example-composition
+Instance: example-01-composition
 InstanceOf: Composition
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-composition"
@@ -121,7 +121,7 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:feb8751e-3baa-4f49-8d9e-1cd32a6c6dac)
 * section[=].entry[+] = Reference(urn:uuid:9add5c32-1ded-43d6-b163-c3fe13f94984)
 
-Instance: example-patient
+Instance: example-01-patient
 InstanceOf: Patient
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-patient"
@@ -140,7 +140,7 @@ Usage: #inline
 * address.postalCode = "3100"
 * address.country = "AUT"
 
-Instance: example-author
+Instance: example-01-author
 InstanceOf: Practitioner
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-practitioner"
@@ -151,7 +151,7 @@ Usage: #inline
 * name.given = "Hannes"
 * name.prefix = "Dr"
 
-Instance: example-problem-5
+Instance: example-01-problem-5
 InstanceOf: Condition
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
@@ -163,7 +163,7 @@ Usage: #inline
 * recordedDate = "2016-06-15T14:00:00+00:00"
 * asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 
-Instance: example-problem-7
+Instance: example-01-problem-7
 InstanceOf: Condition
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
@@ -175,7 +175,7 @@ Usage: #inline
 * recordedDate = "2023-01-01T14:00:00+00:00"
 * asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 
-Instance: example-problem-15
+Instance: example-01-problem-15
 InstanceOf: Condition
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
@@ -187,7 +187,7 @@ Usage: #inline
 * recordedDate = "2023-01-01T14:00:00+00:00"
 * asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 
-Instance: example-medication-summary-7
+Instance: example-01-medication-summary-7
 InstanceOf: MedicationStatement
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
@@ -198,7 +198,7 @@ Usage: #inline
 * effectivePeriod.start = "2016-06-15T10:31:58+02:00"
 * dosage.text = "S:1-0-0-0"
 
-Instance: example-vital-sign-1
+Instance: example-01-vital-sign-1
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
@@ -209,7 +209,7 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
 * valueQuantity = 173 'cm' "cm"
 
-Instance: example-vital-sign-2
+Instance: example-01-vital-sign-2
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
@@ -220,7 +220,7 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
 * valueQuantity = 90 'kg' "kg"
 
-Instance: example-vital-sign-3
+Instance: example-01-vital-sign-3
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
@@ -232,7 +232,7 @@ Usage: #inline
 * valueQuantity = 30.07 'kg/m2' "kg/m2"
 * interpretation = $v3-ObservationInterpretation#H "High"
 
-Instance: example-vital-sign-4
+Instance: example-01-vital-sign-4
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
@@ -246,7 +246,7 @@ Usage: #inline
 * component[+].code = $loinc#8462-4 "Diastolic blood pressure"
 * component[=].valueQuantity = 80 'mm[Hg]' "mm[Hg]"
 
-Instance: example-vital-sign-5
+Instance: example-01-vital-sign-5
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
@@ -257,7 +257,7 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
 * valueQuantity = 85 '/min' "/min"
 
-Instance: example-vital-sign-6
+Instance: example-01-vital-sign-6
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
@@ -269,7 +269,7 @@ Usage: #inline
 * valueQuantity.comparator = #<
 * valueQuantity = 109 'cm' "cm"
 
-Instance: example-social-history-1
+Instance: example-01-social-history-1
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
@@ -280,10 +280,10 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
 * valueCodeableConcept = $loinc#LA18978-9 "Nichtraucher"
 
-Instance: Inline-Instance-for-example-1
+Instance: Inline-Instance-for-example-01-1
 InstanceOf: Observation
 Usage: #inline
-* id = "example-social-history-1"
+* id = "example-01-social-history-1"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
 * code = $sct#365580001 "Familienstatus"
@@ -292,10 +292,10 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
 * valueCodeableConcept = $sct#87915002 "Verheiratet"
 
-Instance: Inline-Instance-for-example-2
+Instance: Inline-Instance-for-example-01-2
 InstanceOf: Observation
 Usage: #inline
-* id = "example-social-history-1"
+* id = "example-01-social-history-1"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
 * code = $sct#224117009 "Angaben zu eigenen Kindern"
@@ -304,10 +304,10 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
 * valueCodeableConcept = $sct#224118004 "Anzahl der Nachkommen: Kinder:2, Enkelkinder:2"
 
-Instance: Inline-Instance-for-example-3
+Instance: Inline-Instance-for-example-01-3
 InstanceOf: Observation
 Usage: #inline
-* id = "example-social-history-1"
+* id = "example-01-social-history-1"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
 * code = $sct#134418002 "Intersse"
@@ -316,7 +316,7 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
 * valueCodeableConcept = $sct#733863009 "technisch affin"
 
-Instance: example-social-history-2
+Instance: example-01-social-history-2
 InstanceOf: Observation
 Usage: #inline
 * status = #final
