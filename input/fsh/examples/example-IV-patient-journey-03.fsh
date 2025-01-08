@@ -93,7 +93,7 @@ Usage: #inline
 * section[0].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list - Reported"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Bluthochdruck</p> <p>Positive Familienanamnese: vorzeitige koronare Herzerkrankung</p> <p>Ernährungszustand adipös</p> <p>Müdigkeit</p> <p>Kurzatmigkeit bei Belastung</p> <p>Beinödeme beidseits</p> <p>HFrEF</p> <p>NYHA II</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:9d1c0b74-20c1-4603-a95a-71e6a1dc8fde)
 * section[=].entry[+] = Reference(urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5)
 * section[=].entry[+] = Reference(urn:uuid:8d3a18fb-3610-4bfb-9aa4-1169cc6dd2dd)
@@ -108,33 +108,33 @@ Usage: #inline
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Ramipril 5 mg 1-0-0-0, Start 15.06.2016</p> <p>Bisocor 2.5 mg 1-0-0-0, Start 22.03.2023 </p> <p> Lasix 40 mg 1-0-0-0, Start 22.03.2023</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:6d15d84f-2faf-4141-ac0c-fb9cf8496abe)
 * section[=].entry[+] = Reference(urn:uuid:39f41bd6-963c-45a8-852b-813b9b1551b5)
 * section[=].entry[+] = Reference(urn:uuid:07c8bd0b-31a6-4c30-9d8f-307f03130188)
 * section[+].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p></p></div>"
 * section[=].entry = Reference(urn:uuid:768eb9cb-00f3-4ab1-bfc2-ff835cb3b89b)
 * section[+].title = "History of Procedures"
 * section[=].code = $loinc#47519-4 "History of Procedures Document"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p></p></div>"
 * section[=].entry[0] = Reference(urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a)
 * section[=].entry[+] = Reference(urn:uuid:8103f99c-64f0-4dd5-b92e-5c9680c91e47)
 * section[=].entry[+] = Reference(urn:uuid:8a825f17-1599-4928-b384-0ca4a62daba8)
 * section[+].title = "Diagnostic Results"
 * section[=].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>EKG: Anomalie, Vorhofflimmern, 15.03.2023</p> <p> NT pro BNP im Serum: 200 pg/ml, 22.03.2023 </p> <p> Echocardiographie: LVEF 35%, 22.03.2023</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a1)
 * section[=].entry[+] = Reference(urn:uuid:96314fcd-3b0c-4032-8cac-6eb59579d90a)
 * section[=].entry[+] = Reference(urn:uuid:a48dba05-e9d7-478d-8b7c-9fe4df508632)
 * section[+].title = "Vital Signs"
 * section[=].code = $loinc#8716-3 "Vital signs"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Körpergröße: 173cm</p> <p> Gewicht: 90kg</p> <p> BMI: 30.07</p> <p>Blutdruck: 130/80 mmHG</p> <p> Puls: 85 Schläge/min</p> <p> Taillenumfang: 109 cm</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:74c5e186-d765-4c93-a624-c9b0746e8142)
 * section[=].entry[+] = Reference(urn:uuid:428259da-e0f7-4780-b1e3-c177515edd37)
 * section[=].entry[+] = Reference(urn:uuid:daf9c15d-14d4-429c-b658-6842fdff67d8)
@@ -144,14 +144,14 @@ Usage: #inline
 * section[+].title = "Plan of Care"
 * section[=].code = $loinc#81381-6 "Administrative information associated with this personal advance care plan"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Empfehlung: Gewichtskontrolle </p> <p>Empfehlung: Salzarme Ernährung</p> <p>Empfehlung: Körperliche Aktivität </p></div>"
 * section[=].entry[0] = Reference(urn:uuid:82301518-66ca-4b4c-821d-087adf643cc4)
 * section[=].entry[+] = Reference(urn:uuid:ce2589a2-a5e5-4520-808f-8118e2863a95)
 * section[=].entry[+] = Reference(urn:uuid:e28c3f1e-323e-40a3-931b-6bae0fed2945)
 * section[+].title = "Social History"
 * section[=].code = $loinc#29762-2 "Social history Narrative"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>narrative needs to be generated</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Raucherstatus: Nichtraucher </p> <p>Familienstatus: Verheiratet, 2 Kinder, 2 Enkelkinder</p> <p>Interesse: technisch affin </p> <p> Körperliche Aktivität: 2.5 Stunden pro Woche </p></div>"
 * section[=].entry[0] = Reference(urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e)
 * section[=].entry[+] = Reference(urn:uuid:CBA1F802-851B-46FB-BE7D-781BE4198E15)
 * section[=].entry[+] = Reference(urn:uuid:0317A71F-6573-450F-BFA7-F2728EA7A8CC)
