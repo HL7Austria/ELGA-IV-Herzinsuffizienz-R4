@@ -28,7 +28,7 @@ config:
 flowchart TD
     A("**15.03.2024**<br>Patient erscheint mit Symptomen beim Hausarzt, wird untersucht und anschließend an den Kardiologen überwiesen")
     A -.-> C("Körperliche Untersuchung zeigt Beinödeme") & D("Das EKG zeigt Auffälligkeiten")
-    A ==> J("**22.03.2024**<br>Der Kardiologe führt eine Echokardiographie und Blutabnahme durch<br>") ==> n13["**29.03.2024**<br>Der Patient sucht Hausarzt zur Nachbesprechnung des Termins beim Kardiologen auf<br>"] 
+    A ==> J("**22.03.2024**<br>Der Kardiologe führt eine Echokardiographie und Blutabnahme durch") ==> n13["**29.03.2024**<br>Der Patient sucht Hausarzt zur Nachbesprechnung des Termins beim Kardiologen auf<br>"] 
     J -.-> n3("Diagnose einer Herzinsuffizienz mit reduzierter Ejektionsfraktion (HFrEF).")
     n13 ==> P("**10.05.2024**<br>Patient nimmt an erster Patientenschulung im Rahmen der Integrierten Versorgung teil<br>")
     n3 -.-> n4("Medikamente") & n5("Beratung zu Lebensstil<br>")
