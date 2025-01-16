@@ -7,7 +7,7 @@
 
 Die folgende fiktive "Patient Journey" beschreibt einen möglichen Anwendungsfall des Leitfadens:
 
-Anton Test ist 72 Jahre alt und lebt mit seiner Ehefrau in Wien. Er hat zwei erwachsene Kinder und Enkelkinder. Beruflich war er früher als Buchhalter tätig. Sein Allgemeinzustand ist gut, allerdings ist er leicht übergewichtig (BMI >30). In seiner Familie gibt es eine Vorbelastung für Herzkrankheiten. Seit 2016 nimmt Anton aufgrund von erhöhtem Blutdruck täglich morgens eine Ramipril 5 mg Tablette ein. Er ist körperlich aktiv und geht regelmäßig mit seinem Hund spazieren. Anton ist technisch versiert und nutzt häufig sein Smartphone. 
+Anton Test ist 72 Jahre alt und lebt mit seiner Ehefrau in Wien. Er hat zwei erwachsene Kinder und Enkelkinder. Beruflich war er früher als Buchhalter tätig. Sein Allgemeinzustand ist gut, allerdings ist er adipös (BMI >30). In seiner Familie gibt es eine Vorbelastung für Herzkrankheiten. Seit 2016 nimmt Anton aufgrund von arterieller Hypertonie täglich morgens eine 5-mg-Tablette Ramipril ein. Er ist körperlich aktiv und geht regelmäßig mit seinem Hund spazieren. Anton ist technisch versiert und nutzt häufig sein Smartphone. 
 
 -	15.03.2024: Anton verspürt seit einigen Wochen zunehmende Kurzatmigkeit und Müdigkeit, besonders bei Belastung. 
 Er sucht seinen Hausarzt auf. Dieser führt eine gründliche Anamnese und körperliche Untersuchung durch. Dabei fallen Beinödeme und EKG-Auffälligkeiten auf. 

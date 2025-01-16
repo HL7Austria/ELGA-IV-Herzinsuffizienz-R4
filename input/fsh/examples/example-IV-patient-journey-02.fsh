@@ -27,14 +27,8 @@ Usage: #example
 * entry[=].resource = example-02-problem-7
 * entry[+].fullUrl = "urn:uuid:32d90aaa-6577-4c5d-9771-d8f606ebf0b9"
 * entry[=].resource = example-02-problem-9
-* entry[+].fullUrl = "urn:uuid:2040058f-9537-4b26-9367-5ca5ac0ddb58"
-* entry[=].resource = example-02-problem-10
-* entry[+].fullUrl = "urn:uuid:7568C01B-D447-46FE-89BA-98AD6DAF73DF"
-* entry[=].resource = Inline-Instance-for-example-02-1
-* entry[+].fullUrl = "urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5"
-* entry[=].resource = example-02-problem-15
 * entry[+].fullUrl = "urn:uuid:A3A9BE59-EC61-4CAB-92A9-9CBAB6AEC437"
-* entry[=].resource = Inline-Instance-for-example-02-2
+* entry[=].resource = example-02-problem-10
 * entry[+].fullUrl = "urn:uuid:6d15d84f-2faf-4141-ac0c-fb9cf8496abe"
 * entry[=].resource = example-02-medication-summary-7
 * entry[+].fullUrl = "urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a1"
@@ -53,14 +47,16 @@ Usage: #example
 * entry[=].resource = example-02-vital-sign-6
 * entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
 * entry[=].resource = example-02-social-history-1
+* entry[+].fullUrl = "urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5"
+* entry[=].resource = example-01-social-history-1
 * entry[+].fullUrl = "urn:uuid:CBA1F802-851B-46FB-BE7D-781BE4198E15"
-* entry[=].resource = Inline-Instance-for-example-02-3
+* entry[=].resource = example-03-social-history-1
 * entry[+].fullUrl = "urn:uuid:0317A71F-6573-450F-BFA7-F2728EA7A8CC"
-* entry[=].resource = Inline-Instance-for-example-02-4
+* entry[=].resource = example-04-social-history-1
 * entry[+].fullUrl = "urn:uuid:feb8751e-3baa-4f49-8d9e-1cd32a6c6dac"
-* entry[=].resource = Inline-Instance-for-example-02-5
+* entry[=].resource = example-05-social-history-1
 * entry[+].fullUrl = "urn:uuid:9add5c32-1ded-43d6-b163-c3fe13f94984"
-* entry[=].resource = example-02-social-history-2
+* entry[=].resource = example-06-social-history-2
 
 Instance: example-02-composition
 InstanceOf: Composition
@@ -75,13 +71,10 @@ Usage: #inline
 * section[0].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list - Reported"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Bluthochdruck</p> <p>Positive Familienanamnese: vorzeitige koronare Herzerkrankung</p> <p>Ernährungszustand adipös</p> <p>Müdigkeit</p> <p>Kurzatmigkeit bei Belastung</p> <p>Beinödeme beidseits</p> <p>Verdachtsdiagnose: Herzinsuffizienz</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Arterielle Hypertonie</p><p>Adipositas</p><p>Vorhofflimmern</p><p>Verdachtsdiagnose: Herzinsuffizienz</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:9d1c0b74-20c1-4603-a95a-71e6a1dc8fde)
-* section[=].entry[+] = Reference(urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5)
 * section[=].entry[+] = Reference(urn:uuid:8d3a18fb-3610-4bfb-9aa4-1169cc6dd2dd)
 * section[=].entry[+] = Reference(urn:uuid:32d90aaa-6577-4c5d-9771-d8f606ebf0b9)
-* section[=].entry[+] = Reference(urn:uuid:2040058f-9537-4b26-9367-5ca5ac0ddb58)
-* section[=].entry[+] = Reference(urn:uuid:7568C01B-D447-46FE-89BA-98AD6DAF73DF)
 * section[=].entry[+] = Reference(urn:uuid:b7b2a10d-7295-4fd1-ad21-81bca78dc45a)
 * section[=].entry[+] = Reference(urn:uuid:ebfb60a8-a753-459d-a796-a191a4dbd91d)
 * section[=].entry[+] = Reference(urn:uuid:5ab717ff-c0a0-409e-83db-0fa6f8619f68)
@@ -119,7 +112,7 @@ Usage: #inline
 * section[+].title = "Vital Signs"
 * section[=].code = $loinc#8716-3 "Vital signs"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Körpergröße: 173cm</p> <p> Gewicht: 90kg</p> <p> BMI: 30.07</p> <p>Blutdruck: 130/80 mmHG</p> <p> Puls: 85 Schläge/min</p> <p> Taillenumfang: 109 cm</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Körpergröße: 173cm</p><p>Gewicht: 90kg</p><p>BMI: 30.07</p><p>Blutdruck: 130/80 mmHG</p><p>Puls: 85 Schläge/min</p><p>Taillenumfang: 109 cm</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:74c5e186-d765-4c93-a624-c9b0746e8142)
 * section[=].entry[+] = Reference(urn:uuid:428259da-e0f7-4780-b1e3-c177515edd37)
 * section[=].entry[+] = Reference(urn:uuid:daf9c15d-14d4-429c-b658-6842fdff67d8)
@@ -129,8 +122,9 @@ Usage: #inline
 * section[+].title = "Social History"
 * section[=].code = $loinc#29762-2 "Social history Narrative"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Raucherstatus: Nichtraucher </p> <p>Familienstatus: Verheiratet, 2 Kinder, 2 Enkelkinder</p> <p>Interesse: technisch affin </p> <p> Körperliche Aktivität: 2.5 Stunden pro Woche </p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Raucherstatus: Nichtraucher</p><p>Familienanamnese: Vorzeitige koronare Herzerkrankung</p><p>Familienstatus: Verheiratet, 2 Kinder, 2 Enkelkinder</p><p>Interesse: technisch affin</p><p>Körperliche Aktivität: 2.5 Stunden pro Woche</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e)
+* section[=].entry[+] = Reference(urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5)
 * section[=].entry[+] = Reference(urn:uuid:CBA1F802-851B-46FB-BE7D-781BE4198E15)
 * section[=].entry[+] = Reference(urn:uuid:0317A71F-6573-450F-BFA7-F2728EA7A8CC)
 * section[=].entry[+] = Reference(urn:uuid:feb8751e-3baa-4f49-8d9e-1cd32a6c6dac)
@@ -148,7 +142,7 @@ Usage: #inline
 * name.given = "Anton"
 * gender = #male
 * birthDate = "1951-11-12"
-* maritalStatus = #married
+* maritalStatus.coding.code = #married
 * address.use = #home
 * address.line = "Am Schulweg 5"
 * address.city = "Hainfeld"
@@ -173,7 +167,7 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category = $condition-category#problem-list-item "Problem List Item"
-* code = $sct#38341003 "Bluthochdruck"
+* code = $sct#38341003 "Arterielle Hypertonie"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * recordedDate = "2016-06-15T14:01:30+00:00"
 * asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
@@ -185,7 +179,7 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category = $condition-category#problem-list-item "Problem List Item"
-* code = $sct#443371000124107 "Ernährungszustand adipös"
+* code = $sct#414916001 "Adipositas"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * recordedDate = "2023-01-01T14:00:00+00:00"
 * asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
@@ -197,7 +191,7 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category = $condition-category#problem-list-item "Problem List Item"
-* code = $sct#84229001 "Müdigkeit"
+* code = $sct#49436004 "Vorhofflimmern"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * recordedDate = "2023-03-15T14:01:30+00:00"
 * asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
@@ -205,44 +199,6 @@ Usage: #inline
 Instance: example-02-problem-10
 InstanceOf: Condition
 Usage: #inline
-* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
-* clinicalStatus = $condition-clinical#active "Active"
-* verificationStatus = $condition-ver-status#confirmed "Confirmed"
-* category = $condition-category#problem-list-item "Problem List Item"
-* code = $sct#60845006 "Kurzatmigkeit bei Belastung"
-* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
-* recordedDate = "2023-03-15T14:01:30+00:00"
-* asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
-
-Instance: Inline-Instance-for-example-02-1
-InstanceOf: Condition
-Usage: #inline
-* id = "example-02-problem-10"
-* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
-* clinicalStatus = $condition-clinical#active "Active"
-* verificationStatus = $condition-ver-status#confirmed "Confirmed"
-* category = $condition-category#problem-list-item "Problem List Item"
-* code = $sct#816190002 "Beinödeme beidseits"
-* subject = Reference(urn:uuid:23A9FD78-AD25-4A45-A726-9679A50FEA6E)
-* recordedDate = "2023-03-15T14:01:30+00:00"
-* asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
-
-Instance: example-02-problem-15
-InstanceOf: Condition
-Usage: #inline
-* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
-* clinicalStatus = $condition-clinical#active "Active"
-* verificationStatus = $condition-ver-status#confirmed "Confirmed"
-* category = $condition-category#problem-list-item "Problem List Item"
-* code = $sct#134439009 "Positive Familienanamnese: vorzeitige koronare Herzkrankheit"
-* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
-* recordedDate = "2023-01-01T14:00:00+00:00"
-* asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
-
-Instance: Inline-Instance-for-example-02-2
-InstanceOf: Condition
-Usage: #inline
-* id = "example-02-problem-10"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
@@ -258,7 +214,6 @@ Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
 * status = #active
 * medicationCodeableConcept = $asp-liste#2450888 "RAMIPRIL 1A TBL  5MG"
-//* author.reference = "urn:uuid:75db30ee-7028-486c-929a-c5126837f472"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * effectivePeriod.start = "2016-06-15T10:31:58+02:00"
 * dosage.text = "S:1-0-0-0"
@@ -355,10 +310,20 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+01:00"
 * valueCodeableConcept = $loinc#LA18978-9 "Nichtraucher"
 
-Instance: Inline-Instance-for-example-02-3
+Instance: example-21-social-history-1
 InstanceOf: Observation
 Usage: #inline
-* id = "example-02-social-history-1"
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
+* status = #final
+* code = $sct#57177007 "Familienanamnese"
+* subject = Reference(urn:uuid:5ACF81A0-ED49-4774-94A1-F7E47C1BC56A)
+* performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
+* effectiveDateTime = "2023-01-01T14:00:00+00:00"
+* valueCodeableConcept = $sct#297242006 "Vorzeitige koronare Herzerkrankung"
+
+Instance: example-03-social-history-1
+InstanceOf: Observation
+Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
 * code = $sct#365580001 "Familienstatus"
@@ -367,10 +332,9 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+01:00"
 * valueCodeableConcept = $sct#87915002 "Verheiratet"
 
-Instance: Inline-Instance-for-example-02-4
+Instance: example-04-social-history-1
 InstanceOf: Observation
 Usage: #inline
-* id = "example-02-social-history-1"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
 * code = $sct#224117009 "Angaben zu eigenen Kindern"
@@ -379,10 +343,9 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+01:00"
 * valueCodeableConcept = $sct#224118004 "Anzahl der Nachkommen: Kinder:2, Enkelkinder:2"
 
-Instance: Inline-Instance-for-example-02-5
+Instance: example-05-social-history-1
 InstanceOf: Observation
 Usage: #inline
-* id = "example-02-social-history-1"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
 * code = $sct#134418002 "Intersse"
@@ -391,7 +354,7 @@ Usage: #inline
 * effectiveDateTime = "2023-01-01T14:00:00+01:00"
 * valueCodeableConcept = $sct#733863009 "technisch affin"
 
-Instance: example-02-social-history-2
+Instance: example-06-social-history-2
 InstanceOf: Observation
 Usage: #inline
 * status = #final
