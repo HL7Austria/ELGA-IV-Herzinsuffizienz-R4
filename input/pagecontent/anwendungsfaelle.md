@@ -34,7 +34,7 @@ flowchart TD
     b1 -.-> bb1("Medikation")
     b1 -.-> bb2("Beratung zum Lebensstil")
     B ==> C("**29.03.2024**<br>**Nachbesprechung**<br/>beim Hausarzt.")
-    C -.-> c1("Hausarzt informiert Patienten <br/>über Infoveranstaltung des <br/>Herzverbandes und über die weiterführende Therapie.")
+    C -.-> c1("Hausarzt informiert Patienten <br/>über Infoveranstaltung des <br/>Herzverbandes und über die <br/>weiterführende Therapie.")
     C ==> D("**Fortlaufende Therapie**<br/>Engmaschige Kontrollen <br/>beim Hausarzt.<br/>Patient nimmt regelmäßig an <br/>Schulungen und Beratungen teil.")
     
     %% Styling
