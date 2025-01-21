@@ -25,6 +25,14 @@ Usage: #example
 * entry[=].resource = example-02-problem-5
 * entry[+].fullUrl = "urn:uuid:8d3a18fb-3610-4bfb-9aa4-1169cc6dd2dd"
 * entry[=].resource = example-02-problem-7
+* entry[+].fullUrl = "urn:uuid:2040058f-9537-4b26-9367-5ca5ac0ddb58"
+* entry[=].resource = example-02-problem-1
+* entry[+].fullUrl = "urn:uuid:7568C01B-D447-46FE-89BA-98AD6DAF73DF"
+* entry[=].resource = example-02-problem-2
+* entry[+].fullUrl = "urn:uuid:b7b2a10d-7295-4fd1-ad21-81bca78dc45a"
+* entry[=].resource = example-02-problem-4
+* entry[+].fullUrl = "urn:uuid:5ab717ff-c0a0-409e-83db-0fa6f8619f68"
+* entry[=].resource = Inline-Instance-for-example-03-1
 * entry[+].fullUrl = "urn:uuid:32d90aaa-6577-4c5d-9771-d8f606ebf0b9"
 * entry[=].resource = example-02-problem-9
 * entry[+].fullUrl = "urn:uuid:A3A9BE59-EC61-4CAB-92A9-9CBAB6AEC437"
@@ -32,15 +40,83 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:6d15d84f-2faf-4141-ac0c-fb9cf8496abe"
 * entry[=].resource = example-03-medication-summary-7
 * entry[+].fullUrl = "urn:uuid:39f41bd6-963c-45a8-852b-813b9b1551b5"
-* entry[=].resource = Inline-Instance-for-example-03-1
-* entry[+].fullUrl = "urn:uuid:07c8bd0b-31a6-4c30-9d8f-307f03130188"
 * entry[=].resource = Inline-Instance-for-example-03-2
+* entry[+].fullUrl = "urn:uuid:07c8bd0b-31a6-4c30-9d8f-307f03130188"
+* entry[=].resource = Inline-Instance-for-example-03-3
 * entry[+].fullUrl = "urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a1"
 * entry[=].resource = example-03-diagnostic-result-2
 * entry[+].fullUrl = "urn:uuid:96314fcd-3b0c-4032-8cac-6eb59579d90a"
-* entry[=].resource = example-03-diagnostic-result-4
-* entry[+].fullUrl = "urn:uuid:a48dba05-e9d7-478d-8b7c-9fe4df508632"
+* entry[=].resource = example-03-diagnostic-result-1
+* entry[+].fullUrl = "urn:uuid:abcd1234-5678-9abc-def0-123456789abc"
+* entry[=].resource = Inline-Instance-for-example-03-4
+* entry[+].fullUrl = "urn:uuid:3456efgh-7890-1abc-2345-6789abcdef01"
 * entry[=].resource = example-03-diagnostic-result-3
+* entry[+].fullUrl = "urn:uuid:6789ijkl-1234-5678-9012-34567890abcd"
+* entry[=].resource = example-03-diagnostic-result-4
+* entry[+].fullUrl = "urn:uuid:90abcdef-1234-5678-90ab-cdef12345678"
+* entry[=].resource = example-03-diagnostic-result-5
+* entry[+].fullUrl = "urn:uuid:0a1b2c3d-4e5f-6789-abcd-1234567890ab"
+* entry[=].resource = example-04-diagnostic-result-leukocytes
+* entry[+].fullUrl = "urn:uuid:12345678-9abc-def0-1234-56789abcdef0"
+* entry[=].resource = example-05-diagnostic-result-platelets
+* entry[+].fullUrl = "urn:uuid:01abcd23-4567-89ef-ghij-klmnopqrs123"
+* entry[=].resource = example-03-diagnostic-result-6
+* entry[+].fullUrl = "urn:uuid:2345lmno-6789-pqrs-tuvw-xyzabcdef0123"
+* entry[=].resource = example-03-diagnostic-result-7
+* entry[+].fullUrl = "urn:uuid:3456789-0abc-1def-2345-6789abcdef987"
+* entry[=].resource = example-03-diagnostic-result-8
+* entry[+].fullUrl = "urn:uuid:123e4567-e89b-12d3-a456-426614174000"
+* entry[=].resource = example-06-diagnostic-result-sodium
+* entry[+].fullUrl = "urn:uuid:123e4567-e89b-12d3-a456-426614174001"
+* entry[=].resource = example-07-diagnostic-result-potassium
+* entry[+].fullUrl = "urn:uuid:123e4567-e89b-12d3-a456-426614174002"
+* entry[=].resource = example-08-diagnostic-result-alt
+* entry[+].fullUrl = "urn:uuid:123e4567-e89b-12d3-a456-426614174003"
+* entry[=].resource = example-09-diagnostic-result-ast
+* entry[+].fullUrl = "urn:uuid:123e4567-e89b-12d3-a456-426614174004"
+* entry[=].resource = example-10-diagnostic-result-ggt
+* entry[+].fullUrl = "urn:uuid:9f906382-d7eb-4dc3-a53d-825220536932"
+* entry[=].resource = example-11-diagnostic-result-bilirubin
+* entry[+].fullUrl = "urn:uuid:a874c9c7-77b2-4f0e-9ef3-d512c457c1a7"
+* entry[=].resource = example-14-diagnostic-result-albumin
+* entry[+].fullUrl = "urn:uuid:7c9f4e34-87b5-4e59-9d70-d6c32609fc25"
+* entry[=].resource = example-15-diagnostic-result-inr
+* entry[+].fullUrl = "urn:uuid:27c9d9a7-4a4c-44b2-839a-6b57f4c9e1b5"
+* entry[=].resource = example-07-diagnostic-result-crp
+* entry[+].fullUrl = "urn:uuid:2498f4c0-3b1c-4032-8cac-6eb59579d90a"
+* entry[=].resource = example-iron
+* entry[+].fullUrl = "urn:uuid:2276f4c0-3b1c-4032-8cac-6eb59579d90b"
+* entry[=].resource = example-ferritin
+* entry[+].fullUrl = "urn:uuid:3034f4c0-3b1c-4032-8cac-6eb59579d90c"
+* entry[=].resource = example-transferrin
+* entry[+].fullUrl = "urn:uuid:2502f4c0-3b1c-4032-8cac-6eb59579d90d"
+* entry[=].resource = example-iron-saturation
+* entry[+].fullUrl = "urn:uuid:3016f4c0-3b1c-4032-8cac-6eb59579d90a"
+* entry[=].resource = example-thyrotropin
+* entry[+].fullUrl = "urn:uuid:3024f4c0-3b1c-4032-8cac-6eb59579d90b"
+* entry[=].resource = example-thyroxine
+* entry[+].fullUrl = "urn:uuid:3052f4c0-3b1c-4032-8cac-6eb59579d90c"
+* entry[=].resource = example-triiodothyronine-reverse
+* entry[+].fullUrl = "urn:uuid:4537f4c0-3b1c-4032-8cac-6eb59579d90d"
+* entry[=].resource = example-erythrocyte-sedimentation-rate
+* entry[+].fullUrl = "urn:uuid:2345f4c0-3b1c-4032-8cac-6eb59579d90a"
+* entry[=].resource = example-glucose
+* entry[+].fullUrl = "urn:uuid:4548f4c0-3b1c-4032-8cac-6eb59579d90b"
+* entry[=].resource = example-hba1c
+* entry[+].fullUrl = "urn:uuid:2093f4c0-3b1c-4032-8cac-6eb59579d90c"
+* entry[=].resource = example-cholesterol-total
+* entry[+].fullUrl = "urn:uuid:13457f4c0-3b1c-4032-8cac-6eb59579d90d"
+* entry[=].resource = example-cholesterol-ldl
+* entry[+].fullUrl = "urn:uuid:2085f4c0-3b1c-4032-8cac-6eb59579d90a"
+* entry[=].resource = example-cholesterol-hdl
+* entry[+].fullUrl = "urn:uuid:2571f4c0-3b1c-4032-8cac-6eb59579d90b"
+* entry[=].resource = example-triglyceride
+* entry[+].fullUrl = "urn:uuid:3084f4c0-3b1c-4032-8cac-6eb59579d90c"
+* entry[=].resource = example-urate
+* entry[+].fullUrl = "urn:uuid:2731f4c0-3b1c-4032-8cac-6eb59579d90d"
+* entry[=].resource = example-parathyrin-intact
+* entry[+].fullUrl = "urn:uuid:a48dba05-e9d7-478d-8b7c-9fe4df508632"
+* entry[=].resource = Inline-Instance-for-example-03-5
 * entry[+].fullUrl = "urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6"
 * entry[=].resource = example-03-diagnostic-result-performer-1
 * entry[+].fullUrl = "urn:uuid:74c5e186-d765-4c93-a624-c9b0746e8142"
@@ -60,7 +136,7 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:ce2589a2-a5e5-4520-808f-8118e2863a95"
 * entry[=].resource = example-03-plan-of-care-2
 * entry[+].fullUrl = "urn:uuid:e28c3f1e-323e-40a3-931b-6bae0fed2945"
-* entry[=].resource = Inline-Instance-for-example-03-3
+* entry[=].resource = Inline-Instance-for-example-03-6
 * entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
 * entry[=].resource = example-02-social-history-1
 * entry[+].fullUrl = "urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5"
@@ -87,14 +163,14 @@ Usage: #inline
 * section[0].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list - Reported"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Arterielle Hypertonie</p><p>Adipositas</p><p>Vorhofflimmern</p><p>Herzinsuffizienz</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Arterielle Hypertonie</p><p>Adipositas</p><p>Vorhofflimmern</p><p>Herzinsuffizienz</p><p>Niereninsuffizienz</p><p>Anämie</p><p>Dyslipidämie</p><p>Hypothyreose</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:9d1c0b74-20c1-4603-a95a-71e6a1dc8fde)
 * section[=].entry[+] = Reference(urn:uuid:8d3a18fb-3610-4bfb-9aa4-1169cc6dd2dd)
 * section[=].entry[+] = Reference(urn:uuid:32d90aaa-6577-4c5d-9771-d8f606ebf0b9)
 * section[=].entry[+] = Reference(urn:uuid:2040058f-9537-4b26-9367-5ca5ac0ddb58)
 * section[=].entry[+] = Reference(urn:uuid:7568C01B-D447-46FE-89BA-98AD6DAF73DF)
 * section[=].entry[+] = Reference(urn:uuid:b7b2a10d-7295-4fd1-ad21-81bca78dc45a)
-* section[=].entry[+] = Reference(urn:uuid:ebfb60a8-a753-459d-a796-a191a4dbd91d)
+* section[=].entry[+] = Reference(urn:uuid:5ab717ff-c0a0-409e-83db-0fa6f8619f68)
 * section[=].entry[+] = Reference(urn:uuid:5ab717ff-c0a0-409e-83db-0fa6f8619f68)
 * section[=].entry[+] = Reference(urn:uuid:A3A9BE59-EC61-4CAB-92A9-9CBAB6AEC437)
 * section[=].entry[+] = Reference(urn:uuid:26567a48-7a3f-468d-b4da-1b63d39a4b19)
@@ -120,9 +196,43 @@ Usage: #inline
 * section[+].title = "Diagnostic Results"
 * section[=].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>EKG: Anomalie, Vorhofflimmern, 15.03.2023</p><p>Laborbefund vom 22.03.2023</p><p>Echocardiographie: LVEF 35%, 22.03.2023</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>EKG: Anomalie, Vorhofflimmern, 15.03.2023</p><p>Laborbefund vom 22.03.2023 **BNP:400 pg/ml**, **NT-proBNP:1800 pg/ml**, **Natrium:132 mmol/L**</p><p>Echocardiographie: LVEF 35%, 22.03.2023</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a1)
 * section[=].entry[+] = Reference(urn:uuid:96314fcd-3b0c-4032-8cac-6eb59579d90a)
+* section[=].entry[+] = Reference(urn:uuid:abcd1234-5678-9abc-def0-123456789abc)
+* section[=].entry[+] = Reference(urn:uuid:3456efgh-7890-1abc-2345-6789abcdef01)
+* section[=].entry[+] = Reference(urn:uuid:6789ijkl-1234-5678-9012-34567890abcd)
+* section[=].entry[+] = Reference(urn:uuid:90abcdef-1234-5678-90ab-cdef12345678)
+* section[=].entry[+] = Reference(urn:uuid:0a1b2c3d-4e5f-6789-abcd-1234567890ab)
+* section[=].entry[+] = Reference(urn:uuid:12345678-9abc-def0-1234-56789abcdef0)
+* section[=].entry[+] = Reference(urn:uuid:01abcd23-4567-89ef-ghij-klmnopqrs123)
+* section[=].entry[+] = Reference(urn:uuid:2345lmno-6789-pqrs-tuvw-xyzabcdef0123)
+* section[=].entry[+] = Reference(urn:uuid:3456789-0abc-1def-2345-6789abcdef987)
+* section[=].entry[+] = Reference(urn:uuid:123e4567-e89b-12d3-a456-426614174000)
+* section[=].entry[+] = Reference(urn:uuid:123e4567-e89b-12d3-a456-426614174001)
+* section[=].entry[+] = Reference(urn:uuid:123e4567-e89b-12d3-a456-426614174002)
+* section[=].entry[+] = Reference(urn:uuid:123e4567-e89b-12d3-a456-426614174003)
+* section[=].entry[+] = Reference(urn:uuid:123e4567-e89b-12d3-a456-426614174004)
+* section[=].entry[+] = Reference(urn:uuid:96314fcd-3b0c-4032-8cac-6eb59579d90a)
+* section[=].entry[+] = Reference(urn:uuid:a874c9c7-77b2-4f0e-9ef3-d512c457c1a7)
+* section[=].entry[+] = Reference(urn:uuid:7c9f4e34-87b5-4e59-9d70-d6c32609fc25)
+* section[=].entry[+] = Reference(urn:uuid:27c9d9a7-4a4c-44b2-839a-6b57f4c9e1b5)
+* section[=].entry[+] = Reference(urn:uuid:9f906382-d7eb-4dc3-a53d-825220536932)
+* section[=].entry[+] = Reference(urn:uuid:2276f4c0-3b1c-4032-8cac-6eb59579d90b)
+* section[=].entry[+] = Reference(urn:uuid:3034f4c0-3b1c-4032-8cac-6eb59579d90c)
+* section[=].entry[+] = Reference(urn:uuid:2502f4c0-3b1c-4032-8cac-6eb59579d90d)
+* section[=].entry[+] = Reference(urn:uuid:3016f4c0-3b1c-4032-8cac-6eb59579d90a)
+* section[=].entry[+] = Reference(urn:uuid:3024f4c0-3b1c-4032-8cac-6eb59579d90b)
+* section[=].entry[+] = Reference(urn:uuid:3052f4c0-3b1c-4032-8cac-6eb59579d90c)
+* section[=].entry[+] = Reference(urn:uuid:4537f4c0-3b1c-4032-8cac-6eb59579d90d)
+* section[=].entry[+] = Reference(urn:uuid:2345f4c0-3b1c-4032-8cac-6eb59579d90a)
+* section[=].entry[+] = Reference(urn:uuid:4548f4c0-3b1c-4032-8cac-6eb59579d90b)
+* section[=].entry[+] = Reference(urn:uuid:2093f4c0-3b1c-4032-8cac-6eb59579d90c)
+* section[=].entry[+] = Reference(urn:uuid:13457f4c0-3b1c-4032-8cac-6eb59579d90d)
+* section[=].entry[+] = Reference(urn:uuid:2085f4c0-3b1c-4032-8cac-6eb59579d90a)
+* section[=].entry[+] = Reference(urn:uuid:2571f4c0-3b1c-4032-8cac-6eb59579d90b)
+* section[=].entry[+] = Reference(urn:uuid:3084f4c0-3b1c-4032-8cac-6eb59579d90c)
+* section[=].entry[+] = Reference(urn:uuid:2731f4c0-3b1c-4032-8cac-6eb59579d90d)
 * section[=].entry[+] = Reference(urn:uuid:a48dba05-e9d7-478d-8b7c-9fe4df508632)
 * section[+].title = "Vital Signs"
 * section[=].code = $loinc#8716-3 "Vital signs"
@@ -206,6 +316,55 @@ Usage: #inline
 * recordedDate = "2023-01-01T14:00:00+00:00"
 * asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 
+Instance: example-02-problem-1
+InstanceOf: Condition
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
+* clinicalStatus = $condition-clinical#active "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* category = $condition-category#problem-list-item "Problem List Item"
+* code = $sct#431855005 "Niereninsuffizienz"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* recordedDate = "2025-01-21T14:01:30+00:00"
+* asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
+
+Instance: example-02-problem-2
+InstanceOf: Condition
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
+* clinicalStatus = $condition-clinical#active "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* category = $condition-category#problem-list-item "Problem List Item"
+* code = $sct#271737000 "Anämie"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* recordedDate = "2025-01-21T14:02:30+00:00"
+* asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
+
+Instance: example-02-problem-4
+InstanceOf: Condition
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
+* clinicalStatus = $condition-clinical#active "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* category = $condition-category#problem-list-item "Problem List Item"
+* code = $sct#370992007 "Dyslipidämie"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* recordedDate = "2025-01-21T14:04:30+00:00"
+* asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
+
+Instance: Inline-Instance-for-example-03-1
+InstanceOf: Condition
+Usage: #inline
+* id = "example-02-problem-4"
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-condition"
+* clinicalStatus = $condition-clinical#active "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* category = $condition-category#problem-list-item "Problem List Item"
+* code = $sct#40930008 "Hypothyreose"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* recordedDate = "2025-01-21T14:04:30+00:00"
+* asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
+
 Instance: example-32-problem-9
 InstanceOf: Condition
 Usage: #inline
@@ -240,7 +399,7 @@ Usage: #inline
 * effectivePeriod.start = "2016-06-15T10:31:58+02:00"
 * dosage.text = "S:1-0-0-0"
 
-Instance: Inline-Instance-for-example-03-1
+Instance: Inline-Instance-for-example-03-2
 InstanceOf: MedicationStatement
 Usage: #inline
 * id = "example-03-medication-summary-7"
@@ -251,7 +410,7 @@ Usage: #inline
 * effectivePeriod.start = "2023-03-22T08:30:00+01:00"
 * dosage.text = "S:1-0-0-0"
 
-Instance: Inline-Instance-for-example-03-2
+Instance: Inline-Instance-for-example-03-3
 InstanceOf: MedicationStatement
 Usage: #inline
 * id = "example-03-medication-summary-7"
@@ -273,20 +432,396 @@ Usage: #inline
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * valueCodeableConcept = $sct#49436004 "Anomalie: Vorhofflimmern"
 
+Instance: example-03-diagnostic-result-1
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#30934-4 "Natriuretic peptide B [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 400 'pg/mL' "pg/ml"
+
+Instance: Inline-Instance-for-example-03-4
+InstanceOf: Observation
+Usage: #inline
+* id = "example-03-diagnostic-result-2"
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#33762-6 "Natriuretic peptide B prohormone N-Terminal [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 1800 'pg/mL' "pg/ml"
+
+Instance: example-03-diagnostic-result-3
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#789-8 "Erythrocytes [#/volume] in Blood by Automated count"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 4.2 '10*6/uL' "10*6/uL"
+
 Instance: example-03-diagnostic-result-4
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
 * status = #final
-* code = $loinc#33762-6 "NT pro BNP im Serum"
+* code = $loinc#718-7 "Hämoglobin (Hb) [Mass/volume] in Blood"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * effectiveDateTime = "2023-03-22T08:30:00+01:00"
 * performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
-* valueQuantity = 200 'pg/mL' "pg/ml"
+* valueQuantity = 11 'g/dL' "g/dL"
 
-Instance: example-03-diagnostic-result-3
+Instance: example-03-diagnostic-result-5
 InstanceOf: Observation
 Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#4544-3 "Hämatokrit (Hkt) [Volume Fraction] of Blood by Automated count"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 37 '%' "%"
+
+Instance: example-04-diagnostic-result-leukocytes
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#6690-2 "Leukocytes [#/volume] in Blood by Automated count"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 10 '10*3/uL' "10^3/µL"
+
+Instance: example-05-diagnostic-result-platelets
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#777-3 "Platelets [#/volume] in Blood by Automated count"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 100 '10*3/uL' "10^3/µL"
+
+Instance: example-03-diagnostic-result-6
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2160-0 "Kreatinin [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 1.3 'mg/dL' "mg/dL"
+
+Instance: example-03-diagnostic-result-7
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#30289-9 "Harnstoff (Urea nitrogen) [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 35 'mg/dL' "mg/dL"
+
+Instance: example-03-diagnostic-result-8
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#45502-0 "Glomeruläre Filtrationsrate (GFR) [Menge/Zeiteinheit] in Serum"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 75 'mL/min/1.73m²' "mL/min/1.73m²"
+
+Instance: example-06-diagnostic-result-sodium
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2951-2 "Sodium [Moles/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 132 'mmol/L' "mmol/L"
+
+Instance: example-07-diagnostic-result-potassium
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2823-3 "Potassium [Moles/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 5.2 'mmol/L' "mmol/L"
+
+Instance: example-08-diagnostic-result-alt
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#1742-6 "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 60 'U/L' "U/L"
+
+Instance: example-09-diagnostic-result-ast
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#1920-8 "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 80 'U/L' "U/L"
+
+Instance: example-10-diagnostic-result-ggt
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2324-2 "Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 90 'U/L' "U/L"
+
+Instance: example-11-diagnostic-result-bilirubin
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#42719-5 "Bilirubin.total [Mass/volume] in Blood"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 2.5 'mg/dL' "mg/dL"
+
+Instance: example-14-diagnostic-result-albumin
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#1751-7 "Albumin [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 3 'g/dL' "g/dL"
+
+Instance: example-15-diagnostic-result-inr
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#5895-7 "Deprecated INR in Platelet poor plasma by Coagulation assay"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 1.2 ''
+
+Instance: example-07-diagnostic-result-crp
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#1988-5 "C reactive protein [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 20 'mg/L' "mg/L"
+
+Instance: example-iron
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2498-4 "Iron [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 45 'ug/dL' "µg/dL"
+
+Instance: example-ferritin
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2276-4 "Ferritin [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 30 'ng/mL' "ng/mL"
+
+Instance: example-transferrin
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#3034-6 "Transferrin [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 200 'mg/dL' "mg/dL"
+
+Instance: example-iron-saturation
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2502-3 "Iron saturation [Mass Fraction] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 20 '%' "%"
+
+Instance: example-thyrotropin
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#3016-3 "Thyrotropin [Units/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 6 'm[IU]/L' "m[IU]/L"
+
+Instance: example-thyroxine
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#3024-7 "Thyroxine (T4) free [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 0.7 'ng/dL' "ng/dL"
+
+Instance: example-triiodothyronine-reverse
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#3052-8 "Triiodothyronine (T3).reverse [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 35 'pg/mL' "pg/mL"
+
+Instance: example-erythrocyte-sedimentation-rate
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#4537-7 "Erythrocyte sedimentation rate by Westergren method"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 60 'mm/h' "mm/h"
+
+Instance: example-glucose
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2345-7 "Glucose [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 100 'mg/dL' "mg/dL"
+
+Instance: example-hba1c
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#4548-4 "Hemoglobin A1c/Hemoglobin.total in Blood"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 6.7 '%' "%"
+
+Instance: example-cholesterol-total
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2093-3 "Cholesterol [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 240 'mg/dL' "mg/dL"
+
+Instance: example-cholesterol-ldl
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#13457-7 "Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 160 'mg/dL' "mg/dL"
+
+Instance: example-cholesterol-hdl
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2085-9 "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 35 'mg/dL' "mg/dL"
+
+Instance: example-triglyceride
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2571-8 "Triglyceride [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 300 'mg/dL' "mg/dL"
+
+Instance: example-urate
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#3084-1 "Urate [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 9 'mg/dL' "mg/dL"
+
+Instance: example-parathyrin-intact
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
+* status = #final
+* code = $loinc#2731-8 "Parathyrin.intact [Mass/volume] in Serum or Plasma"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectiveDateTime = "2023-03-22T08:30:00+01:00"
+* performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
+* valueQuantity = 80 'pg/mL' "pg/mL"
+
+Instance: Inline-Instance-for-example-03-5
+InstanceOf: Observation
+Usage: #inline
+* id = "example-03-diagnostic-result-3"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationresultslaboratory"
 * status = #final
 * code = $sct#40701008 "Echocardiography"
@@ -407,7 +942,7 @@ Usage: #inline
 * effectiveDateTime = "2023-03-22T08:30:00+01:00"
 * performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
 
-Instance: Inline-Instance-for-example-03-3
+Instance: Inline-Instance-for-example-03-6
 InstanceOf: Observation
 Usage: #inline
 * id = "example-03-plan-of-care-2"
