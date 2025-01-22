@@ -16,41 +16,49 @@ Usage: #example
 * type = #document
 * timestamp = "2023-01-01T14:00:00+00:00"
 * entry[0].fullUrl = "urn:uuid:212fdc76-ccc3-40bf-8cdd-82f2ef88bd7b"
-* entry[=].resource = example-01-composition
+* entry[=].resource = example-02-composition
 * entry[+].fullUrl = "urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8"
-* entry[=].resource = example-01-patient
+* entry[=].resource = example-02-patient
 * entry[+].fullUrl = "urn:uuid:75db30ee-7028-486c-929a-c5126837f472"
-* entry[=].resource = example-01-author
+* entry[=].resource = example-02-author
 * entry[+].fullUrl = "urn:uuid:9d1c0b74-20c1-4603-a95a-71e6a1dc8fde"
-* entry[=].resource = example-01-problem-5
+* entry[=].resource = example-02-problem-5
 * entry[+].fullUrl = "urn:uuid:8d3a18fb-3610-4bfb-9aa4-1169cc6dd2dd"
-* entry[=].resource = example-01-problem-7
+* entry[=].resource = example-02-problem-7
+* entry[+].fullUrl = "urn:uuid:32d90aaa-6577-4c5d-9771-d8f606ebf0b9"
+* entry[=].resource = example-02-problem-9
+* entry[+].fullUrl = "urn:uuid:A3A9BE59-EC61-4CAB-92A9-9CBAB6AEC437"
+* entry[=].resource = example-02-problem-10
 * entry[+].fullUrl = "urn:uuid:6d15d84f-2faf-4141-ac0c-fb9cf8496abe"
-* entry[=].resource = example-01-medication-summary-7
+* entry[=].resource = example-02-medication-summary-7
+* entry[+].fullUrl = "urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a1"
+* entry[=].resource = example-02-diagnostic-result-2
 * entry[+].fullUrl = "urn:uuid:74c5e186-d765-4c93-a624-c9b0746e8142"
-* entry[=].resource = example-01-vital-sign-1
+* entry[=].resource = example-02-vital-sign-1
 * entry[+].fullUrl = "urn:uuid:428259da-e0f7-4780-b1e3-c177515edd37"
-* entry[=].resource = example-01-vital-sign-2
+* entry[=].resource = example-02-vital-sign-2
 * entry[+].fullUrl = "urn:uuid:daf9c15d-14d4-429c-b658-6842fdff67d8"
-* entry[=].resource = example-01-vital-sign-3
+* entry[=].resource = example-02-vital-sign-3
 * entry[+].fullUrl = "urn:uuid:8248cc70-65a2-4d37-ae14-a3ef2abf8f32"
-* entry[=].resource = example-01-vital-sign-4
+* entry[=].resource = example-02-vital-sign-4
 * entry[+].fullUrl = "urn:uuid:4d3f7ac4-fd0a-49af-a56b-303a2dbe67d1"
-* entry[=].resource = example-01-vital-sign-5
+* entry[=].resource = example-02-vital-sign-5
 * entry[+].fullUrl = "urn:uuid:be35e603-6b99-4bb5-ad70-8499f6b55df1"
-* entry[=].resource = example-01-vital-sign-6
+* entry[=].resource = example-02-vital-sign-6
 * entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
-* entry[=].resource = example-01-social-history-1
+* entry[=].resource = example-322-social-history-1
+* entry[+].fullUrl = "urn:uuid:5c5f6c1f-e55a-4784-945a-ef454bd8a044"
+* entry[=].resource = example-02-social-history-1
 * entry[+].fullUrl = "urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5"
-* entry[=].resource = Inline-Instance-for-example-01-1
+* entry[=].resource = example-01-social-history-1
 * entry[+].fullUrl = "urn:uuid:CBA1F802-851B-46FB-BE7D-781BE4198E15"
-* entry[=].resource = Inline-Instance-for-example-01-2
+* entry[=].resource = example-03-social-history-1
 * entry[+].fullUrl = "urn:uuid:0317A71F-6573-450F-BFA7-F2728EA7A8CC"
-* entry[=].resource = Inline-Instance-for-example-01-3
+* entry[=].resource = example-04-social-history-1
 * entry[+].fullUrl = "urn:uuid:feb8751e-3baa-4f49-8d9e-1cd32a6c6dac"
-* entry[=].resource = Inline-Instance-for-example-01-4
+* entry[=].resource = example-05-social-history-1
 * entry[+].fullUrl = "urn:uuid:9add5c32-1ded-43d6-b163-c3fe13f94984"
-* entry[=].resource = example-01-social-history-2
+* entry[=].resource = example-06-social-history-2
 
 Instance: example-01-composition
 InstanceOf: Composition
@@ -110,8 +118,9 @@ Usage: #inline
 * section[+].title = "Social History"
 * section[=].code = $loinc#29762-2 "Social history Narrative"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Raucherstatus: Nichtraucher</p><p>Familienanamnese: Vorzeitige koronare Herzerkrankung</p><p>Familienstatus: Verheiratet, 2 Kinder, 2 Enkelkinder</p><p>Interesse: technisch affin</p><p>Körperliche Aktivität: 2.5 Stunden pro Woche</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Raucherstatus: Nichtraucher seit 5 Jahren (40 Pack Years)</p><p>Alkoholkonsum: 1-2 Gläser Wein oder Bier/Tag</p><p>Familienanamnese: Vorzeitige koronare Herzerkrankung</p><p>Familienstatus: Verheiratet, 2 Kinder, 2 Enkelkinder</p><p>Interesse: technisch affin</p><p>Körperliche Aktivität: 2.5 Stunden pro Woche</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e)
+* section[=].entry[+] = Reference(urn:uuid:5c5f6c1f-e55a-4784-945a-ef454bd8a044)
 * section[=].entry[+] = Reference(urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5)
 * section[=].entry[+] = Reference(urn:uuid:CBA1F802-851B-46FB-BE7D-781BE4198E15)
 * section[=].entry[+] = Reference(urn:uuid:0317A71F-6573-450F-BFA7-F2728EA7A8CC)
@@ -253,7 +262,7 @@ Usage: #inline
 * valueQuantity.comparator = #<
 * valueQuantity = 109 'cm' "cm"
 
-Instance: example-01-social-history-1
+Instance: example-02-social-history-1
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
@@ -261,8 +270,19 @@ Usage: #inline
 * code = $loinc#72166-2 "Raucherstatus"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
-* effectiveDateTime = "2023-01-01T14:00:00+00:00"
-* valueCodeableConcept = $loinc#LA18978-9 "Nichtraucher"
+* effectiveDateTime = "2023-01-01T14:00:00+01:00"
+* valueCodeableConcept = $loinc#LA18978-9 "Nichtraucher seit 5 Jahren (40 Pack Years)"
+
+Instance: example-322-social-history-1
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
+* status = #final
+* code = $loinc#72123-1 "Alkoholkonsum"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
+* effectiveDateTime = "2023-01-01T14:00:00+01:00"
+* valueCodeableConcept = $loinc#55284-4 "1-2 Gläser Wein oder Bier/Tag "
 
 Instance: Inline-Instance-for-example-01-1
 InstanceOf: Observation
