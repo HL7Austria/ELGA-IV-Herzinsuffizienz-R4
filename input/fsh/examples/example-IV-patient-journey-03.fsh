@@ -40,10 +40,22 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:6d15d84f-2faf-4141-ac0c-fb9cf8496abe"
 * entry[=].resource = example-03-medication-summary-7
 * entry[+].fullUrl = "urn:uuid:39f41bd6-963c-45a8-852b-813b9b1551b5"
-* entry[=].resource = Inline-Instance-for-example-03-2
+* entry[=].resource = Inline-Instance-for-example-03-1M
 * entry[+].fullUrl = "urn:uuid:07c8bd0b-31a6-4c30-9d8f-307f03130188"
-* entry[=].resource = Inline-Instance-for-example-03-3
+* entry[=].resource = Inline-Instance-for-example-03-2
 * entry[+].fullUrl = "urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a1"
+* entry[=].resource = Inline-Instance-for-example-03-3
+* entry[+].fullUrl = "urn:uuid:9f876b17-ed2d-487b-96d2-b13b8e6e9221"
+* entry[=].resource = Inline-Instance-for-example-03-4M
+* entry[+].fullUrl = "urn:uuid:90795403-0034-4280-968d-b75a66d16ccc"
+* entry[=].resource = Inline-Instance-for-example-03-5M
+* entry[+].fullUrl = "urn:uuid:d00a5064-b81a-476d-a8e6-0d2ef501a231"
+* entry[=].resource = Inline-Instance-for-example-03-6M
+* entry[+].fullUrl = "urn:uuid:ba31f604-1447-4cd1-a700-9522f8681498"
+* entry[=].resource = Inline-Instance-for-example-03-7
+* entry[+].fullUrl = "urn:uuid:3e40cb90-851e-4c49-ba33-a0762d053d41"
+* entry[=].resource = Inline-Instance-for-example-03-8
+* entry[+].fullUrl = "urn:uuid:1e38ac26-1ef3-425c-a3e9-3c1c60028b82"
 * entry[=].resource = example-03-diagnostic-result-2
 * entry[+].fullUrl = "urn:uuid:96314fcd-3b0c-4032-8cac-6eb59579d90a"
 * entry[=].resource = example-03-diagnostic-result-1
@@ -138,6 +150,8 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:e28c3f1e-323e-40a3-931b-6bae0fed2945"
 * entry[=].resource = Inline-Instance-for-example-03-6
 * entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
+* entry[=].resource = example-322-social-history-31
+* entry[+].fullUrl = "urn:uuid:5c5f6c1f-e55a-4784-945a-ef454bd8a044"
 * entry[=].resource = example-02-social-history-1
 * entry[+].fullUrl = "urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5"
 * entry[=].resource = example-01-social-history-1
@@ -177,7 +191,7 @@ Usage: #inline
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Ramipril 5 mg 1-0-0-0, Start 15.06.2016</p><p>Bisocor 2.5 mg 1-0-0-0, Start 22.03.2023</p><p>Lasix 40 mg 1-0-0-0, Start 22.03.2023</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Ramipril 10 mg 1-0-0-0, Start 22.03.2023</p><p>Bisocor 5 mg 1-0-0-0, Start 22.03.2023</p><p>Torasemid 10 mg 1-0-0-0, Start 22.03.2023</p><p>Spironolacton 25 mg 1-0-0-0, Start 22.03.2023</p><p>Ferrum Hausmann 100 mg nü-0-0-0, Start 22.03.2023</p><p>Atorvastatin 40 mg 0-0-0-1, Start 22.03.2023</p><p>L-Thyroxin 50 µg nü-0-0-0, Start 22.03.2023</p><p>Patiromer 8,4 g 0-0-0-1, Start 22.03.2023</p><p>Allopurinol 100 mg 0-0-0-1, Start 22.03.2023</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:6d15d84f-2faf-4141-ac0c-fb9cf8496abe)
 * section[=].entry[+] = Reference(urn:uuid:39f41bd6-963c-45a8-852b-813b9b1551b5)
 * section[=].entry[+] = Reference(urn:uuid:07c8bd0b-31a6-4c30-9d8f-307f03130188)
@@ -247,15 +261,16 @@ Usage: #inline
 * section[+].title = "Plan of Care"
 * section[=].code = $loinc#81381-6 "Administrative information associated with this personal advance care plan"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Empfehlung: Gewichtskontrolle</p><p>Empfehlung: Salzarme Ernährung</p><p>Empfehlung: Körperliche Aktivität</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Empfehlung: Gewichtskontrolle, Start 22.03.2023, **Trockengewicht: 85kg**, Flüssigkeitsbegrenzung auf 1,5 bis 2 Liter/Tag, Verzicht/Reduktion Alkoholmenge, Zielgewicht: 75kg </p><p>Empfehlung: Salzarme Ernährung, Start 22.03.2023, 2-3 g Salz/Tag </p><p>Empfehlung: Körperliche Aktivität, Start 22.03.2023, tgl. Gehen und Radfahren</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:82301518-66ca-4b4c-821d-087adf643cc4)
 * section[=].entry[+] = Reference(urn:uuid:ce2589a2-a5e5-4520-808f-8118e2863a95)
 * section[=].entry[+] = Reference(urn:uuid:e28c3f1e-323e-40a3-931b-6bae0fed2945)
 * section[+].title = "Social History"
 * section[=].code = $loinc#29762-2 "Social history Narrative"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Raucherstatus: Nichtraucher</p><p>Familienanamnese: Vorzeitige koronare Herzerkrankung</p><p>Familienstatus: Verheiratet, 2 Kinder, 2 Enkelkinder</p><p>Interesse: technisch affin</p><p>Körperliche Aktivität: 2.5 Stunden pro Woche</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Raucherstatus: Nichtraucher seit 5 Jahren (40 Pack Years)</p><p>Alkoholkonsum: 1-2 Gläser Wein oder Bier/Tag</p><p>Familienanamnese: Vorzeitige koronare Herzerkrankung</p><p>Familienstatus: Verheiratet, 2 Kinder, 2 Enkelkinder</p><p>Interesse: technisch affin</p><p>Körperliche Aktivität: 2.5 Stunden pro Woche</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e)
+* section[=].entry[+] = Reference(urn:uuid:5c5f6c1f-e55a-4784-945a-ef454bd8a044)
 * section[=].entry[+] = Reference(urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5)
 * section[=].entry[+] = Reference(urn:uuid:CBA1F802-851B-46FB-BE7D-781BE4198E15)
 * section[=].entry[+] = Reference(urn:uuid:0317A71F-6573-450F-BFA7-F2728EA7A8CC)
@@ -394,9 +409,20 @@ InstanceOf: MedicationStatement
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
 * status = #active
-* medicationCodeableConcept = $asp-liste#2450888 "RAMIPRIL 1A TBL  5MG"
+* medicationCodeableConcept = $asp-liste#2450888 "RAMIPRIL 1A TBL  10MG"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
-* effectivePeriod.start = "2016-06-15T10:31:58+02:00"
+* effectivePeriod.start = "2023-03-22T08:30:00+01:00"
+* dosage.text = "S:1-0-0-0"
+
+Instance: Inline-Instance-for-example-03-1M
+InstanceOf: MedicationStatement
+Usage: #inline
+* id = "example-03-medication-summary-7"
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
+* status = #active
+* medicationCodeableConcept = $asp-liste#2450888 "BISOCOR TBL  5MG"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2023-03-22T08:30:00+01:00"
 * dosage.text = "S:1-0-0-0"
 
 Instance: Inline-Instance-for-example-03-2
@@ -405,7 +431,7 @@ Usage: #inline
 * id = "example-03-medication-summary-7"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
 * status = #active
-* medicationCodeableConcept = $asp-liste#2450888 "BISOCOR TBL  2.5MG"
+* medicationCodeableConcept = $asp-liste#2450888 "TORASEMID TBL 10MG"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * effectivePeriod.start = "2023-03-22T08:30:00+01:00"
 * dosage.text = "S:1-0-0-0"
@@ -416,10 +442,65 @@ Usage: #inline
 * id = "example-03-medication-summary-7"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
 * status = #active
-* medicationCodeableConcept = $asp-liste#2450888 "LASIX TBL 40MG"
+* medicationCodeableConcept = $asp-liste#2450888 "SPIRONOLACTON TBL 25MG"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * effectivePeriod.start = "2023-03-22T08:30:00+01:00"
 * dosage.text = "S:1-0-0-0"
+
+Instance: Inline-Instance-for-example-03-4M
+InstanceOf: MedicationStatement
+Usage: #inline
+* id = "example-03-medication-summary-7"
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
+* status = #active
+* medicationCodeableConcept = $asp-liste#2450888 "FERRUM HAUSMANN 100MG NÜCHTERN"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2023-03-22T08:30:00+01:00"
+* dosage.text = "S:1-0-0-0"
+
+Instance: Inline-Instance-for-example-03-5M
+InstanceOf: MedicationStatement
+Usage: #inline
+* id = "example-03-medication-summary-7"
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
+* status = #active
+* medicationCodeableConcept = $asp-liste#2450888 "ATROVASTATIN 40MG"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2023-03-22T08:30:00+01:00"
+* dosage.text = "S:0-0-1-0"
+
+Instance: Inline-Instance-for-example-03-6M
+InstanceOf: MedicationStatement
+Usage: #inline
+* id = "example-03-medication-summary-7"
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
+* status = #active
+* medicationCodeableConcept = $asp-liste#2450888 "L-THYROXIN 50MCG NÜCHTERN"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2023-03-22T08:30:00+01:00"
+* dosage.text = "S:1-0-0-0"
+
+Instance: Inline-Instance-for-example-03-7
+InstanceOf: MedicationStatement
+Usage: #inline
+* id = "example-03-medication-summary-7"
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
+* status = #active
+* medicationCodeableConcept = $asp-liste#2450888 "PATIROMER 8,4G"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2023-03-22T08:30:00+01:00"
+* dosage.text = "S:0-0-1-0"
+
+Instance: Inline-Instance-for-example-03-8
+InstanceOf: MedicationStatement
+Usage: #inline
+* id = "example-03-medication-summary-7"
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-medicationstatement"
+* status = #active
+* medicationCodeableConcept = $asp-liste#2450888 "ALLOPURINOL 100MG"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* effectivePeriod.start = "2023-03-22T08:30:00+01:00"
+* dosage.text = "S:0-0-1-0"
 
 Instance: example-03-diagnostic-result-2
 InstanceOf: Observation
@@ -750,7 +831,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * effectiveDateTime = "2023-03-22T08:30:00+01:00"
 * performer = Reference(urn:uuid:82f802a7-56a9-49b4-a675-95da08f0d7a6)
-* valueQuantity = 6.7 '%' "%"
+* valueQuantity = 6.2 '%' "%"
 
 Instance: example-cholesterol-total
 InstanceOf: Observation
@@ -962,7 +1043,18 @@ Usage: #inline
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+01:00"
-* valueCodeableConcept = $loinc#LA18978-9 "Nichtraucher"
+* valueCodeableConcept = $loinc#LA18978-9 "Nichtraucher seit 5 Jahren (40 Pack Years)"
+
+Instance: example-322-social-history-31
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
+* status = #final
+* code = $loinc#72123-1 "Alkoholkonsum"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
+* effectiveDateTime = "2023-01-01T14:00:00+01:00"
+* valueCodeableConcept = $loinc#55284-4 "1-2 Gläser Wein oder Bier/Tag "
 
 Instance: example-31-social-history-1
 InstanceOf: Observation
