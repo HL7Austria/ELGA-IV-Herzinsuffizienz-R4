@@ -7,15 +7,15 @@
 
 Die folgende fiktive "Patient Journey" beschreibt einen möglichen Anwendungsfall des Leitfadens:
 
-Anton Test ist 72 Jahre alt und lebt mit seiner Ehefrau in Wien. Er hat zwei erwachsene Kinder und Enkelkinder. Beruflich war er früher als Buchhalter tätig. Sein Allgemeinzustand ist gut, allerdings ist er adipös (BMI >30). In seiner Familie gibt es eine Vorbelastung für Herzkrankheiten. Seit 2016 nimmt Anton aufgrund von arterieller Hypertonie täglich morgens eine 5-mg-Tablette Ramipril ein. Er ist körperlich aktiv und geht regelmäßig mit seinem Hund spazieren. Anton ist technisch versiert und nutzt häufig sein Smartphone. 
+Anton ist 72 Jahre alt und lebt mit seiner Ehefrau in Wien. Er hat zwei erwachsene Kinder und Enkelkinder. Beruflich war er früher als Buchhalter tätig. Sein Allgemeinzustand ist gut, allerdings ist er adipös (BMI >30). In seiner Familie gibt es eine Vorbelastung für Herzkrankheiten. Seit 2016 nimmt Anton aufgrund von arterieller Hypertonie täglich morgens eine 5-mg-Tablette Ramipril ein. Er ist körperlich aktiv und geht regelmäßig mit seinem Hund spazieren. Anton ist technisch versiert und nutzt häufig sein Smartphone. Er hat vor 5 Jahren mit dem Rauchen aufgehört. Davor rauchte er 40 Jahre lang täglich ein Päckchen Zigaretten (entsprechend 40 Pack Years). Anton gibt an, in den letzten Jahren moderat Alkohol zu konsumieren, etwa 1-2 Gläser Wein oder Bier pro Woche. Er hat nie regelmäßig größere Mengen Alkohol getrunken.
 
 -	15.03.2024: Anton verspürt seit einigen Wochen zunehmende Kurzatmigkeit und Müdigkeit, besonders bei Belastung. 
 Er sucht seinen Hausarzt auf. Dieser führt eine gründliche Anamnese und körperliche Untersuchung durch. Dabei fallen Beinödeme und EKG-Auffälligkeiten auf. 
 Es wird eine Verdachtsdiagnose auf Herzinsuffizienz gestellt. Anton wird zur weiteren Abklärung an einen Kardiologen überwiesen. 
     
-- 22.03.2024: Der Kardiologe diagnostiziert mittels Echokardiographie und Laboruntersuchung eine Herzinsuffizienz mit reduzierter Ejektionsfraktion (HFrEF) und verordnet Anton zusätzlich zu seinem ACE-Hemmer einen Betablocker und ein Diuretikum sowie Empfehlungen zur Gewichtskontrolle, salzarmer Ernährung und körperlicher Aktivität. 
+- 22.03.2024: Der Kardiologe diagnostiziert eine Herzinsuffizienz mit reduzierter Ejektionsfraktion (HFrEF) basierend auf der Echokardiographie und den auffälligen Laborwerten, die unter anderem auf eine Niereninsuffizienz, Anämie, Dyslipidämie und Hypothyreose hinweisen. Antons medikamentöse Therapie wird erhöht und ergänzt. Außerdem erhält Anton Empfehlungen zur Gewichtskontrolle, salzarmen Ernährung und moderater körperlicher Aktivität. 
 
-- 29.03.2024: Anton fühlt sich mit der Therapie bereits besser, hat jedoch Fragen zur Einnahme der Medikamente. Der Hausarzt informiert ihn über eine Veranstaltung des Herzverbands und das Disease-Management-Programm (DMP) für Herzinsuffizienz, das Anton weiterhelfen könnte.
+- 29.03.2024: Anton fühlt sich mit der Therapie bereits besser, hat jedoch Fragen zu den Untersuchungsergebnissen und zur Einnahme der Medikamente. Der Hausarzt informiert ihn über eine Veranstaltung des Herzverbands und das Disease-Management-Programm (DMP) für Herzinsuffizienz, das Anton weiterhelfen könnte.
 
 - Fortlaufende Betreuung: Anton nimmt regelmäßig an Schulungen und Beratungen im Rahmen des DMP teil. Durch die engmaschige Betreuung und optimierte Therapie kann er seine Erkrankung besser verstehen und managen, was ihm hilft, trotz der Einschränkungen eine gute Lebensqualität zu erhalten.
 
