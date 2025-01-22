@@ -46,6 +46,8 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:be35e603-6b99-4bb5-ad70-8499f6b55df1"
 * entry[=].resource = example-02-vital-sign-6
 * entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
+* entry[=].resource = example-322-social-history-1
+* entry[+].fullUrl = "urn:uuid:5c5f6c1f-e55a-4784-945a-ef454bd8a044"
 * entry[=].resource = example-02-social-history-1
 * entry[+].fullUrl = "urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5"
 * entry[=].resource = example-01-social-history-1
@@ -122,8 +124,9 @@ Usage: #inline
 * section[+].title = "Social History"
 * section[=].code = $loinc#29762-2 "Social history Narrative"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Raucherstatus: Nichtraucher</p><p>Familienanamnese: Vorzeitige koronare Herzerkrankung</p><p>Familienstatus: Verheiratet, 2 Kinder, 2 Enkelkinder</p><p>Interesse: technisch affin</p><p>Körperliche Aktivität: 2.5 Stunden pro Woche</p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Raucherstatus: Nichtraucher seit 5 Jahren (40 Pack Years)</p><p>Alkoholkonsum: 1-2 Gläser Wein oder Bier/Tag</p><p>Familienanamnese: Vorzeitige koronare Herzerkrankung</p><p>Familienstatus: Verheiratet, 2 Kinder, 2 Enkelkinder</p><p>Interesse: technisch affin</p><p>Körperliche Aktivität: 2.5 Stunden pro Woche</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e)
+* section[=].entry[+] = Reference(urn:uuid:5c5f6c1f-e55a-4784-945a-ef454bd8a044)
 * section[=].entry[+] = Reference(urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5)
 * section[=].entry[+] = Reference(urn:uuid:CBA1F802-851B-46FB-BE7D-781BE4198E15)
 * section[=].entry[+] = Reference(urn:uuid:0317A71F-6573-450F-BFA7-F2728EA7A8CC)
@@ -299,7 +302,7 @@ Usage: #inline
 * valueQuantity.comparator = #<
 * valueQuantity = 109 'cm' "cm"
 
-Instance: example-02-social-history-1
+Instance: example-02-social-history-11
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
@@ -308,7 +311,18 @@ Usage: #inline
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+01:00"
-* valueCodeableConcept = $loinc#LA18978-9 "Nichtraucher"
+* valueCodeableConcept = $loinc#LA18978-9 "Nichtraucher seit 5 Jahren (40 Pack Years)"
+
+Instance: example-322-social-history-12
+InstanceOf: Observation
+Usage: #inline
+* meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
+* status = #final
+* code = $loinc#72123-1 "Alkoholkonsum"
+* subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
+* performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
+* effectiveDateTime = "2023-01-01T14:00:00+01:00"
+* valueCodeableConcept = $loinc#55284-4 "1-2 Gläser Wein oder Bier/Tag "
 
 Instance: example-21-social-history-1
 InstanceOf: Observation
