@@ -65,6 +65,10 @@ pages:
     title: Mapping from HI to IPS
   terminologies.md:
     title: Terminologies
+  usecases.md:
+    title: Use Cases
+  info.md:
+    title: Informationen über dieses Dokument
 
 #
 #
@@ -91,6 +95,11 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  TOC: toc.html
+  Use Cases: usecases.html
+  Terminologies: terminologies.html
+  Artifacts: artifacts.html
+  ELGA IGs: info.html
   Logical Model (HI):
     Patient (HI): StructureDefinition-Patient-hi.html
     Akteur (HI): StructureDefinition-Akteur-hi.html
@@ -102,8 +111,6 @@ menu:
     Diagnostic Results (IPS): StructureDefinition-DiagnosticResults-ips.html
     Plan of Care (IPS): StructureDefinition-PlanOfCare-ips.html
   Mapping HI to IPS: mappings.html
-  Terminologies: terminologies.html
-  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
