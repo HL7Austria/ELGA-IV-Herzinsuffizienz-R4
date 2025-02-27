@@ -60,7 +60,7 @@ dependencies:
 
 pages:
   index.md:
-    title: Implementation Guide for HI
+    title: ELGA Implementierungsleitfaden IV Herzinsuffizienz
   mappings.md:
     title: Mapping from HI to IPS
   terminologies.md:
