@@ -41,24 +41,15 @@ Usage: #example
 * entry[=].resource = example-01-vital-sign-6
 * entry[+].fullUrl = "urn:uuid:566f71b0-4f76-498f-8c58-841fe405aed4"
 * entry[=].resource = example-02-social-history-1
-
-
-
-
-
-
-
-
-
 * entry[+].fullUrl = "urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e"
 * entry[=].resource = example-322-social-history-1
 * entry[+].fullUrl = "urn:uuid:5c5f6c1f-e55a-4784-945a-ef454bd8a044"
 * entry[=].resource = example-02-social-history-1
 * entry[+].fullUrl = "urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5"
 * entry[=].resource = example-01-social-history-1
-* entry[+].fullUrl = "urn:uuid:CBA1F802-851B-46FB-BE7D-781BE4198E15"
+* entry[+].fullUrl = "urn:uuid:cba1f802-851b-46fb-be7d-781be4198e15"
 * entry[=].resource = example-03-social-history-1
-* entry[+].fullUrl = "urn:uuid:0317A71F-6573-450F-BFA7-F2728EA7A8CC"
+* entry[+].fullUrl = "urn:uuid:0317a71f-6573-450f-bfa7-f2728ea7a8cc"
 * entry[=].resource = example-04-social-history-1
 * entry[+].fullUrl = "urn:uuid:feb8751e-3baa-4f49-8d9e-1cd32a6c6dac"
 * entry[=].resource = example-05-social-history-1
@@ -70,7 +61,7 @@ InstanceOf: Composition
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-composition"
 * status = #final
-* type = $loinc#60591-5 "Patient summary Document"
+* type = $loinc#60591-5 "Patient Summary"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * date = "2023-01-01T14:00:00+00:00"
 * author = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
@@ -95,21 +86,21 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:ecf9728f-fa50-4b46-b8f7-7768174df72a)
 * section[=].entry[+] = Reference(urn:uuid:cf4b2e92-51e6-44de-9406-5406e66e9d45)
 * section[+].title = "Allergies and Intolerances"
-* section[=].code = $loinc#48765-2 "Allergies and Intolerances adverse reactions Document"
+* section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p></p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>-</p></div>"
 * section[=].entry = Reference(urn:uuid:768eb9cb-00f3-4ab1-bfc2-ff835cb3b89b)
 * section[+].title = "History of Procedures"
 * section[=].code = $loinc#47519-4 "History of Procedures Document"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p></p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>-</p></div>"
 * section[=].entry[0] = Reference(urn:uuid:75c46c35-8f4e-4232-b026-5672c60d076a)
 * section[=].entry[+] = Reference(urn:uuid:8103f99c-64f0-4dd5-b92e-5c9680c91e47)
 * section[=].entry[+] = Reference(urn:uuid:8a825f17-1599-4928-b384-0ca4a62daba8)
 * section[+].title = "Diagnostic Results"
 * section[=].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
 * section[=].text.status = #empty
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p></p></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>-</p></div>"
 * section[+].title = "Vital Signs"
 * section[=].code = $loinc#8716-3 "Vital signs"
 * section[=].text.status = #empty
@@ -128,8 +119,8 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:d0a5bbf1-6d01-4d44-bac5-05f12c98411e)
 * section[=].entry[+] = Reference(urn:uuid:5c5f6c1f-e55a-4784-945a-ef454bd8a044)
 * section[=].entry[+] = Reference(urn:uuid:e66d8ac1-a124-4e94-be22-969c9b117ce5)
-* section[=].entry[+] = Reference(urn:uuid:CBA1F802-851B-46FB-BE7D-781BE4198E15)
-* section[=].entry[+] = Reference(urn:uuid:0317A71F-6573-450F-BFA7-F2728EA7A8CC)
+* section[=].entry[+] = Reference(urn:uuid:cba1f802-851b-46fb-be7d-781be4198e15)
+* section[=].entry[+] = Reference(urn:uuid:0317a71f-6573-450f-bfa7-f2728ea7a8cc)
 * section[=].entry[+] = Reference(urn:uuid:feb8751e-3baa-4f49-8d9e-1cd32a6c6dac)
 * section[=].entry[+] = Reference(urn:uuid:9add5c32-1ded-43d6-b163-c3fe13f94984)
 
@@ -170,7 +161,7 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category = $condition-category#problem-list-item "Problem List Item"
-* code = $sct#38341003 "Arterielle Hypertonie"
+* code = $sct#38341003 "Hypertension"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * recordedDate = "2016-06-15T14:00:00+00:00"
 * asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
@@ -182,7 +173,7 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category = $condition-category#problem-list-item "Problem List Item"
-* code = $sct#414916001 "Adipositas"
+* code = $sct#414916001 "Adiposis"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * recordedDate = "2023-01-01T14:00:00+00:00"
 * asserter = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
@@ -202,6 +193,7 @@ InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
 * status = #final
+* category[0] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = $loinc#8302-2 "Körpergröße"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
@@ -213,6 +205,7 @@ InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
 * status = #final
+* category[0] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = $loinc#29463-7 "Körpergewicht"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
@@ -224,7 +217,8 @@ InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
 * status = #final
-* code = $loinc#39156-5 "Body-Mass-Index"
+* category[0] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = $loinc#39156-5 "Body-Mass-Index (BMI)"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
@@ -236,13 +230,14 @@ InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
 * status = #final
-* code = $loinc#85354-9 "Blutdruck"
+* category[0] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = $loinc#85354-9 "Blood pressure panel with all children optional"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
-* component[0].code = $loinc#8480-6 "Systolic blood pressure"
+* component[0].code = $loinc#8480-6 "Blutdruck systolisch"
 * component[=].valueQuantity = 130 'mm[Hg]' "mm[Hg]"
-* component[+].code = $loinc#8462-4 "Diastolic blood pressure"
+* component[+].code = $loinc#8462-4 "Blutdruck diastolisch"
 * component[=].valueQuantity = 80 'mm[Hg]' "mm[Hg]"
 
 Instance: example-01-vital-sign-5
@@ -250,6 +245,7 @@ InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
 * status = #final
+* category[0] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = $loinc#8867-4 "Puls"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
@@ -261,7 +257,8 @@ InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationvitalsigns"
 * status = #final
-* code = $sct#276361009 "Taillenumfang"
+* category[0] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = $sct#276361009 "Waist circumference"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
@@ -277,18 +274,18 @@ Usage: #inline
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+01:00"
-* valueCodeableConcept = $loinc#LA18978-9 "Nichtraucher seit 5 Jahren (40 Pack Years)"
+* valueCodeableConcept = $loinc#LA18978-9 "Never smoker"
 
 Instance: example-322-social-history-1
 InstanceOf: Observation
 Usage: #inline
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
-* code = $loinc#72123-1 "Alkoholkonsum"
+* code = $loinc#74013-4 "Alcoholic drinks per day"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+01:00"
-* valueCodeableConcept = $loinc#55284-4 "1-2 Gläser Wein oder Bier/Tag "
+* valueCodeableConcept = $loinc#55284-4 "Blood pressure systolic and diastolic"
 
 Instance: Inline-Instance-for-example-01-1
 InstanceOf: Observation
@@ -296,11 +293,11 @@ Usage: #inline
 * id = "example-01-social-history-1"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
-* code = $sct#57177007 "Familienanamnese"
+* code = $sct#57177007 "Family history of"
 * subject = Reference(urn:uuid:5ACF81A0-ED49-4774-94A1-F7E47C1BC56A)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
-* valueCodeableConcept = $sct#297242006 "Vorzeitige koronare Herzerkrankung"
+* valueCodeableConcept = $sct#297242006 "Family history of ischemic heart disease"
 
 Instance: Inline-Instance-for-example-01-2
 InstanceOf: Observation
@@ -308,11 +305,11 @@ Usage: #inline
 * id = "example-01-social-history-1"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
-* code = $sct#365580001 "Familienstatus"
+* code = $sct#365580001 "Finding of personal status"
 * subject = Reference(urn:uuid:991A9685-5481-488E-A7B1-7F93581425EA)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
-* valueCodeableConcept = $sct#87915002 "Verheiratet"
+* valueCodeableConcept = $sct#87915002 "Married"
 
 Instance: Inline-Instance-for-example-01-3
 InstanceOf: Observation
@@ -320,11 +317,11 @@ Usage: #inline
 * id = "example-01-social-history-1"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
-* code = $sct#224117009 "Angaben zu eigenen Kindern"
+* code = $sct#224117009 "Details of own children"
 * subject = Reference(urn:uuid:F3BF9543-E773-4462-9873-E44D79986EFB)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
-* valueCodeableConcept = $sct#224118004 "Anzahl der Nachkommen: Kinder:2, Enkelkinder:2"
+* valueCodeableConcept = $sct#224118004 "Number of offspring"
 
 Instance: Inline-Instance-for-example-01-4
 InstanceOf: Observation
@@ -332,17 +329,17 @@ Usage: #inline
 * id = "example-01-social-history-1"
 * meta.profile = "https://fhir.hl7.at/elga-austrianpatientsummary-r4/StructureDefinition/at-ips-observationtobaccouse"
 * status = #final
-* code = $sct#134418002 "Intersse"
+* code = $sct#134418002 "Normal interest"
 * subject = Reference(urn:uuid:5ACF81A0-ED49-4774-94A1-F7E47C1BC56A)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
-* valueCodeableConcept = $sct#733863009 "technisch affin"
+* valueCodeableConcept = $sct#733863009 "Assessment of readiness for self-management (procedure)"
 
 Instance: example-01-social-history-2
 InstanceOf: Observation
 Usage: #inline
 * status = #final
-* code = $sct#61686008 "Körperliche Aktivität"
+* code = $sct#61686008 "Physical exercise"
 * subject = Reference(urn:uuid:0fed5ebe-ca8f-4ad1-aba4-ddad45bd6cc8)
 * performer = Reference(urn:uuid:75db30ee-7028-486c-929a-c5126837f472)
 * effectiveDateTime = "2023-01-01T14:00:00+00:00"
